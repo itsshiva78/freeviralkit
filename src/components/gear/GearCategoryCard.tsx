@@ -40,7 +40,7 @@ export function GearCategoryCard({ category }: GearCategoryCardProps) {
 
             <div>
               <div className="flex justify-between items-start gap-2 mb-3">
-                <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 border border-slate-200 dark:border-slate-700">
+                <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
                   {item.tag}
                 </span>
                 <span className="text-xs font-semibold text-slate-400">{item.price}</span>
@@ -48,7 +48,7 @@ export function GearCategoryCard({ category }: GearCategoryCardProps) {
               <h3 className="font-display font-bold text-slate-800 dark:text-slate-100 group-hover:text-purple-400 transition-colors line-clamp-2 min-h-[2.75rem] mb-2 leading-snug">
                 {item.name}
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-4">
+              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-4">
                 {item.desc}
               </p>
             </div>

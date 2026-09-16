@@ -64,21 +64,21 @@ export default function TagsGeneratorClient({ niche }: TagsGeneratorClientProps)
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
               <div className="flex items-center gap-3">
                 <h2 className="font-display text-xl font-semibold">🏷️ Your Tags</h2>
-                <button onClick={() => handleGenerate(undefined, true)} aria-label="Regenerate tags" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 border border-slate-200 text-sm text-slate-600 hover:text-slate-900 transition-colors cursor-pointer">
+                <button onClick={() => handleGenerate(undefined, true)} aria-label="Regenerate tags" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-sm text-slate-600 hover:text-slate-900 dark:hover:text-white dark:text-slate-50 transition-colors cursor-pointer">
                   <RotateCcw className="w-3.5 h-3.5" /> Regenerate
                 </button>
               </div>
               <button onClick={() => copy(tags.join(', '), 'all-tags')} aria-label="Copy all tags" className="copy-btn cursor-pointer">
-                {copiedStates['all-tags'] ? <><CheckCircle2 className="w-4 h-4 text-green-400" /> Copied!</> : <><Copy className="w-4 h-4 text-slate-600" /> Copy All</>}
+                {copiedStates['all-tags'] ? <><CheckCircle2 className="w-4 h-4 text-green-400" /> Copied!</> : <><Copy className="w-4 h-4 text-slate-600 dark:text-slate-400" /> Copy All</>}
               </button>
             </div>
             {/* Character limit bar */}
-            <div className="mb-4 bg-slate-100 rounded-lg p-3 border border-slate-100">
+            <div className="mb-4 bg-slate-100 dark:bg-slate-800 rounded-lg p-3 border border-slate-100 dark:border-slate-800">
               <div className="flex justify-between text-xs mb-1.5">
-                <span className="text-slate-600">Tag characters used</span>
+                <span className="text-slate-600 dark:text-slate-400">Tag characters used</span>
                 <span className={tagsTotalChars <= 500 ? 'text-green-400' : 'text-red-400'}>{tagsTotalChars} / 500</span>
               </div>
-              <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div className="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                 <div className={`h-full rounded-full transition-all ${tagsTotalChars <= 400 ? 'bg-green-500' : tagsTotalChars <= 500 ? 'bg-yellow-500' : 'bg-red-500'}`}
                   style={{ width: `${Math.min((tagsTotalChars / 500) * 100, 100)}%` }} />
               </div>
@@ -96,7 +96,7 @@ export default function TagsGeneratorClient({ niche }: TagsGeneratorClientProps)
             {/* Pro Tip */}
             <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-5">
               <h3 className="font-display font-semibold text-cyan-500 mb-1 flex items-center gap-1.5">💡 Pro Tip: Tag Priority Order</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 Put your main target focus keyword as the first tag. YouTube weighs early tags slightly higher in search categorization. Keep tags relevant and avoid generic words.
               </p>
             </div>

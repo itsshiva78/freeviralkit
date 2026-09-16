@@ -174,7 +174,7 @@ export default function BeautyTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Beauty </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Create viral titles for GRWM, makeup tutorials, skincare routines, product reviews, and transformation videos. Powered by AI, always free.
           </p>
           <div className="text-left mt-8">
@@ -183,8 +183,8 @@ export default function BeautyTitleLandingPage() {
         </section>
         {/* Huge SEO Content Expansion */}
         <section className="mt-16 mb-16 space-y-12">
-          <div className="prose prose-slate max-w-none text-slate-700">
-            <h2 className="font-display text-3xl font-bold text-slate-900">
+          <div className="prose prose-slate max-w-none text-slate-700 dark:text-slate-300">
+            <h2 className="font-display text-3xl font-bold text-slate-900 dark:text-slate-50">
               The Psychology of Clicks: Crafting Winning Beauty Titles
             </h2>
             <p>
@@ -193,7 +193,7 @@ export default function BeautyTitleLandingPage() {
             <p>
               Unlike gaming or tech, where viewers are often looking for objective facts or walkthroughs, beauty content is deeply personal, aspirational, and emotional. Viewers are searching for transformations, honest opinions, and relatable struggles. A great beauty title doesn&apos;t just describe what happens in the video; it promises an experience, a solution, or a revelation. Understanding this subtle difference is the key to elevating your channel from a hobbyist level to a professional brand.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The Power of the &quot;Curiosity Gap&quot;
             </h3>
             <p>
@@ -202,7 +202,7 @@ export default function BeautyTitleLandingPage() {
             <p>
               For example, a title like <strong>&quot;Reviewing Drugstore Foundations&quot;</strong> provides information, but it lacks a curiosity gap. It is boring and predictable. Contrast that with <strong>&quot;I Wore a $5 Foundation for 24 Hours (And I&apos;m Shocked).&quot;</strong> This title immediately poses several questions in the viewer&apos;s mind: Which foundation is it? Did it melt off? Did it outperform a luxury brand? The viewer must click to find out. By hinting at a surprising outcome without giving away the answer, you leverage the curiosity gap to drive massive click-through rates (CTR).
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Specificity Sells: Naming Brands and Shades
             </h3>
             <p>
@@ -211,7 +211,7 @@ export default function BeautyTitleLandingPage() {
             <p>
               If you are reviewing the latest launch from Rare Beauty or Fenty, your title must include the exact brand name, the specific product name, and ideally, the shade or skin type. A title like <strong>&quot;Fenty Beauty Pro Filt&apos;r Soft Matte Foundation Review | Shade 290 on Oily Skin&quot;</strong> is an SEO goldmine. It captures the exact long-tail search query of a highly motivated viewer. These specific titles might not get a million views overnight, but they will generate a consistent, evergreen stream of highly engaged views and potentially lucrative affiliate link clicks for months or years to come.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The Emotional Resonance of Constraints and Challenges
             </h3>
             <p>
@@ -220,7 +220,7 @@ export default function BeautyTitleLandingPage() {
             <p>
               Titles that incorporate time limits, budget restrictions, or product limitations consistently outperform standard tutorials. Examples include <strong>&quot;5-Minute College Makeup Routine (For When You Overslept),&quot;</strong> <strong>&quot;Full Face of Makeup Using ONLY Liquid Products,&quot;</strong> or <strong>&quot;Testing the Worst-Rated Makeup at Sephora.&quot;</strong> These titles instantly convey the premise of the video and promise a unique viewing experience that sets your content apart from the endless sea of traditional &quot;Get Ready With Me&quot; videos. They demonstrate creativity and skill, which helps build authority and trust with your audience.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Avoiding the Clickbait Trap: Delivering on the Promise
             </h3>
             <p>
@@ -236,21 +236,21 @@ export default function BeautyTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Your Beauty Title Determines Your Video&apos;s Success
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             The beauty niche on YouTube is massive — and fiercely competitive. With thousands of makeup tutorials, skincare routines, and product reviews uploaded daily, your title is the single biggest factor that determines whether someone clicks your video or scrolls past it.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Beauty viewers are searching with high intent. They&apos;re looking for &ldquo;best drugstore foundation for oily skin&rdquo; or &ldquo;GRWM everyday makeup.&rdquo; If your title matches their search query naturally, YouTube rewards you with higher rankings and more recommendations.
           </p>
-          <p className="text-slate-600">
-            Great beauty titles combine a <strong className="text-slate-900">specific look or technique</strong>, a <strong className="text-slate-900">relatable constraint</strong>, and <strong className="text-slate-900">authentic language</strong>. That&apos;s exactly what our AI generates for you.
+          <p className="text-slate-600 dark:text-slate-400">
+            Great beauty titles combine a <strong className="text-slate-900 dark:text-slate-50">specific look or technique</strong>, a <strong className="text-slate-900 dark:text-slate-50">relatable constraint</strong>, and <strong className="text-slate-900 dark:text-slate-50">authentic language</strong>. That&apos;s exactly what our AI generates for you.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -268,10 +268,10 @@ export default function BeautyTitleLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -281,18 +281,18 @@ export default function BeautyTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Beauty Title Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your beauty topic</strong> — describe the look, product, routine, or tutorial you&apos;re creating.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your beauty topic</strong> — describe the look, product, routine, or tutorial you&apos;re creating.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates 10 optimized titles</strong> — each crafted with beauty keywords, trending formats, and engagement hooks.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> — each crafted with beauty keywords, trending formats, and engagement hooks.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -312,8 +312,8 @@ export default function BeautyTitleLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -326,24 +326,24 @@ export default function BeautyTitleLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-vlogs"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎬 Title Generator for Vlogs</span>
-              <p className="text-slate-600 text-sm mt-1">Create relatable vlog titles for daily routines, lifestyle, and personal content.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎬 Title Generator for Vlogs</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create relatable vlog titles for daily routines, lifestyle, and personal content.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Find trending beauty and makeup hashtags to boost your video&apos;s reach.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Find trending beauty and makeup hashtags to boost your video&apos;s reach.</p>
             </Link>
             <Link
               href="/youtube-description-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">📝 YouTube Description Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Write SEO-optimized descriptions with product links, timestamps, and affiliate sections.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">📝 YouTube Description Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Write SEO-optimized descriptions with product links, timestamps, and affiliate sections.</p>
             </Link>
           </div>
         </section>

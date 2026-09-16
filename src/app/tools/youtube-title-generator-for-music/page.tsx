@@ -175,7 +175,7 @@ export default function MusicTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Music </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate viral titles for song covers, music production tutorials, beat-making sessions, and album reviews. Powered by AI, built for musicians.
           </p>
           <div className="text-left mt-8">
@@ -187,21 +187,21 @@ export default function MusicTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Your Music Title Makes or Breaks Your Video
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Music is one of the most-watched categories on YouTube, but also one of the most saturated. Millions of covers, tutorials, and reactions compete for the same audience every day. Your title is the first — and often only — chance to stand out.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             A lazy title like &ldquo;New Cover Song&rdquo; tells viewers nothing. But &ldquo;I Sang Bohemian Rhapsody in 10 Different Styles (Mind-Blown)&rdquo; instantly communicates the challenge, the scope, and the excitement.
           </p>
-          <p className="text-slate-600">
-            Great music titles combine <strong className="text-slate-900">the song or artist name</strong>, a <strong className="text-slate-900">format indicator</strong>, and an <strong className="text-slate-900">emotional hook</strong>. That&apos;s exactly what our AI generates for you.
+          <p className="text-slate-600 dark:text-slate-400">
+            Great music titles combine <strong className="text-slate-900 dark:text-slate-50">the song or artist name</strong>, a <strong className="text-slate-900 dark:text-slate-50">format indicator</strong>, and an <strong className="text-slate-900 dark:text-slate-50">emotional hook</strong>. That&apos;s exactly what our AI generates for you.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -219,10 +219,10 @@ export default function MusicTitleLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -230,14 +230,14 @@ export default function MusicTitleLandingPage() {
         {/* Advanced Music SEO Deep Dive */}
         <section className="mt-16 mb-8 space-y-12">
           <div className="glass-card rounded-2xl p-6 md:p-8">
-            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900">
+            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900 dark:text-slate-50">
               The Ultimate Guide to YouTube Titles for Musicians and Producers
             </h2>
-            <div className="prose prose-lg text-slate-600 max-w-none space-y-6">
+            <div className="prose prose-lg text-slate-600 dark:text-slate-400 max-w-none space-y-6">
               <p>
                 Navigating the YouTube algorithm as a musician, producer, or singer-songwriter can often feel like playing to an empty room. You spend countless hours mixing your tracks, mastering the audio, setting up the perfect lighting, and editing your performance. Yet, when you finally hit publish, the video barely gets any views. Why does this happen? The harsh reality of YouTube is that your music&apos;s quality does not matter if people never click on your video in the first place. Your title is the billboard for your music. If that billboard isn&apos;t compelling, people will drive right past it.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Why Standard Titles Destroy Your Discoverability
               </h3>
               <p>
@@ -246,7 +246,7 @@ export default function MusicTitleLandingPage() {
               <p>
                 To get discovered, you have to intercept the traffic that already exists. This is why song covers are the ultimate growth hack for aspiring singers. Instead of naming your video &quot;Acoustic Session Part 3,&quot; you need to target a massive search term: &quot;Blinding Lights - The Weeknd (Acoustic Cover).&quot; By putting the original artist and the massive hit song right at the front of your title, you are essentially hijacking their search traffic. When fans of The Weeknd look for live versions, acoustic versions, or reactions to his songs, your video has a chance to appear in their recommended feed.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Anatomy of a Viral Music Reaction Title
               </h3>
               <p>
@@ -255,7 +255,7 @@ export default function MusicTitleLandingPage() {
               <p>
                 If you are an instrumentalist, the formula is the same. &quot;Classical Pianist Hears Bohemian Rhapsody for the First Time&quot; creates an irresistible information gap. Viewers who love Queen want to see how a trained classical musician reacts to their favorite song. The title clearly defines the character (Classical Pianist), the subject (Bohemian Rhapsody), and the hook (First Time).
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 SEO Strategies for Music Producers and Beatmakers
               </h3>
               <p>
@@ -264,7 +264,7 @@ export default function MusicTitleLandingPage() {
               <p>
                 A well-optimized title for a beatmaker looks like this: &quot;[FREE] Travis Scott x Drake Type Beat 2026 - &apos;NIGHTFALL&apos; | Dark Trap Instrumental.&quot; Let&apos;s break down why this is effective. The word &quot;[FREE]&quot; is a massive psychological trigger that dramatically increases Click-Through Rate (CTR). The combination of two massive artists (&quot;Travis Scott x Drake&quot;) gives the rapper a precise understanding of the beat&apos;s tempo, mood, and style. Adding the current year (&quot;2026&quot;) signals to the algorithm and the creator that the beat sounds modern and isn&apos;t a leftover from five years ago. Finally, the name of the beat and the genre tag (&quot;Dark Trap Instrumental&quot;) provide secondary SEO keywords that help rank the video in broader searches.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Avoiding the Truncation Trap
               </h3>
               <p>
@@ -273,7 +273,7 @@ export default function MusicTitleLandingPage() {
               <p>
                 Imagine a title that reads: &quot;My Amazing Acoustic Cover of Someone Like You by Adele Featuring My Friend Sarah on the Cello.&quot; On a phone, the viewer might only see: &quot;My Amazing Acoustic Cover of Someone...&quot; They have no idea what song you are singing. The crucial information—Adele, Someone Like You, Cello—is completely hidden. Always front-load the most important keywords. A better version would be: &quot;Adele - Someone Like You (Acoustic Cello Cover).&quot; It is short, punchy, and instantly communicates the value of the video.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Power of Emotional Trigger Words
               </h3>
               <p>
@@ -290,18 +290,18 @@ export default function MusicTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Music Title Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your music topic</strong> — describe your cover, production session, or music review.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your music topic</strong> — describe your cover, production session, or music review.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to music content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to music content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -321,8 +321,8 @@ export default function MusicTitleLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -335,24 +335,24 @@ export default function MusicTitleLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-gaming"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎮 Title Generator for Gaming</span>
-              <p className="text-slate-600 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎮 Title Generator for Gaming</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
             </Link>
             <Link
               href="/tools/youtube-title-generator-for-cooking"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🍳 Title Generator for Cooking</span>
-              <p className="text-slate-600 text-sm mt-1">Generate mouthwatering titles for recipe tutorials and food content.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🍳 Title Generator for Cooking</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate mouthwatering titles for recipe tutorials and food content.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate trending hashtags for your music videos to maximize reach and discoverability.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate trending hashtags for your music videos to maximize reach and discoverability.</p>
             </Link>
           </div>
         </section>

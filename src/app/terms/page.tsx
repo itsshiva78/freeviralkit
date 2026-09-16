@@ -51,10 +51,10 @@ export default function TermsOfServicePage() {
       <main className="container mx-auto px-6 py-16 max-w-4xl min-h-screen">
       <div className="mb-12">
         <h1 className="font-display text-4xl md:text-5xl font-extrabold mb-4 text-slate-900 dark:text-white">Terms of Service</h1>
-        <p className="text-slate-500">Last Updated: June 4, 2026</p>
+        <p className="text-slate-500 dark:text-slate-400">Last Updated: June 4, 2026</p>
       </div>
 
-      <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-purple-500 hover:prose-a:text-purple-600 prose-p:text-slate-600 dark:prose-p:text-slate-400 leading-loose">
+      <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-purple-500 hover:prose-a:text-purple-600 prose-p:text-slate-600 dark:text-slate-400 dark:prose-p:text-slate-400 leading-loose">
         <p>
           Welcome to FreeViralKit ("Company," "we," "our," "us"). These Terms of Service ("Terms") constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you," "user"), and FreeViralKit, concerning your access to and use of the freeviralkit.com website as well as any other media form, media channel, mobile website, or mobile application related, linked, or otherwise connected thereto (collectively, the "Site").
         </p>

@@ -51,10 +51,10 @@ export default function PrivacyPolicyPage() {
       <main className="container mx-auto px-6 py-16 max-w-4xl min-h-screen">
       <div className="mb-12">
         <h1 className="font-display text-4xl md:text-5xl font-extrabold mb-4 text-slate-900 dark:text-white">Privacy Policy</h1>
-        <p className="text-slate-500">Last Updated: June 4, 2026</p>
+        <p className="text-slate-500 dark:text-slate-400">Last Updated: June 4, 2026</p>
       </div>
 
-      <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-purple-500 hover:prose-a:text-purple-600 prose-p:text-slate-600 dark:prose-p:text-slate-400 leading-loose">
+      <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-purple-500 hover:prose-a:text-purple-600 prose-p:text-slate-600 dark:text-slate-400 dark:prose-p:text-slate-400 leading-loose">
         <p>
           At FreeViralKit ("we," "our," or "us"), your privacy is of paramount importance to us. This Comprehensive Privacy Policy explains in detail how we collect, use, disclose, and safeguard your information when you visit our website at freeviralkit.com (the "Site") and use our suite of AI-powered YouTube SEO tools, including but not limited to the Title Generator, Description Generator, Hashtag Generator, Tags Generator, Channel Name Generator, Script Generator, Shorts Idea Generator, and Niche Researcher (collectively, the "Services").
         </p>

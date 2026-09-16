@@ -16,7 +16,7 @@ export async function HomeBlogShowcase() {
           <h2 className="font-display text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white">
             Featured YouTube <span className="text-gradient">Growth Guides</span>
           </h2>
-          <p className="text-slate-500 text-sm mt-1">
+          <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
             Deep-dive masterclasses on algorithm secrets, retention, and SEO
           </p>
         </div>
@@ -40,12 +40,12 @@ export async function HomeBlogShowcase() {
                 <span className="text-[11px] font-semibold text-purple-400 bg-purple-400/10 px-2.5 py-0.5 rounded-full border border-purple-400/20 truncate max-w-[160px]">
                   {post.category}
                 </span>
-                <span className="text-[11px] text-slate-500 shrink-0">{post.readTime}</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400 shrink-0">{post.readTime}</span>
               </div>
               <h3 className="font-display text-sm font-bold text-slate-900 dark:text-white group-hover:text-purple-400 transition-colors leading-snug mb-2">
                 {post.title}
               </h3>
-              <p className="text-slate-500 text-xs leading-relaxed line-clamp-3 mb-4">
+              <p className="text-slate-500 dark:text-slate-400 text-xs leading-relaxed line-clamp-3 mb-4">
                 {post.description}
               </p>
             </div>

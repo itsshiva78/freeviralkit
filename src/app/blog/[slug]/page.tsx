@@ -180,7 +180,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {rows.map((rowStr, rIdx) => {
                     const cells = rowStr.split('|').map(c => c.trim()).filter(Boolean);
                     return (
-                      <tr key={rIdx} className="hover:bg-slate-50 dark:hover:bg-blue-500/5 transition-colors">
+                      <tr key={rIdx} className="hover:bg-slate-50 dark:bg-slate-950 dark:hover:bg-blue-500/5 transition-colors">
                         {cells.map((cell, cIdx) => (
                           <td key={cIdx} className="px-5 py-3.5" dangerouslySetInnerHTML={{
                             __html: cell
@@ -395,10 +395,10 @@ export default async function BlogPostPage({ params }: Props) {
               <Link href="/about" className="text-cyan-600 dark:text-cyan-400 hover:underline">
                 About the Author →
               </Link>
-              <a href="https://linkedin.com/in/shiva-srivastava" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <a href="https://linkedin.com/in/shiva-srivastava" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:text-slate-50 dark:hover:text-white transition-colors">
                 LinkedIn ↗
               </a>
-              <a href="https://github.com/shivasap27sh-del" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <a href="https://github.com/shivasap27sh-del" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:text-slate-50 dark:hover:text-white transition-colors">
                 GitHub ↗
               </a>
             </div>

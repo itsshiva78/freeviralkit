@@ -175,7 +175,7 @@ export default function FitnessTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Fitness </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate high-CTR titles for workout routines, body transformations, nutrition guides, and gym challenge videos. Powered by AI, built for fitness creators.
           </p>
           <div className="text-left mt-8">
@@ -258,7 +258,7 @@ export default function FitnessTitleLandingPage() {
             {examplesByCategory.map((cat) => (
               <div key={cat.category} className="glass-card rounded-2xl p-6">
                 <h3 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h3>
-                <ul className="space-y-2 text-slate-700">
+                <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                   {cat.examples.map((example) => (
                     <li key={example} className="flex items-start gap-2">
                       <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -276,11 +276,11 @@ export default function FitnessTitleLandingPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {tips.map((tip, i) => (
-                <div key={tip.title} className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                  <h3 className="font-semibold text-slate-900 mb-2">
+                <div key={tip.title} className="bg-slate-50 dark:bg-slate-950 rounded-xl p-5 border border-slate-100 dark:border-slate-800">
+                  <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-2">
                     {i + 1}. {tip.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{tip.description}</p>
+                  <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{tip.description}</p>
                 </div>
               ))}
             </div>
@@ -290,25 +290,25 @@ export default function FitnessTitleLandingPage() {
             <h2 className="font-display text-2xl font-semibold mb-6">
               How Our Fitness Title Generator Works
             </h2>
-            <ol className="space-y-4 text-slate-600 mb-8">
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+            <ol className="space-y-4 text-slate-600 dark:text-slate-400 mb-8">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">1</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">Enter your fitness topic</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">Enter your fitness topic</strong>
                   <p className="text-sm">Describe your workout, transformation, or nutrition video concisely.</p>
                 </div>
               </li>
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">2</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">AI generates 10 titles</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">AI generates 10 titles</strong>
                   <p className="text-sm">We output variations tailored to high-intent searches, emotional hooks, and browse features.</p>
                 </div>
               </li>
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">3</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">Copy and use</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">Copy and use</strong>
                   <p className="text-sm">Paste the most compelling title directly into your YouTube Studio dashboard.</p>
                 </div>
               </li>
@@ -329,9 +329,9 @@ export default function FitnessTitleLandingPage() {
             </h2>
             <div className="space-y-6">
               {faqs.map((faq) => (
-                <div key={faq.question} className="border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                  <h3 className="font-semibold text-slate-900 mb-2 text-lg">{faq.question}</h3>
-                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                <div key={faq.question} className="border-b border-slate-100 dark:border-slate-800 last:border-0 pb-6 last:pb-0">
+                  <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-2 text-lg">{faq.question}</h3>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -344,31 +344,31 @@ export default function FitnessTitleLandingPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
                 href="/tools/youtube-title-generator-for-cooking"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🍳 Title Generator for Cooking</span>
-                <p className="text-slate-600 text-sm">Generate mouthwatering titles for recipe tutorials and healthy meal prep content.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🍳 Title Generator for Cooking</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Generate mouthwatering titles for recipe tutorials and healthy meal prep content.</p>
               </Link>
               <Link
                 href="/tools/youtube-title-generator-for-vlogs"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🎬 Title Generator for Vlogs</span>
-                <p className="text-slate-600 text-sm">Create relatable vlog titles for daily routines, travel, and lifestyle content.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🎬 Title Generator for Vlogs</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Create relatable vlog titles for daily routines, travel, and lifestyle content.</p>
               </Link>
               <Link
                 href="/youtube-shorts-idea-generator"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">📱 YouTube Shorts Idea Generator</span>
-                <p className="text-slate-600 text-sm">Get viral Shorts ideas for quick workout clips, fitness tips, and transformation teasers.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">📱 YouTube Shorts Idea Generator</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Get viral Shorts ideas for quick workout clips, fitness tips, and transformation teasers.</p>
               </Link>
               <Link
                 href="/youtube-tags-generator"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🏷️ YouTube Tags Generator</span>
-                <p className="text-slate-600 text-sm">Generate optimized tags for your workouts to boost discoverability.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🏷️ YouTube Tags Generator</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Generate optimized tags for your workouts to boost discoverability.</p>
               </Link>
             </div>
           </div>
@@ -386,7 +386,7 @@ export default function FitnessTitleLandingPage() {
                 <h3 className="font-display text-xl font-bold group-hover:text-purple-600 transition-colors leading-snug mb-2">
                   How to Write YouTube Titles That Actually Get Clicks
                 </h3>
-                <p className="text-slate-600 text-sm">Learn the psychological elements behind viral titles that convert impressions into views.</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Learn the psychological elements behind viral titles that convert impressions into views.</p>
               </Link>
               <Link
                 href="/blog/youtube-ctr-secrets"
@@ -396,7 +396,7 @@ export default function FitnessTitleLandingPage() {
                 <h3 className="font-display text-xl font-bold group-hover:text-purple-600 transition-colors leading-snug mb-2">
                   YouTube CTR Secrets — How to Get More Clicks on Every Video
                 </h3>
-                <p className="text-slate-600 text-sm">Discover how aligning your thumbnail, title, and topic can drastically improve your click-through rate.</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Discover how aligning your thumbnail, title, and topic can drastically improve your click-through rate.</p>
               </Link>
             </div>
           </div>

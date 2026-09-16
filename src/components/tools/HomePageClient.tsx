@@ -109,7 +109,7 @@ export default function HomePageClient() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-1">
-          <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
             <span className="font-semibold text-slate-600 dark:text-slate-400 mr-1">Trending:</span>
             {['AI Automation', 'Python 2026', 'Faceless Channel', 'Stock Investing', 'Gaming Walkthrough'].map((ex) => (
               <button

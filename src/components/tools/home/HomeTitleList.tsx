@@ -61,7 +61,7 @@ export function HomeTitleList({
               className={`glass-card rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer transition-all ${
                 isSelected
                   ? 'border-purple-500/80 ring-2 ring-purple-500/20 bg-purple-50/50 dark:bg-purple-950/20 shadow-lg'
-                  : 'hover:border-purple-400/50 hover:bg-slate-50/80 dark:hover:bg-slate-850/50'
+                  : 'hover:border-purple-400/50 hover:bg-slate-50 dark:bg-slate-950/80 dark:hover:bg-slate-850/50'
               }`}
             >
               <div className="flex-1">
@@ -73,7 +73,7 @@ export function HomeTitleList({
                     {title.length} chars
                   </span>
                   <span className="text-slate-400">•</span>
-                  <span className="text-slate-500 text-xs">
+                  <span className="text-slate-500 dark:text-slate-400 text-xs">
                     {title.length >= 50 && title.length <= 70
                       ? '✓ Ideal YouTube Search Length'
                       : title.length > 70

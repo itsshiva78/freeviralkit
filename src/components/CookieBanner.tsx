@@ -30,7 +30,7 @@ export default function CookieBanner() {
                 </p>
                 <div className="flex gap-4 text-xs font-medium">
                   <Link href="/privacy-policy" className="text-purple-500 hover:text-purple-600">Privacy Policy</Link>
-                  <button onClick={() => setShowPreferences(true)} className="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300">Manage Preferences</button>
+                  <button onClick={() => setShowPreferences(true)} className="text-slate-500 hover:text-slate-700 dark:text-slate-300 dark:hover:text-slate-300">Manage Preferences</button>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row items-stretch gap-3 shrink-0 w-full md:w-auto">
@@ -52,7 +52,7 @@ export default function CookieBanner() {
             <div className="flex flex-col gap-6">
               <div className="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-4">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">Cookie Preferences</h3>
-                <button onClick={() => setShowPreferences(false)} className="text-slate-500 hover:text-slate-700 text-sm font-medium">Back</button>
+                <button onClick={() => setShowPreferences(false)} className="text-slate-500 hover:text-slate-700 dark:text-slate-300 text-sm font-medium">Back</button>
               </div>
               
               <div className="space-y-4">
@@ -60,7 +60,7 @@ export default function CookieBanner() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="font-semibold text-slate-900 dark:text-white text-sm">Strictly Necessary Cookies</div>
-                    <div className="text-xs text-slate-500 mt-1">Required for the website to function properly. Cannot be switched off.</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Required for the website to function properly. Cannot be switched off.</div>
                   </div>
                   <div className="text-xs font-semibold text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Always Active</div>
                 </div>
@@ -69,7 +69,7 @@ export default function CookieBanner() {
                 <div className="flex items-start justify-between gap-4 border-t border-slate-100 dark:border-slate-800 pt-4">
                   <div>
                     <div className="font-semibold text-slate-900 dark:text-white text-sm">Analytics Cookies</div>
-                    <div className="text-xs text-slate-500 mt-1">Help us understand how visitors interact with the website (Google Analytics).</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Help us understand how visitors interact with the website (Google Analytics).</div>
                   </div>
                   <label className="relative inline-flex items-center cursor-pointer shrink-0">
                     <input type="checkbox" className="sr-only peer" checked={prefs.analytics} onChange={(e) => setPrefs(p => ({ ...p, analytics: e.target.checked }))} />
@@ -81,7 +81,7 @@ export default function CookieBanner() {
                 <div className="flex items-start justify-between gap-4 border-t border-slate-100 dark:border-slate-800 pt-4">
                   <div>
                     <div className="font-semibold text-slate-900 dark:text-white text-sm">Advertising Cookies</div>
-                    <div className="text-xs text-slate-500 mt-1">Used to deliver relevant ads and track ad campaign performance (Google AdSense).</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Used to deliver relevant ads and track ad campaign performance (Google AdSense).</div>
                   </div>
                   <label className="relative inline-flex items-center cursor-pointer shrink-0">
                     <input type="checkbox" className="sr-only peer" checked={prefs.advertising} onChange={(e) => setPrefs(p => ({ ...p, advertising: e.target.checked }))} />

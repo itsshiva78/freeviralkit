@@ -31,7 +31,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
       {currentPage > 1 ? (
         <Link
           href={currentPage === 2 ? basePath : `${basePath}/page/${currentPage - 1}`}
-          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 hover:text-purple-500 hover:border-purple-500/30 transition-all flex items-center justify-center"
+          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:text-purple-500 hover:border-purple-500/30 transition-all flex items-center justify-center"
           aria-label="Previous Page"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -86,7 +86,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
       {currentPage < totalPages ? (
         <Link
           href={`${basePath}/page/${currentPage + 1}`}
-          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 hover:text-purple-500 hover:border-purple-500/30 transition-all flex items-center justify-center"
+          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:text-purple-500 hover:border-purple-500/30 transition-all flex items-center justify-center"
           aria-label="Next Page"
         >
           <ChevronRight className="w-5 h-5" />

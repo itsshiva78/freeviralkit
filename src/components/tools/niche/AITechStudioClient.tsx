@@ -241,7 +241,7 @@ export default function AITechStudioClient() {
           className={`max-w-md mx-auto rounded-[2.5rem] p-4 md:p-5 border-4 shadow-2xl transition-all duration-300 ${
             feedTheme === 'dark'
               ? 'bg-[#0f0f0f] border-slate-800 text-white shadow-cyan-950/20'
-              : 'bg-[#f4f5f8] border-slate-300 text-slate-900 shadow-slate-400/30'
+              : 'bg-[#f4f5f8] border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-50 shadow-slate-400/30'
           }`}
         >
           {/* Phone Top Header */}
@@ -373,7 +373,7 @@ export default function AITechStudioClient() {
                 </div>
 
                 <div className="flex items-center gap-2 shrink-0">
-                  <span className="text-xs font-mono text-slate-500 hidden sm:inline">
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400 hidden sm:inline">
                     {t.length} chars
                   </span>
                   <button

@@ -93,7 +93,7 @@ export default function TopicResearcherPageClient() {
 
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {examples.map(ex => (
             <button
               key={ex}
@@ -151,7 +151,7 @@ export default function TopicResearcherPageClient() {
               <div className="glass-card rounded-2xl p-6 flex flex-col justify-between items-center text-center">
                 <BarChart3 className="w-8 h-8 text-cyan-400 mb-3" />
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Search Demand</span>
-                <span className={`px-4 py-1.5 rounded-full border text-sm font-bold ${volumeColors[data.volume] || 'text-slate-500'}`}>
+                <span className={`px-4 py-1.5 rounded-full border text-sm font-bold ${volumeColors[data.volume] || 'text-slate-500 dark:text-slate-400'}`}>
                   {data.volume} Volume
                 </span>
               </div>
@@ -160,7 +160,7 @@ export default function TopicResearcherPageClient() {
               <div className="glass-card rounded-2xl p-6 flex flex-col justify-between items-center text-center">
                 <ShieldAlert className="w-8 h-8 text-red-400 mb-3" />
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Competition Level</span>
-                <span className={`px-4 py-1.5 rounded-full border text-sm font-bold ${competitionColors[data.competition] || 'text-slate-500'}`}>
+                <span className={`px-4 py-1.5 rounded-full border text-sm font-bold ${competitionColors[data.competition] || 'text-slate-500 dark:text-slate-400'}`}>
                   {data.competition} Competition
                 </span>
               </div>

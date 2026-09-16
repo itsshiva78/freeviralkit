@@ -55,10 +55,10 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
     let score = 50;
     const charCount = desc.length;
     const checks = {
-      length: { passed: false, text: 'Write a comprehensive description (1000+ chars)', color: 'text-slate-500' },
-      links: { passed: false, text: 'Include social media, subscription, or affiliate links', color: 'text-slate-500' },
-      hashtags: { passed: false, text: 'Add 3-5 relevant hashtags at the bottom', color: 'text-slate-500' },
-      snippet: { passed: false, text: 'Front-load keywords in the first 150 characters', color: 'text-slate-500' },
+      length: { passed: false, text: 'Write a comprehensive description (1000+ chars)', color: 'text-slate-500 dark:text-slate-400' },
+      links: { passed: false, text: 'Include social media, subscription, or affiliate links', color: 'text-slate-500 dark:text-slate-400' },
+      hashtags: { passed: false, text: 'Add 3-5 relevant hashtags at the bottom', color: 'text-slate-500 dark:text-slate-400' },
+      snippet: { passed: false, text: 'Front-load keywords in the first 150 characters', color: 'text-slate-500 dark:text-slate-400' },
     };
 
     if (charCount >= 1000 && charCount <= 4000) {
@@ -67,7 +67,7 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
     } else if (charCount > 4000) {
       checks.length = { passed: false, text: 'Getting close to YouTube\'s 5000 character limit', color: 'text-yellow-400' };
     } else {
-      checks.length = { passed: false, text: 'Too short (add chapters, links, or outlines)', color: 'text-slate-500' };
+      checks.length = { passed: false, text: 'Too short (add chapters, links, or outlines)', color: 'text-slate-500 dark:text-slate-400' };
     }
 
     if (/https?:\/\/[^\s]+/.test(desc)) {
@@ -82,7 +82,7 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
     } else if (hashtagCount > 15) {
       checks.hashtags = { passed: false, text: 'Too many hashtags (more than 15 will be ignored)', color: 'text-red-400' };
     } else {
-      checks.hashtags = { passed: false, text: 'Add 3-5 hashtags at the bottom', color: 'text-slate-500' };
+      checks.hashtags = { passed: false, text: 'Add 3-5 hashtags at the bottom', color: 'text-slate-500 dark:text-slate-400' };
     }
 
     if (charCount > 155) {
@@ -116,7 +116,7 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
 
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {getExamples().map(ex => (
             <button
               key={ex}
@@ -158,7 +158,7 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
               {/* Description Output */}
               <div className="lg:col-span-7 space-y-4">
                 <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 flex flex-col group hover:border-slate-300 dark:hover:border-slate-700 transition-all">
-                  <div className="flex justify-between items-center text-xs text-slate-500 mb-3 font-mono border-b dark:border-slate-800 pb-2">
+                  <div className="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-3 font-mono border-b dark:border-slate-800 pb-2">
                     <span>OUTPUT TEXT</span>
                     <span>{description.split(/\s+/).length} words • {description.length} chars</span>
                   </div>
@@ -268,7 +268,7 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
               <h4 className="font-display font-semibold text-green-400 mb-1 flex items-center gap-1.5">
                 💡 Pro Tip: First 2 Lines Matter Most
               </h4>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 Front-load your primary focus keyword in the first two lines of your description. These first 150 characters are shown as a preview snippet in YouTube search results, directly impacting your video CTR.
               </p>
             </div>

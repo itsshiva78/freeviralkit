@@ -55,80 +55,6 @@
   --border-color: rgba(255, 255, 255, 0.08);
   --color-foreground: #f8fafc;
   --color-background: #090d16;
-
-  .bg-white {
-    background-color: #0f172a;
-  }
-  .bg-white\/80 {
-    background-color: rgba(15, 23, 42, 0.8);
-  }
-  .bg-white\/95 {
-    background-color: rgba(15, 23, 42, 0.95);
-  }
-  .text-slate-900 {
-    color: #f8fafc;
-  }
-  .text-slate-800 {
-    color: #e2e8f0;
-  }
-  .text-slate-700 {
-    color: #cbd5e1;
-  }
-  .text-slate-600 {
-    color: #94a3b8;
-  }
-  .text-slate-500 {
-    color: #8b9bb5;
-  }
-  .border-slate-300 {
-    border-color: rgba(255, 255, 255, 0.12);
-  }
-  .border-slate-200 {
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-  .border-slate-100 {
-    border-color: rgba(255, 255, 255, 0.04);
-  }
-  .bg-slate-50 {
-    background-color: #090d16;
-  }
-  .bg-slate-100 {
-    background-color: rgba(255, 255, 255, 0.04);
-  }
-  .hover\:bg-slate-50:hover {
-    background-color: rgba(255, 255, 255, 0.03);
-  }
-  .hover\:bg-slate-100:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  .hover\:bg-slate-200:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  .hover\:text-slate-900:hover {
-    color: #ffffff;
-  }
-  .copy-btn {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .copy-btn:hover {
-    background: rgba(255, 255, 255, 0.06);
-    color: rgba(255, 255, 255, 0.9);
-  }
-  .bg-grid {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-  }
-  .skeleton-line {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.02) 0%,
-      rgba(255, 255, 255, 0.06) 50%,
-      rgba(255, 255, 255, 0.02) 100%
-    );
-  }
 }
 
 @layer utilities {
@@ -139,7 +65,8 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
   }
 
-  .text-gradient {
+  .text-gradient,
+  .gradient-text {
     background: var(--gradient-hero);
     -webkit-background-clip: text;
     background-clip: text;
@@ -240,6 +167,17 @@
     color: rgba(15, 23, 42, 0.9);
   }
 
+  :where(.dark, .dark *) .copy-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  :where(.dark, .dark *) .copy-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
   /* Title card hover */
   .title-card {
     position: relative;
@@ -276,6 +214,16 @@
     background-size: 200% 100%;
     animation: shimmer 1.5s ease-in-out infinite;
   }
+
+  :where(.dark, .dark *) .skeleton-line {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.02) 0%,
+      rgba(255, 255, 255, 0.06) 50%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    background-size: 200% 100%;
+  }
 }
 
 /* Keyframes */
@@ -302,81 +250,6 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* Background Animations */
-.bg-animation {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-  contain: strict;
-}
-
-.bg-orb {
-  position: absolute;
-  border-radius: 50%;
-  /* Reduced from 100px — visually same but significantly cheaper for GPU */
-  filter: blur(60px);
-  opacity: 0.4;
-  animation: orbFloat 20s ease-in-out infinite;
-  will-change: transform;
-  /* Force GPU compositing on Safari/iOS which sometimes ignores will-change */
-  transform: translateZ(0);
-  /* Contain repaints to this element */
-  contain: layout style;
-}
-
-/* Disable heavy animations on low-end devices and mobile */
-@media (max-width: 768px) {
-  .bg-orb {
-    animation: none;
-    filter: blur(40px);
-    opacity: 0.25;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bg-orb {
-    animation: none;
-  }
-}
-
-.bg-orb-1 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
-  top: -10%;
-  left: -10%;
-  animation-duration: 25s;
-}
-
-.bg-orb-2 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.25), transparent 70%);
-  top: 50%;
-  right: -5%;
-  animation-duration: 20s;
-  animation-delay: -5s;
-}
-
-.bg-orb-3 {
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.2), transparent 70%);
-  bottom: -5%;
-  left: 30%;
-  animation-duration: 22s;
-  animation-delay: -10s;
-}
-
-@keyframes orbFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(60px, -40px) scale(1.1); }
-  50% { transform: translate(-30px, 60px) scale(0.95); }
-  75% { transform: translate(40px, 30px) scale(1.05); }
-}
-
 .bg-grid {
   position: absolute;
   inset: 0;
@@ -384,4 +257,10 @@
       linear-gradient(rgba(15, 23, 42, 0.02) 1px, transparent 1px),
       linear-gradient(90deg, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
+}
+
+:where(.dark, .dark *) .bg-grid {
+  background-image:
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
 }

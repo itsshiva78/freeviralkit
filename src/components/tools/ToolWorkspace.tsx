@@ -41,14 +41,14 @@ export default function ToolWorkspace({
             onChange={(e) => setTopic(e.target.value)}
             placeholder={placeholder}
             aria-label="Enter your video topic"
-            className="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
+            className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-4 text-slate-900 dark:text-slate-50 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
           />
         </div>
 
         {/* Examples section */}
         {examples.length > 0 && (
           <div className="flex flex-wrap items-center gap-2 mb-6">
-            <span className="text-xs text-slate-500 font-medium">Examples:</span>
+            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
             {examples.map((ex) => (
               <button
                 key={ex}
@@ -57,7 +57,7 @@ export default function ToolWorkspace({
                   setTopic(ex);
                   onGenerate(ex);
                 }}
-                className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200 text-slate-600 hover:text-slate-950 hover:bg-slate-200 transition-all cursor-pointer"
+                className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
               >
                 {ex}
               </button>

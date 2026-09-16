@@ -91,18 +91,18 @@ export default function ScriptGeneratorPageClient() {
             value={title}
             onChange={e => setTitle(e.target.value)}
             placeholder="Enter your video title or idea (e.g. how to start coding, morning routine, tech unboxing...)"
-            className="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
+            className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-4 text-slate-900 dark:text-slate-50 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
             onKeyDown={e => e.key === 'Enter' && handleGenerate()}
           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <div>
-            <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Tone of Voice</label>
+            <label className="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Tone of Voice</label>
             <select
               value={tone}
               onChange={e => setTone(e.target.value)}
-              className="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-purple-500 transition-colors text-sm cursor-pointer"
+              className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-slate-50 focus:outline-none focus:border-purple-500 transition-colors text-sm cursor-pointer"
             >
               {tones.map(t => (
                 <option key={t.value} value={t.value}>{t.label}</option>
@@ -110,11 +110,11 @@ export default function ScriptGeneratorPageClient() {
             </select>
           </div>
           <div>
-            <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Duration</label>
+            <label className="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Target Duration</label>
             <select
               value={duration}
               onChange={e => setDuration(e.target.value)}
-              className="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-purple-500 transition-colors text-sm cursor-pointer"
+              className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-slate-50 focus:outline-none focus:border-purple-500 transition-colors text-sm cursor-pointer"
             >
               {durations.map(d => (
                 <option key={d} value={d}>⏰ {d}</option>
@@ -125,7 +125,7 @@ export default function ScriptGeneratorPageClient() {
 
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {examples.map(ex => (
             <button
               key={ex}
@@ -133,7 +133,7 @@ export default function ScriptGeneratorPageClient() {
                 setTitle(ex);
                 handleGenerate(ex);
               }}
-              className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200 text-slate-600 hover:text-slate-950 hover:bg-slate-200 transition-all cursor-pointer"
+              className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
             >
               {ex}
             </button>
@@ -172,13 +172,13 @@ export default function ScriptGeneratorPageClient() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => handleGenerate()}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 border border-slate-200 text-sm text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-sm text-slate-600 hover:text-slate-900 dark:hover:text-white dark:text-slate-50 transition-colors cursor-pointer"
                 >
                   <RotateCcw className="w-3.5 h-3.5" /> Re-Draft
                 </button>
                 <button
                   onClick={copyFullOutline}
-                  className="flex items-center gap-2 px-4 py-1.5 rounded-xl bg-gradient-primary text-slate-900 text-sm font-semibold hover:opacity-90 transition-all shadow-[0_4px_15px_rgba(139,92,246,0.3)] cursor-pointer"
+                  className="flex items-center gap-2 px-4 py-1.5 rounded-xl bg-gradient-primary text-slate-900 dark:text-slate-50 text-sm font-semibold hover:opacity-90 transition-all shadow-[0_4px_15px_rgba(139,92,246,0.3)] cursor-pointer"
                 >
                   {copiedStates['full-outline'] ? <CheckCircle2 className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                   {copiedStates['full-outline'] ? 'Copied Outline!' : 'Copy Full Outline'}
@@ -194,22 +194,22 @@ export default function ScriptGeneratorPageClient() {
                   <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-purple-500/15 text-purple-400 border border-purple-500/20 flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" /> 0:00 - 0:15 | The Visual Hook
                   </span>
-                  <button onClick={() => copy(outline.hook, 'hook')} className="text-xs text-slate-400 hover:text-slate-600 font-semibold cursor-pointer">
+                  <button onClick={() => copy(outline.hook, 'hook')} className="text-xs text-slate-400 hover:text-slate-600 dark:text-slate-400 font-semibold cursor-pointer">
                     {copiedStates['hook'] ? 'Copied!' : 'Copy'}
                   </button>
                 </div>
-                <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 flex gap-3.5">
+                <div className="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl p-4 flex gap-3.5">
                   <MessageSquare className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Spoken Script (Hook)</h3>
-                    <p className="text-sm font-bold text-slate-800 italic leading-relaxed">&ldquo;{renderFormattedText(outline.hook)}&rdquo;</p>
+                    <p className="text-sm font-bold text-slate-800 dark:text-slate-200 italic leading-relaxed">&ldquo;{renderFormattedText(outline.hook)}&rdquo;</p>
                   </div>
                 </div>
               </div>
 
               {/* Segment 2: Body Outline Timeline */}
               <div className="glass-card rounded-2xl p-6 border-l-4 border-l-cyan-500">
-                <h3 className="font-display font-bold text-slate-800 flex items-center gap-1.5 mb-6">
+                <h3 className="font-display font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5 mb-6">
                   <Video className="w-5 h-5 text-cyan-400" /> Segment-by-Segment Video Storyboard
                 </h3>
 
@@ -222,11 +222,11 @@ export default function ScriptGeneratorPageClient() {
                         <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 text-sm">
                           Section #{idx + 1}
                         </h3>
-                        <button onClick={() => copy(item, `body-${idx}`)} className="text-xs text-slate-400 hover:text-slate-600 cursor-pointer">
+                        <button onClick={() => copy(item, `body-${idx}`)} className="text-xs text-slate-400 hover:text-slate-600 dark:text-slate-400 cursor-pointer">
                           {copiedStates[`body-${idx}`] ? 'Copied!' : 'Copy'}
                         </button>
                       </div>
-                      <p className="text-sm text-slate-600 leading-relaxed bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl p-4 whitespace-pre-wrap">
+                      <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl p-4 whitespace-pre-wrap">
                         {renderFormattedText(item)}
                       </p>
                     </div>
@@ -243,11 +243,11 @@ export default function ScriptGeneratorPageClient() {
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-green-500/15 text-green-400 border border-green-500/20">
                         💬 Mid-Roll CTA Prompts
                       </span>
-                      <button onClick={() => copy(outline.cta, 'cta')} className="text-xs text-slate-400 hover:text-slate-600 font-semibold cursor-pointer">
+                      <button onClick={() => copy(outline.cta, 'cta')} className="text-xs text-slate-400 hover:text-slate-600 dark:text-slate-400 font-semibold cursor-pointer">
                         {copiedStates['cta'] ? 'Copied!' : 'Copy'}
                       </button>
                     </div>
-                    <p className="text-sm text-slate-600 leading-relaxed italic bg-slate-50 border border-slate-100 rounded-xl p-4">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed italic bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl p-4">
                       &ldquo;{renderFormattedText(outline.cta)}&rdquo;
                     </p>
                   </div>
@@ -260,11 +260,11 @@ export default function ScriptGeneratorPageClient() {
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/20">
                         ⚡ Loop Playout / Endscreen Outro
                       </span>
-                      <button onClick={() => copy(outline.outro, 'outro')} className="text-xs text-slate-400 hover:text-slate-600 font-semibold cursor-pointer">
+                      <button onClick={() => copy(outline.outro, 'outro')} className="text-xs text-slate-400 hover:text-slate-600 dark:text-slate-400 font-semibold cursor-pointer">
                         {copiedStates['outro'] ? 'Copied!' : 'Copy'}
                       </button>
                     </div>
-                    <p className="text-sm text-slate-600 leading-relaxed italic bg-slate-50 border border-slate-100 rounded-xl p-4">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed italic bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded-xl p-4">
                       &ldquo;{renderFormattedText(outline.outro)}&rdquo;
                     </p>
                   </div>
@@ -277,7 +277,7 @@ export default function ScriptGeneratorPageClient() {
               <h3 className="font-display font-semibold text-purple-400 mb-1 flex items-center gap-1.5">
                 💡 Retaining Viewer Attention
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 Aim to change B-roll clips, show on-screen text graphics, or change camera angles every **3 to 5 seconds** in the body segment. Front-load your main value proposition right after the hook to maximize retention before the first CTA marker.
               </p>
             </div>

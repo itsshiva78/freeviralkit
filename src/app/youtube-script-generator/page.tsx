@@ -199,7 +199,7 @@ export default function ScriptGeneratorPage() {
               The Pre-Filming Script Audit Checklist
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 text-lg">Never hit the record button until your script passes every single one of these checks:</p>
-            <ul className="space-y-4 text-slate-600 text-lg">
+            <ul className="space-y-4 text-slate-600 dark:text-slate-400 text-lg">
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Does the hook actively deliver on the exact promise made by the title/thumbnail within the first 10 seconds?</span></li>
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Are there explicit B-roll cues or visual change notes planned at least every 15-20 seconds to prevent visual fatigue?</span></li>
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Is the primary Call-To-Action (CTA) strategically placed immediately after a moment of high value, rather than at the very beginning?</span></li>

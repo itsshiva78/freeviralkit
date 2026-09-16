@@ -239,7 +239,7 @@ export default function TagsGeneratorPage() {
             <h3 className="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">
               Tag Optimization Checklist
             </h3>
-            <ul className="space-y-2 text-slate-600">
+            <ul className="space-y-2 text-slate-600 dark:text-slate-400">
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" /><span className="dark:text-slate-300">Is your exact primary keyword the very first tag?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" /><span className="dark:text-slate-300">Have you used close to the 500-character maximum limit?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" /><span className="dark:text-slate-300">Are you prioritizing long-tail phrases (3+ words) over single words?</span></li>

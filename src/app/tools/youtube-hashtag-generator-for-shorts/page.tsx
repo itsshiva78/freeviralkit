@@ -173,7 +173,7 @@ export default function ShortsHashtagLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Hashtag Generator for Shorts </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Find the perfect trending hashtags to get your Shorts on the shelf, boost impressions, and go viral. AI-powered, always free.
           </p>
           <div className="text-left mt-8">
@@ -182,8 +182,8 @@ export default function ShortsHashtagLandingPage() {
         </section>
         {/* Huge SEO Content Expansion */}
         <section className="mt-16 mb-16 space-y-12">
-          <div className="prose prose-slate max-w-none text-slate-700">
-            <h2 className="font-display text-3xl font-bold text-slate-900">
+          <div className="prose prose-slate max-w-none text-slate-700 dark:text-slate-300">
+            <h2 className="font-display text-3xl font-bold text-slate-900 dark:text-slate-50">
               Mastering the YouTube Shorts Algorithm with Strategic Hashtags
             </h2>
             <p>
@@ -192,7 +192,7 @@ export default function ShortsHashtagLandingPage() {
             <p>
               The architecture of the YouTube Shorts algorithm is fundamentally different from traditional, long-form YouTube search and discovery. Long-form video discovery relies heavily on search intent, browse features, and session time. In contrast, the Shorts feed operates on a rapid-fire, high-volume recommendation engine that acts much like a slot machine. When you publish a new Short, YouTube doesn&apos;t immediately push it to a million people. Instead, it pushes it to a small, targeted &quot;seed audience.&quot; This is where hashtags perform their most vital function.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The Seed Audience Phase: Why Context is King
             </h3>
             <p>
@@ -201,7 +201,7 @@ export default function ShortsHashtagLandingPage() {
             <p>
               However, if you use targeted hashtags like <strong>#programmerhumor</strong> or <strong>#dndmemes</strong>, the algorithm has a much clearer picture of who will appreciate the joke. It serves the video to viewers with a history of engaging with coding jokes or tabletop RPG content. Because the audience is highly targeted, the viewed vs. swiped away ratio will likely be much higher, and the APV will be stronger. This positive data signals to the algorithm that the video is engaging, prompting it to test the Short with a slightly larger, slightly broader audience. This concentric circle of testing is the exact mechanism of going viral.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The &quot;Viewed vs. Swiped Away&quot; Metric
             </h3>
             <p>
@@ -210,7 +210,7 @@ export default function ShortsHashtagLandingPage() {
             <p>
               How do hashtags influence this? By ensuring your video lands in front of the right eyes in the first place. If your video is about high-level chess strategies and you tag it with <strong>#gaming</strong> and <strong>#viral</strong>, it might be served to someone expecting a Minecraft Let&apos;s Play. They will instantly swipe away, hurting your metrics. If you use <strong>#chesstok</strong>, <strong>#chessmaster</strong>, and <strong>#magnuscarlsen</strong>, you get served to chess enthusiasts who will actually watch the video, thereby preserving your Viewed vs. Swiped Away percentage.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The Three-Tiered Hashtag Strategy for Shorts
             </h3>
             <p>
@@ -227,7 +227,7 @@ export default function ShortsHashtagLandingPage() {
                 <strong>Tier 3: The Niche Specific Tags.</strong> This is where the magic happens. These tags describe exactly what is happening in the video. If your broad tag is #Cooking, your niche tags might be <strong>#SourdoughBread</strong>, <strong>#BakingTips</strong>, or <strong>#VeganDesserts</strong>. These are the tags that help the algorithm find your seed audience. Use 2-3 of these per Short.
               </li>
             </ul>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Trending vs. Evergreen Hashtags on Shorts
             </h3>
             <p>
@@ -236,7 +236,7 @@ export default function ShortsHashtagLandingPage() {
             <p>
               Evergreen hashtags, on the other hand, represent consistent, long-term interest. Tags like <strong>#ExcelTips</strong>, <strong>#WeightLossJourney</strong>, or <strong>#GuitarTutorial</strong> will get searched for and watched year-round. These Shorts might not get a million views in their first 24 hours, but they will generate a slow, steady stream of views, subscribers, and potentially ad revenue over months or even years. A healthy YouTube Shorts strategy utilizes both trending tags to capture immediate attention and evergreen tags to build a sustainable, searchable library of content.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Common Mistakes Creators Make with Shorts Hashtags
             </h3>
             <p>
@@ -252,21 +252,21 @@ export default function ShortsHashtagLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Hashtags Are Critical for YouTube Shorts Success
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             YouTube Shorts compete in one of the fastest-moving feeds on the internet. Every day, over 70 billion Shorts are watched globally. In that ocean of content, hashtags act as your compass — they tell the algorithm exactly who should see your Short.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Unlike long-form videos where SEO relies heavily on descriptions and tags, Shorts discovery is driven by the Shorts shelf algorithm. Hashtags are one of the strongest relevance signals the algorithm uses to categorize and recommend your content.
           </p>
-          <p className="text-slate-600">
-            The right combination of <strong className="text-slate-900">trending hashtags</strong>, <strong className="text-slate-900">niche-specific tags</strong>, and <strong className="text-slate-900">the #Shorts identifier</strong> can mean the difference between 100 views and 1 million views.
+          <p className="text-slate-600 dark:text-slate-400">
+            The right combination of <strong className="text-slate-900 dark:text-slate-50">trending hashtags</strong>, <strong className="text-slate-900 dark:text-slate-50">niche-specific tags</strong>, and <strong className="text-slate-900 dark:text-slate-50">the #Shorts identifier</strong> can mean the difference between 100 views and 1 million views.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Hashtags</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -284,10 +284,10 @@ export default function ShortsHashtagLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -297,18 +297,18 @@ export default function ShortsHashtagLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Shorts Hashtag Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Describe your Short</strong> — enter the topic, niche, or trend your video covers.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Describe your Short</strong> — enter the topic, niche, or trend your video covers.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates optimized hashtag sets</strong> — mixing trending, niche, and shelf-boosting hashtags.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized hashtag sets</strong> — mixing trending, niche, and shelf-boosting hashtags.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy and paste</strong> — add them to your Shorts title or description in YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and paste</strong> — add them to your Shorts title or description in YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -328,8 +328,8 @@ export default function ShortsHashtagLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -342,24 +342,24 @@ export default function ShortsHashtagLandingPage() {
           <div className="space-y-3">
             <Link
               href="/youtube-shorts-idea-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎬 YouTube Shorts Idea Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Get viral-worthy Shorts ideas tailored to your niche in seconds.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎬 YouTube Shorts Idea Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Get viral-worthy Shorts ideas tailored to your niche in seconds.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate optimized hashtags for all YouTube video formats — long-form and Shorts.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized hashtags for all YouTube video formats — long-form and Shorts.</p>
             </Link>
             <Link
               href="/youtube-tags-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🏷️ YouTube Tags Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Boost discoverability with AI-generated tags for any YouTube video.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🏷️ YouTube Tags Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Boost discoverability with AI-generated tags for any YouTube video.</p>
             </Link>
           </div>
         </section>

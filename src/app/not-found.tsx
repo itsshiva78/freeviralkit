@@ -67,11 +67,11 @@ export default function NotFound() {
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
+                className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl hover:bg-slate-50 dark:bg-slate-950 dark:hover:bg-slate-800 transition-colors group"
               >
                 <span className="flex items-center gap-3">
                   <span className="text-lg" role="img" aria-hidden="true">{tool.emoji}</span>
-                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
+                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:hover:text-white dark:group-hover:text-white transition-colors">
                     {tool.name}
                   </span>
                 </span>

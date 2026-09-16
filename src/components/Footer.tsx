@@ -49,7 +49,7 @@ export default function Footer() {
             <Link href="/" className="mb-4 inline-flex" aria-label="FreeViralKit Home">
               <Logo size="md" />
             </Link>
-            <p className="text-sm text-slate-500 leading-relaxed mb-4">
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
               Free AI-powered YouTube SEO tool. Generate optimized titles, descriptions, hashtags, and tags to grow your channel faster.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-slate-500 hover:text-purple-400 transition-colors"
+                      className="text-sm text-slate-500 dark:text-slate-400 hover:text-purple-400 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
             <h3 className="font-display text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider mb-4">
               💡 Stay Updated
             </h3>
-            <p className="text-xs text-slate-500 leading-relaxed mb-4">
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
               Follow us on social media for weekly YouTube growth tips, algorithm updates, and creator strategies.
             </p>
             <div className="flex gap-4">
@@ -103,112 +103,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Badges */}
-        <div className="flex flex-row flex-wrap justify-center items-center gap-6 mt-12 mb-4">
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a
-              href="https://www.producthunt.com/products/freeviralkit?utm_source=badge-follow&utm_medium=badge&utm_campaign=badge-freeviralkit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+        {/* Directory badges — uniform compact row */}
+        <div className="mt-12 mb-4">
+          <p className="text-xs text-slate-400 dark:text-slate-500 text-center mb-4 uppercase tracking-widest font-medium">As Seen On</p>
+          <div className="flex flex-row flex-wrap justify-center items-center gap-4 opacity-60 hover:opacity-90 transition-opacity duration-300">
+            <a href="https://www.producthunt.com/products/freeviralkit?utm_source=badge-follow&utm_medium=badge&utm_campaign=badge-freeviralkit" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1223625&theme=${currentTheme}&size=small`}
-                alt="FreeViralKit - 10x your YouTube views with AI-generated titles &amp; SEO | Product Hunt"
-                width="86"
-                height="32"
-                loading="lazy"
-                className="w-[86px] h-[32px]"
-              />
+              <img src={`https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1223625&theme=${currentTheme}&size=small`} alt="Product Hunt" width="86" height="28" loading="lazy" className="h-7 w-auto" />
             </a>
-          </div>
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a
-              href="https://codetrendy.com/listing/freeviralkit?utm_source=freeviralkit.com&utm_medium=badge"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href="https://codetrendy.com/listing/freeviralkit?utm_source=freeviralkit.com&utm_medium=badge" target="_blank" rel="nofollow noopener noreferrer" className="hover:scale-105 transition-transform">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://codetrendy.com/api/badge?style=classic"
-                alt="Listed on CodeTrendy"
-                height="54"
-                loading="lazy"
-                className="h-[54px] w-auto"
-              />
+              <img src="https://codetrendy.com/api/badge?style=classic" alt="CodeTrendy" height="28" loading="lazy" className="h-7 w-auto" />
             </a>
-          </div>
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a
-              href="https://sitepatent.com/?utm_source=freeviralkit.com&utm_medium=badge"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href="https://sitepatent.com/?utm_source=freeviralkit.com&utm_medium=badge" target="_blank" rel="nofollow noopener noreferrer" className="hover:scale-105 transition-transform">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://sitepatent.com/api/badge?style=classic"
-                alt="Browse us on SitePatent"
-                height="54"
-                loading="lazy"
-                className="h-[54px] w-auto"
-              />
+              <img src="https://sitepatent.com/api/badge?style=classic" alt="SitePatent" height="28" loading="lazy" className="h-7 w-auto" />
             </a>
-          </div>
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a
-              href="https://mediapronet.com/?utm_source=freeviralkit.com&utm_medium=badge"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href="https://mediapronet.com/?utm_source=freeviralkit.com&utm_medium=badge" target="_blank" rel="nofollow noopener noreferrer" className="hover:scale-105 transition-transform">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://mediapronet.com/api/badge?style=classic"
-                alt="Browse us on MEDIAPRONET"
-                height="54"
-                loading="lazy"
-                className="h-[54px] w-auto"
-              />
+              <img src="https://mediapronet.com/api/badge?style=classic" alt="MediaProNet" height="28" loading="lazy" className="h-7 w-auto" />
             </a>
-          </div>
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer">
+            <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" width="200" height="54" loading="lazy" />
+              <img src="https://twelve.tools/badge0-white.svg" alt="Twelve Tools" width="120" height="28" loading="lazy" className="h-7 w-auto" />
             </a>
-          </div>
-          <div className="hover:scale-105 transition-transform duration-200 inline-flex">
-            <a
-              href="https://www.tinystartups.com/startup/freeviralkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '14px',
-                padding: '14px 22px 14px 18px',
-                borderRadius: '14px',
-                textDecoration: 'none',
-                fontFamily: "'Inter',system-ui,sans-serif",
-                background: 'linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box',
-                border: '2px solid transparent',
-                color: '#0E0B1F'
-              }}
-            >
-              <svg width="56" height="56" viewBox="0 0 100 100">
-                <defs>
-                  <linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
-                    <stop offset="0%" stopColor="#3525E6" />
-                    <stop offset="55%" stopColor="#D81FE0" />
-                    <stop offset="100%" stopColor="#22B8F0" />
-                  </linearGradient>
-                </defs>
-                <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)" />
-              </svg>
-              <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15 }}>
-                <span style={{ fontFamily: 'monospace', fontSize: '9px', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6A6585' }}>Launched on</span>
-                <span style={{ fontSize: '22px', fontWeight: 800, letterSpacing: '-0.025em' }}>Tiny Startups</span>
-                <span style={{ fontSize: '11px', color: '#6A6585', marginTop: '4px' }}>tinystartups.com</span>
-              </span>
+            <a href="https://www.tinystartups.com/startup/freeviralkit" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors">
+              Tiny Startups ↗
             </a>
           </div>
         </div>
@@ -216,12 +136,12 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-slate-200 dark:border-slate-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <p className="text-slate-500 text-sm text-center md:text-left">
+            <p className="text-slate-500 dark:text-slate-400 text-sm text-center md:text-left">
               © {new Date().getFullYear()} FreeViralKit. Built with ❤️ by{' '}
               <span className="text-purple-400 font-semibold">Shiva</span>
             </p>
             <span className="hidden md:inline text-slate-300 dark:text-slate-700">|</span>
-            <div className="flex flex-wrap gap-4 text-sm text-slate-500 justify-center">
+            <div className="flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400 justify-center">
               <Link href="/privacy-policy" className="hover:text-purple-400 transition-colors">
                 Privacy Policy
               </Link>

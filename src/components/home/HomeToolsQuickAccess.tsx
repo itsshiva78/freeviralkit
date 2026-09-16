@@ -135,7 +135,7 @@ export function HomeToolsQuickAccess() {
                       <div className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-purple-400 transition-colors">
                         {item.title}
                       </div>
-                      <div className="text-[11px] text-slate-500 line-clamp-1">{item.desc}</div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">{item.desc}</div>
                     </div>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-purple-400 group-hover:translate-x-0.5 transition-all shrink-0" />
@@ -172,7 +172,7 @@ export function HomeToolsQuickAccess() {
                       <div className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-pink-400 transition-colors">
                         {item.title}
                       </div>
-                      <div className="text-[11px] text-slate-500 line-clamp-1">{item.desc}</div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">{item.desc}</div>
                     </div>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-pink-400 group-hover:translate-x-0.5 transition-all shrink-0" />
@@ -210,7 +210,7 @@ export function HomeToolsQuickAccess() {
                       <div className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-cyan-400 transition-colors">
                         {item.title}
                       </div>
-                      <div className="text-[11px] text-slate-500 line-clamp-1">{item.desc}</div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">{item.desc}</div>
                     </div>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all shrink-0" />

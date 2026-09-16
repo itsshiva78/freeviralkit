@@ -37,7 +37,7 @@ export default function HookVariantCards({
           <Sparkles className="w-5 h-5 text-purple-500" />
           Select Hook Angle &amp; Pacing Deck
         </h3>
-        <span className="text-xs text-slate-500 font-mono hidden sm:inline">
+        <span className="text-xs text-slate-500 dark:text-slate-400 font-mono hidden sm:inline">
           Click any card to inspect its 30s timeline
         </span>
       </div>
@@ -92,7 +92,7 @@ export default function HookVariantCards({
 
               {/* Action Toolbar */}
               <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-200/60 dark:border-slate-800/80 text-xs">
-                <div className="flex flex-wrap items-center gap-2 text-slate-500 text-[11px] font-mono">
+                <div className="flex flex-wrap items-center gap-2 text-slate-500 dark:text-slate-400 text-[11px] font-mono">
                   <span className="truncate max-w-xs md:max-w-md">
                     🎥 {pkg.brollCue}
                   </span>

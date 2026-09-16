@@ -80,7 +80,7 @@ export default function MobileFeedSimulator({
               onClick={() => setFeedTheme('light')}
               className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                 feedTheme === 'light'
-                  ? 'bg-white text-slate-900 shadow-md ring-1 ring-slate-300 font-extrabold'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 shadow-md ring-1 ring-slate-300 font-extrabold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
@@ -108,7 +108,7 @@ export default function MobileFeedSimulator({
         className={`max-w-md mx-auto rounded-[2.5rem] p-4 md:p-5 border-4 shadow-2xl transition-all duration-300 ${
           feedTheme === 'dark'
             ? 'bg-[#0f0f0f] border-slate-800 text-white shadow-purple-950/20'
-            : 'bg-[#f4f5f8] border-slate-300 text-slate-900 shadow-slate-400/30 ring-1 ring-slate-200'
+            : 'bg-[#f4f5f8] border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-50 shadow-slate-400/30 ring-1 ring-slate-200'
         }`}
       >
         {/* Phone Notch & Top Status Header */}
@@ -143,7 +143,7 @@ export default function MobileFeedSimulator({
           className={`flex items-center justify-between px-3.5 py-2.5 rounded-full mb-3 text-xs transition-colors border shadow-sm ${
             feedTheme === 'dark'
               ? 'bg-[#222222] border-slate-800 text-slate-200'
-              : 'bg-white border-slate-300 text-slate-800 font-semibold'
+              : 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold'
           }`}
         >
           <span className="flex items-center gap-2 text-xs truncate">
@@ -164,7 +164,7 @@ export default function MobileFeedSimulator({
           className={`rounded-2xl overflow-hidden border transition-all duration-200 ${
             feedTheme === 'dark'
               ? 'bg-[#181818] border-slate-800 text-white'
-              : 'bg-white border-slate-300 text-slate-900 shadow-md'
+              : 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-50 shadow-md'
           }`}
         >
           {/* 16:9 Thumbnail Box with Dynamic Text Overlay */}
@@ -257,7 +257,7 @@ export default function MobileFeedSimulator({
           className={`mt-4 pt-3 border-t flex items-center justify-between text-xs font-mono transition-colors ${
             feedTheme === 'dark'
               ? 'border-slate-800 text-slate-400'
-              : 'border-slate-300 text-slate-700'
+              : 'border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300'
           }`}
         >
           <span className={feedTheme === 'dark' ? 'text-slate-300' : 'text-slate-800 font-semibold'}>
@@ -266,7 +266,7 @@ export default function MobileFeedSimulator({
               className={`font-black text-xs px-1.5 py-0.5 rounded ${
                 feedTheme === 'dark'
                   ? 'text-white bg-slate-800'
-                  : 'text-slate-950 bg-slate-200 border border-slate-300'
+                  : 'text-slate-950 bg-slate-200 border border-slate-300 dark:border-slate-700'
               }`}
             >
               {charLength} / 65

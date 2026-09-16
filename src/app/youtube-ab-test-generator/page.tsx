@@ -202,11 +202,11 @@ export default function ABTestGeneratorPage() {
 
                 <div className="space-y-2 pt-3 border-t border-slate-200/60 dark:border-slate-800/80 text-[11px] font-mono">
                   <div className="p-2 rounded-lg bg-slate-900/60 text-slate-300">
-                    <span className="text-slate-500 block text-[9px] uppercase">Title Formula:</span>
+                    <span className="text-slate-500 dark:text-slate-400 block text-[9px] uppercase">Title Formula:</span>
                     {st.formula}
                   </div>
                   <div className="p-2 rounded-lg bg-slate-900/60 text-amber-300">
-                    <span className="text-slate-500 block text-[9px] uppercase">Thumbnail Strategy:</span>
+                    <span className="text-slate-500 dark:text-slate-400 block text-[9px] uppercase">Thumbnail Strategy:</span>
                     {st.thumbnailIdea}
                   </div>
                 </div>

@@ -175,7 +175,7 @@ export default function TechTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Tech </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate high-CTR titles for product reviews, unboxing videos, tech comparisons, and how-to tutorials. Powered by AI, built for tech creators.
           </p>
           <div className="text-left mt-8">
@@ -187,21 +187,21 @@ export default function TechTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Your Tech Title Determines Your Video&apos;s Success
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Tech is one of the most competitive niches on YouTube. Every product launch triggers hundreds of review, unboxing, and comparison videos — all fighting for the same audience. The title is what separates a 500-view video from a 500K-view video.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             A bland title like &ldquo;Phone Review&rdquo; gets completely lost. But &ldquo;iPhone 17 Pro Max Review — Is It Actually Worth $1,200?&rdquo; immediately tells the viewer the product, the format, and raises a question they need answered.
           </p>
-          <p className="text-slate-600">
-            Effective tech titles combine <strong className="text-slate-900">the product name</strong>, a <strong className="text-slate-900">clear content format</strong>, and a <strong className="text-slate-900">compelling hook or question</strong>. That&apos;s exactly what our AI generates for you.
+          <p className="text-slate-600 dark:text-slate-400">
+            Effective tech titles combine <strong className="text-slate-900 dark:text-slate-50">the product name</strong>, a <strong className="text-slate-900 dark:text-slate-50">clear content format</strong>, and a <strong className="text-slate-900 dark:text-slate-50">compelling hook or question</strong>. That&apos;s exactly what our AI generates for you.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -219,10 +219,10 @@ export default function TechTitleLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -230,14 +230,14 @@ export default function TechTitleLandingPage() {
         {/* Advanced Tech SEO Deep Dive */}
         <section className="mt-16 mb-8 space-y-12">
           <div className="glass-card rounded-2xl p-6 md:p-8">
-            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900">
+            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900 dark:text-slate-50">
               The Ultimate Guide to YouTube Titles for Tech Creators
             </h2>
-            <div className="prose prose-lg text-slate-600 max-w-none space-y-6">
+            <div className="prose prose-lg text-slate-600 dark:text-slate-400 max-w-none space-y-6">
               <p>
                 The tech niche is widely considered one of the most lucrative categories on YouTube. With high RPMs (Revenue Per Mille) and massive affiliate marketing potential, a single successful tech review can generate thousands of dollars in passive income for years. However, this profitability makes it incredibly saturated. When Apple releases a new iPhone, thousands of creators upload their reviews within hours of the embargo lifting. If you are a small or mid-sized tech channel, you cannot compete with giants like MKBHD or Mrwhosetheboss on production value alone. Your only weapon to steal clicks from the massive channels is a hyper-optimized, psychologically compelling YouTube title.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Why Vanilla Reviews Are Dead
               </h3>
               <p>
@@ -246,7 +246,7 @@ export default function TechTitleLandingPage() {
               <p>
                 Instead of a vanilla review, reframe the video around a burning question the consumer has. Before someone drops $1,200 on a phone, they want reassurance. Titles like &quot;I Used the Galaxy S26 Ultra for 30 Days - Don&apos;t Make My Mistake!&quot; or &quot;Is the S26 Ultra Actually Worth $1,200? (Honest Review)&quot; perform drastically better. They promise an authentic, long-term perspective that feels much more valuable than a day-one spec read. You are moving the premise from &quot;Here are the specs&quot; to &quot;Here is how this product will affect your daily life and your wallet.&quot;
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Power of the &quot;Versus&quot; Framework
               </h3>
               <p>
@@ -255,7 +255,7 @@ export default function TechTitleLandingPage() {
               <p>
                 A strong versus title should force a definitive conclusion. &quot;MacBook Air M5 vs Dell XPS 15&quot; is okay, but &quot;MacBook Air M5 vs Dell XPS 15 - The Truth Apple Won&apos;t Tell You&quot; is far better. By implying that one product has a hidden flaw or that there is a secret the viewer needs to know, you spike the Click-Through Rate (CTR) through the roof. Additionally, comparison videos have incredibly high conversion rates for Amazon affiliate links, because the viewer is literally watching the video to decide which link to click.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Nailing the &quot;How-To&quot; Tutorial Title
               </h3>
               <p>
@@ -264,7 +264,7 @@ export default function TechTitleLandingPage() {
               <p>
                 Your tutorial titles must promise speed, ease, and effectiveness. &quot;How to Build a PC in 2026&quot; is a solid base. But &quot;How to Build a PC in 2026 (Step-by-Step for ABSOLUTE Beginners)&quot; removes the friction. By adding &quot;Absolute Beginners,&quot; you eliminate the intimidation factor. If it&apos;s a software fix, adding timeframes is magical: &quot;Fix Windows 11 Blue Screen in 3 Minutes (No Data Loss).&quot; You have identified the pain point, offered a fast solution, and reassured them that their data is safe.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Death of the Traditional Unboxing
               </h3>
               <p>
@@ -273,7 +273,7 @@ export default function TechTitleLandingPage() {
               <p>
                 To make an unboxing title work today, you have to raise the stakes. &quot;Unboxing the CHEAPEST Gaming PC on Amazon&quot; works because the focus isn&apos;t the unboxing; it&apos;s the curiosity of whether the cheap PC is actually a scam. &quot;I Bought Every Apple Accessory Under $20&quot; transforms a boring unboxing into an exciting experiment. It&apos;s all about the framing.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Leveraging Long-Tail Keywords
               </h3>
               <p>
@@ -290,18 +290,18 @@ export default function TechTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Tech Title Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your tech topic</strong> — describe your product review, unboxing, or tutorial.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your tech topic</strong> — describe your product review, unboxing, or tutorial.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to tech content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to tech content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -321,8 +321,8 @@ export default function TechTitleLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -335,24 +335,24 @@ export default function TechTitleLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-gaming"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎮 Title Generator for Gaming</span>
-              <p className="text-slate-600 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎮 Title Generator for Gaming</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
             </Link>
             <Link
               href="/tools/youtube-description-generator-for-education"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">📚 Description Generator for Education</span>
-              <p className="text-slate-600 text-sm mt-1">Write structured educational descriptions with learning outcomes and CTAs.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">📚 Description Generator for Education</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Write structured educational descriptions with learning outcomes and CTAs.</p>
             </Link>
             <Link
               href="/youtube-tags-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🏷️ YouTube Tags Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate optimized tags for your tech review and tutorial videos.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🏷️ YouTube Tags Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized tags for your tech review and tutorial videos.</p>
             </Link>
           </div>
         </section>

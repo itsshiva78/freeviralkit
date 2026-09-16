@@ -110,7 +110,7 @@ export default function AboutPage() {
           >
             Helping Creators Go Viral
           </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
             FreeViralKit is a free, AI-powered YouTube SEO tool that generates optimized titles,
             descriptions, hashtags, and tags — everything you need to rank higher and grow faster,
             completely free without arbitrary paywalls.
@@ -125,7 +125,7 @@ export default function AboutPage() {
                 <div className="font-display text-3xl font-extrabold text-gradient mb-1">
                   {stat.value}
                 </div>
-                <div className="text-slate-600 text-sm leading-tight">{stat.label}</div>
+                <div className="text-slate-600 dark:text-slate-400 text-sm leading-tight">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -136,13 +136,13 @@ export default function AboutPage() {
           <h2 id="mission-heading" className="font-display text-2xl font-bold mb-4">
             Our Mission: Democratizing YouTube SEO
           </h2>
-          <p className="text-slate-700 leading-relaxed mb-4">
+          <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
             We believe every creator deserves access to professional-grade SEO tools, regardless of
             budget. The creator economy is increasingly becoming a pay-to-play ecosystem where massive
             corporate channels dominate search results. FreeViralKit was built to disrupt this model
             by providing instant, high-quality YouTube optimization — completely free, with no account required.
           </p>
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Our AI understands every YouTube niche. Whether you are running a gaming channel, a cooking vlog, or an educational hub, FreeViralKit generates human-quality titles with proper emoji placement, descriptions with strategic keyword integration, and tags that maximize your video&apos;s reach.
           </p>
         </section>

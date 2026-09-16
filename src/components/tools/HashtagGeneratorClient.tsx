@@ -51,13 +51,13 @@ export default function HashtagGeneratorClient({ niche }: HashtagGeneratorClient
         <div className="relative mb-4">
           <input type="text" value={topic} onChange={e => setTopic(e.target.value)}
             placeholder={niche ? `Enter your ${niche} video topic...` : "Enter your video topic or title (e.g. vegan chocolate cake, fortnite gameplay...)"}
-            className="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
+            className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-4 text-slate-900 dark:text-slate-50 placeholder:text-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all text-lg"
             onKeyDown={e => e.key === 'Enter' && handleGenerate()} />
         </div>
         
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {getExamples().map(ex => (
             <button
               key={ex}
@@ -65,7 +65,7 @@ export default function HashtagGeneratorClient({ niche }: HashtagGeneratorClient
                 setTopic(ex);
                 handleGenerate(ex);
               }}
-              className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200 text-slate-600 hover:text-slate-950 hover:bg-slate-200 transition-all cursor-pointer"
+              className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
             >
               {ex}
             </button>
@@ -86,22 +86,22 @@ export default function HashtagGeneratorClient({ niche }: HashtagGeneratorClient
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
               <div className="flex items-center gap-3">
                 <h2 className="font-display text-xl font-semibold"># Your Hashtags</h2>
-                <button onClick={() => handleGenerate(undefined, true)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 border border-slate-200 text-sm text-slate-600 hover:text-slate-900 transition-colors cursor-pointer">
+                <button onClick={() => handleGenerate(undefined, true)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-sm text-slate-600 hover:text-slate-900 dark:hover:text-white dark:text-slate-50 transition-colors cursor-pointer">
                   <RotateCcw className="w-3.5 h-3.5" /> Regenerate
                 </button>
               </div>
               <button onClick={() => copy(hashtags.join(' '), 'all-ht')} aria-label="Copy all hashtags" className="copy-btn cursor-pointer">
-                {copiedStates['all-ht'] ? <><CheckCircle2 className="w-4 h-4 text-green-400" /> Copied!</> : <><Copy className="w-4 h-4 text-slate-600" /> Copy All</>}
+                {copiedStates['all-ht'] ? <><CheckCircle2 className="w-4 h-4 text-green-400" /> Copied!</> : <><Copy className="w-4 h-4 text-slate-600 dark:text-slate-400" /> Copy All</>}
               </button>
             </div>
-            <p className="text-xs text-slate-500 mb-4">⭐ First 3 (marked TOP) appear above your video title on YouTube</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">⭐ First 3 (marked TOP) appear above your video title on YouTube</p>
             <div className="flex flex-wrap gap-2 mb-6">
               {hashtags.map((ht, idx) => (
                 <motion.button key={idx} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: idx * 0.04 }}
                   onClick={() => copy(ht, `ht-${idx}`)}
                   className={`px-4 py-2.5 rounded-xl font-medium transition-all hover:scale-105 cursor-pointer ${
                     idx < 3 ? 'bg-pink-500/15 border border-pink-500/30 text-pink-600 shadow-[0_0_10px_rgba(236,72,153,0.1)]'
-                      : 'bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200'
+                      : 'bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                   }`}>
                   {copiedStates[`ht-${idx}`] ? <span className="text-green-600">Copied!</span> : (ht.startsWith('#') ? ht : `#${ht}`)}
                   {idx < 3 && <span className="ml-2 text-[10px] bg-pink-500/20 text-pink-600 px-1.5 py-0.5 rounded-full">TOP</span>}
@@ -114,7 +114,7 @@ export default function HashtagGeneratorClient({ niche }: HashtagGeneratorClient
               <h3 className="font-display font-semibold text-pink-600 mb-1 flex items-center gap-1.5">
                 💡 Pro Tip: Place Top 3 in Description
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 Always copy and place your top 3 hashtags at the very bottom of your video description. YouTube automatically displays these first 3 hashtags clickable directly above your video title, driving traffic from hashtag searches.
               </p>
             </div>

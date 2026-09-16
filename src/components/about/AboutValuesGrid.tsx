@@ -22,7 +22,7 @@ export function AboutValuesGrid() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="font-display text-lg font-bold mb-2">{value.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{value.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{value.description}</p>
               </div>
             );
           })}
@@ -34,7 +34,7 @@ export function AboutValuesGrid() {
         <h2 id="tech-heading" className="font-display text-2xl font-bold mb-2 text-center">
           Built with Modern Web Technologies
         </h2>
-        <p className="text-slate-600 text-sm text-center mb-6">
+        <p className="text-slate-600 dark:text-slate-400 text-sm text-center mb-6">
           Engineered for speed, reliability, and edge delivery.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -43,13 +43,13 @@ export function AboutValuesGrid() {
             return (
               <div
                 key={tech.name}
-                className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-center"
+                className="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700/80 text-center"
               >
                 <div className="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center mx-auto mb-2">
                   <Icon className="w-4 h-4" />
                 </div>
-                <div className="font-bold text-sm text-slate-800">{tech.name}</div>
-                <div className="text-slate-500 text-xs mt-0.5">{tech.detail}</div>
+                <div className="font-bold text-sm text-slate-800 dark:text-slate-200">{tech.name}</div>
+                <div className="text-slate-500 dark:text-slate-400 text-xs mt-0.5">{tech.detail}</div>
               </div>
             );
           })}

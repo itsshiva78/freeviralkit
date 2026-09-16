@@ -47,7 +47,7 @@ export default function ThumbnailGeneratorClient() {
 
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {examples.map(ex => (
             <button
               key={ex}

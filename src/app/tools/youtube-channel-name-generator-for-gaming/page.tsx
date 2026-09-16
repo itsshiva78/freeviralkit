@@ -176,7 +176,7 @@ export default function GamingChannelNameLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Channel Name Generator for Gaming </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate unique, brandable gaming channel names instantly. Clan-style, streamer names, professional brands, or funny gamer tags — all powered by AI.
           </p>
           <div className="text-left mt-8">
@@ -189,18 +189,18 @@ export default function GamingChannelNameLandingPage() {
             <h2 className="font-display text-2xl font-bold mb-6">
               The Ultimate Guide to Naming Your Gaming Channel in 2024
             </h2>
-            <div className="prose prose-slate max-w-none space-y-6 text-slate-700">
+            <div className="prose prose-slate max-w-none space-y-6 text-slate-700 dark:text-slate-300">
               <p>
                 In the highly competitive world of gaming content creation, your YouTube channel name isn&apos;t just a label; it&apos;s your entire brand identity. Whether you are aiming to be the next biggest Minecraft let&apos;s player, a top-tier Valorant esports professional, or a cozy Stardew Valley streamer, the right name can drastically impact your click-through rates (CTR) and initial viewer retention. The algorithm might push your thumbnail, but your channel name provides the context.
               </p>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Why Memorability Trumps Complexity</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Why Memorability Trumps Complexity</h3>
               <p>
                 A common mistake new gamers make is overcomplicating their handles. You might think &quot;Xx_Dark_Assassin_xX_99&quot; sounds cool, but it is notoriously difficult to remember and even harder to type into a search bar. The most successful creators—think PewDiePie, Markiplier, Jacksepticeye, or Ninja—all share one trait: their names are distinct, pronounceable, and free of unnecessary clutter. A strong gaming channel name should be catchy enough to be remembered after a single glance at a crowded comment section.
               </p>
               <p>
                 When viewers see your name in the recommended feed, it triggers an immediate subconscious judgment. Does this creator look professional? Are they funny? Do they take their craft seriously? If your name screams &quot;random gamer,&quot; you might lose potential subscribers before they even click play. It is much better to have a simple, two-syllable word than a complicated multi-word phrase with numbers and underscores.
               </p>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Finding Your Unique Value Proposition (UVP) in Gaming</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Finding Your Unique Value Proposition (UVP) in Gaming</h3>
               <p>
                 Your UVP is what makes you different from the millions of other gamers on the platform. Are you a speedrunner? A lore explainer? A funny montage editor? Your channel name can subtly hint at your content style. Building an emotional connection with your audience starts before they even watch your gameplay.
               </p>
@@ -209,21 +209,21 @@ export default function GamingChannelNameLandingPage() {
                 <li><strong>Lore and Essay Channels:</strong> Might use words like &quot;Archive,&quot; &quot;Theory,&quot; or &quot;Story&quot; (e.g., Game Theory, VaatiVidya). This immediately tells the viewer they are in for an educational, deep-dive experience.</li>
                 <li><strong>Comedy and Let&apos;s Plays:</strong> Can get away with sillier, more descriptive names (e.g., CallMeKevin, Let&apos;s Game It Out). It sets a lighthearted tone and lowers the expectation for high-level gameplay, focusing instead on entertainment value.</li>
               </ul>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">The Danger of Game-Specific Names</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">The Danger of Game-Specific Names</h3>
               <p>
                 It is incredibly tempting to include the name of the game you currently love in your channel handle. If you play exclusively Fortnite, naming yourself &quot;FortniteProDaily&quot; might seem like a smart SEO move. However, gaming trends change rapidly. What happens when Fortnite is no longer your main game? You are stuck with a name that no longer represents your content, alienating both old and new viewers. Always opt for a broader name that allows your channel to pivot and evolve as your interests change.
               </p>
               <p>
                 Even if you plan to be a one-game channel forever, keeping your name neutral protects your brand identity. You want viewers to come for the game but stay for YOU. A game-specific name tells them the game is the star, not the creator.
               </p>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Branding Across Platforms: The Consistency Rule</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Branding Across Platforms: The Consistency Rule</h3>
               <p>
                 Your YouTube channel name doesn&apos;t exist in a vacuum. To build a robust community, you will likely stream on Twitch, post clips on TikTok, and share updates on X (Twitter). Therefore, channel name availability across all major platforms is absolutely crucial. 
               </p>
               <p>
                 Before finalizing your new gaming channel name, check if the exact handle is available on other social networks. If it isn&apos;t, consider adding small, consistent modifiers like &quot;TV,&quot; &quot;Gaming,&quot; or &quot;Live&quot; (e.g., &quot;YourNameTV&quot;). Consistency helps your super-fans track you down wherever you go, effectively multiplying your growth potential. An inconsistent brand confuses viewers and dilutes your online presence.
               </p>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Leveraging AI to Brainstorm Like a Pro</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Leveraging AI to Brainstorm Like a Pro</h3>
               <p>
                 Sometimes, you just hit a creative wall. That is where our AI-powered gaming channel name generator comes in. By analyzing thousands of successful gaming brands, it understands the cadence, structure, and appeal of top-tier names. It bypasses the frustration of manually searching for available names and delivers fresh, brandable options tailored exactly to your vibe. Whether you want a sweat-style competitive name or a cozy aesthetic handle, the AI does the heavy lifting so you can get back to what actually matters: creating amazing gaming content.
               </p>
@@ -238,21 +238,21 @@ export default function GamingChannelNameLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Your Gaming Channel Name Matters More Than You Think
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Your channel name is the first thing viewers see — before your thumbnail, before your title, before your content. It&apos;s your brand identity on YouTube, and in the gaming space, it communicates everything: your personality, your vibe, your credibility.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Think about the biggest gaming channels. &ldquo;PewDiePie,&rdquo; &ldquo;MrBeast Gaming,&rdquo; &ldquo;Dream&rdquo; — each name is short, memorable, and instantly recognizable. That&apos;s not an accident. A great name sticks in viewers&apos; minds and makes them more likely to subscribe, share, and return.
           </p>
-          <p className="text-slate-600">
-            Our AI generates names that are <strong className="text-slate-900">short and memorable</strong>, <strong className="text-slate-900">easy to spell</strong>, and <strong className="text-slate-900">tailored to your gaming niche</strong>. Whether you&apos;re starting a Minecraft let&apos;s play or a competitive Valorant channel, we&apos;ve got you covered.
+          <p className="text-slate-600 dark:text-slate-400">
+            Our AI generates names that are <strong className="text-slate-900 dark:text-slate-50">short and memorable</strong>, <strong className="text-slate-900 dark:text-slate-50">easy to spell</strong>, and <strong className="text-slate-900 dark:text-slate-50">tailored to your gaming niche</strong>. Whether you&apos;re starting a Minecraft let&apos;s play or a competitive Valorant channel, we&apos;ve got you covered.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category}</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -270,10 +270,10 @@ export default function GamingChannelNameLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -283,18 +283,18 @@ export default function GamingChannelNameLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Gaming Channel Name Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Describe your channel vibe</strong> — tell us your gaming niche, personality, and style preferences.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Describe your channel vibe</strong> — tell us your gaming niche, personality, and style preferences.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates unique name ideas</strong> — clan-style, streamer, brand, and creative names tailored to gaming.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates unique name ideas</strong> — clan-style, streamer, brand, and creative names tailored to gaming.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Pick your favorite</strong> — check availability and claim your name on YouTube and social media.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Pick your favorite</strong> — check availability and claim your name on YouTube and social media.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -314,8 +314,8 @@ export default function GamingChannelNameLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -328,24 +328,24 @@ export default function GamingChannelNameLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-gaming"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎮 Title Generator for Gaming</span>
-              <p className="text-slate-600 text-sm mt-1">Create click-worthy gaming video titles for walkthroughs, challenges, and reviews.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎮 Title Generator for Gaming</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create click-worthy gaming video titles for walkthroughs, challenges, and reviews.</p>
             </Link>
             <Link
               href="/youtube-tags-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🏷️ YouTube Tags Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate optimized tags for your gaming videos to boost discoverability.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🏷️ YouTube Tags Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized tags for your gaming videos to boost discoverability.</p>
             </Link>
             <Link
               href="/youtube-channel-name-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">💡 YouTube Channel Name Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate brandable channel names for any YouTube niche — not just gaming.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">💡 YouTube Channel Name Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate brandable channel names for any YouTube niche — not just gaming.</p>
             </Link>
           </div>
         </section>

@@ -179,7 +179,7 @@ export default function ErrorBanner({ error, onClear, onRetry, retryAfter = 5 }:
                 disabled={countdown !== null && countdown > 0}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg cursor-pointer active:scale-95 ${
                   countdown !== null && countdown > 0
-                    ? 'bg-slate-800 text-slate-500 border border-slate-700 cursor-not-allowed'
+                    ? 'bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-700 cursor-not-allowed'
                     : 'bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-400 hover:to-pink-500 text-white shadow-red-500/20'
                 }`}
               >

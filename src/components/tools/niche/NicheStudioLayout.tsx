@@ -109,11 +109,11 @@ export default function NicheStudioLayout({
 
               <div className="space-y-2 pt-3 border-t border-slate-200/60 dark:border-slate-800/80 text-[11px] font-mono">
                 <div className="p-2.5 rounded-lg bg-slate-900/60 text-slate-300">
-                  <span className="text-slate-500 block text-[9px] uppercase">Formula:</span>
+                  <span className="text-slate-500 dark:text-slate-400 block text-[9px] uppercase">Formula:</span>
                   {fw.formula}
                 </div>
                 <div className="p-2.5 rounded-lg bg-slate-900/60 text-emerald-300">
-                  <span className="text-slate-500 block text-[9px] uppercase">Example:</span>
+                  <span className="text-slate-500 dark:text-slate-400 block text-[9px] uppercase">Example:</span>
                   {fw.example}
                 </div>
               </div>

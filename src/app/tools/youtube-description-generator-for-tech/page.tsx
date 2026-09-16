@@ -179,7 +179,7 @@ export default function TechDescriptionLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Description Generator for Tech </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Create structured, SEO-optimized descriptions for product reviews, unboxings, comparisons, and tech tutorials. Powered by AI, always free.
           </p>
           <div className="text-left mt-8">
@@ -193,11 +193,11 @@ export default function TechDescriptionLandingPage() {
             <h2 className="font-display text-2xl font-bold mb-6">
               How to Structure the Perfect Tech YouTube Description in 2024
             </h2>
-            <div className="prose prose-slate max-w-none space-y-6 text-slate-700">
+            <div className="prose prose-slate max-w-none space-y-6 text-slate-700 dark:text-slate-300">
               <p>
                 The tech niche on YouTube is a completely different beast compared to vlogs or gaming. Your viewers are not just looking for entertainment; they are looking for buying advice, technical specifications, and detailed comparisons. Before dropping $1,000 on a new smartphone or $2,000 on a custom PC build, viewers use YouTube as a search engine. Your video description is the critical metadata that signals to the YouTube algorithm that your review, unboxing, or tutorial is the definitive answer to their search query.
               </p>
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Dominating Search with Exact Model Numbers</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Dominating Search with Exact Model Numbers</h3>
               <p>
                 In the tech niche, &quot;close enough&quot; doesn&apos;t cut it for search. A viewer isn&apos;t just searching for &quot;best laptop.&quot; They are searching for &quot;M3 Max MacBook Pro 16 inch 64GB RAM review.&quot; If your description only says, &quot;Here is my review of the new Apple laptop,&quot; you will completely lose the SEO battle to creators who explicitly list out the exact hardware configurations.
               </p>
@@ -205,7 +205,7 @@ export default function TechDescriptionLandingPage() {
                 Always include a &quot;Specs Tested&quot; section in your description. This naturally injects high-value, long-tail keywords without looking like spam. It helps the algorithm index your video for highly specific, high-intent search queries that have less competition but massive conversion rates for affiliate links.
               </p>
 
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">The Power of the &quot;Affiliate Funnel&quot;</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">The Power of the &quot;Affiliate Funnel&quot;</h3>
               <p>
                 Tech channels often make more money from affiliate marketing (Amazon Associates, B&amp;H Photo, Best Buy) than from Google AdSense. However, if your affiliate links are buried at the very bottom of a 400-word block of text, your click-through rate (CTR) will plummet. 
               </p>
@@ -213,7 +213,7 @@ export default function TechDescriptionLandingPage() {
                 The most successful tech reviewers place their primary affiliate links immediately after the first paragraph (the SEO hook). They use clear, transparent calls to action like <em>&quot;Check the current price of the Samsung S24 Ultra here: [Link]&quot;</em>. Transparency builds trust, and placing the link above the timestamps ensures it is seen by everyone, even viewers who don&apos;t expand the full description.
               </p>
 
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Timestamps: The UX and SEO Cheat Code</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Timestamps: The UX and SEO Cheat Code</h3>
               <p>
                 Tech videos are often long. A thorough motherboard review or software tutorial can easily stretch past the 20-minute mark. Viewers hate scrubbing through long videos to find the one specific feature they care about. By providing exact timestamps (starting with 0:00), you create YouTube Chapters.
               </p>
@@ -221,7 +221,7 @@ export default function TechDescriptionLandingPage() {
                 Chapters dramatically improve viewer retention because users skip to what they want instead of clicking off entirely. Furthermore, Google Search indexes these chapters. A user searching &quot;Sony A7IV autofocus test&quot; might see your video ranking directly in Google, specifically cued up to your 4:15 timestamp labeled &quot;Autofocus Test.&quot;
               </p>
 
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Disclosures and Trust</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Disclosures and Trust</h3>
               <p>
                 The tech community values transparency above all else. If you received a review unit for free, or if the video is sponsored by a VPN or software company, the Federal Trade Commission (FTC) requires clear disclosure. Placing a simple &quot;Transparency Note&quot; in your description not only keeps you legally compliant but also vastly improves your credibility with the audience. 
               </p>
@@ -229,7 +229,7 @@ export default function TechDescriptionLandingPage() {
                 Example: <em>&quot;Transparency Note: Asus provided this laptop for review, but they did not see this video before publishing and no money exchanged hands.&quot;</em> This single sentence can be the difference between a viewer trusting your affiliate link or going to a competitor.
               </p>
 
-              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900">Streamlining Your Workflow with AI</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4 text-slate-900 dark:text-slate-50">Streamlining Your Workflow with AI</h3>
               <p>
                 Drafting a comprehensive description with an SEO hook, spec lists, timestamps, affiliate disclosures, and social links takes a considerable amount of time. Time that could be spent benchmarking GPUs or editing b-roll. Our AI YouTube description generator for tech is specifically trained on the metadata formats of top-tier tech creators.
               </p>
@@ -245,14 +245,14 @@ export default function TechDescriptionLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Tech Video Descriptions Are Different
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Tech viewers are researchers. They search for specific product names, model numbers, and comparison queries before making a purchase decision. Your description is where YouTube (and Google) finds those keywords.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             A well-structured tech description doesn&apos;t just help with SEO — it builds viewer trust. When someone sees organized timestamps, clear product links, and detailed specs in your description, they know you&apos;re a credible source.
           </p>
-          <p className="text-slate-600">
-            The best tech descriptions combine <strong className="text-slate-900">keyword-rich summaries</strong>, <strong className="text-slate-900">structured timestamps</strong>, and <strong className="text-slate-900">clear affiliate/purchase links</strong>. That&apos;s exactly what our AI builds for you.
+          <p className="text-slate-600 dark:text-slate-400">
+            The best tech descriptions combine <strong className="text-slate-900 dark:text-slate-50">keyword-rich summaries</strong>, <strong className="text-slate-900 dark:text-slate-50">structured timestamps</strong>, and <strong className="text-slate-900 dark:text-slate-50">clear affiliate/purchase links</strong>. That&apos;s exactly what our AI builds for you.
           </p>
         </section>
 
@@ -260,7 +260,7 @@ export default function TechDescriptionLandingPage() {
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Descriptions</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -279,10 +279,10 @@ export default function TechDescriptionLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -293,18 +293,18 @@ export default function TechDescriptionLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Tech Description Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your video topic</strong> — describe the product, comparison, or tutorial you&apos;re covering.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your video topic</strong> — describe the product, comparison, or tutorial you&apos;re covering.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates a structured description</strong> — with SEO summary, timestamps template, specs section, and CTAs.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates a structured description</strong> — with SEO summary, timestamps template, specs section, and CTAs.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Customize and publish</strong> — edit the timestamps, add your links, and paste into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Customize and publish</strong> — edit the timestamps, add your links, and paste into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -325,8 +325,8 @@ export default function TechDescriptionLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -340,24 +340,24 @@ export default function TechDescriptionLandingPage() {
           <div className="space-y-3">
             <Link
               href="/youtube-title-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">✏️ YouTube Title Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Create click-worthy titles for your tech reviews and comparisons.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">✏️ YouTube Title Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create click-worthy titles for your tech reviews and comparisons.</p>
             </Link>
             <Link
               href="/tools/youtube-description-generator-for-education"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">📚 Description Generator for Education</span>
-              <p className="text-slate-600 text-sm mt-1">Write structured educational descriptions with learning outcomes and CTAs.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">📚 Description Generator for Education</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Write structured educational descriptions with learning outcomes and CTAs.</p>
             </Link>
             <Link
               href="/youtube-description-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">📝 YouTube Description Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate SEO-optimized descriptions for any YouTube video niche.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">📝 YouTube Description Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate SEO-optimized descriptions for any YouTube video niche.</p>
             </Link>
           </div>
         </section>

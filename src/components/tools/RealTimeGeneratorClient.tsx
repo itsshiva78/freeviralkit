@@ -64,7 +64,7 @@ export default function RealTimeGeneratorClient() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="w-full sm:w-auto flex items-center gap-2">
-            <span className="text-xs font-semibold text-slate-500">Niche Format:</span>
+            <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">Niche Format:</span>
             <select
               value={niche}
               onChange={(e) => setNiche(e.target.value)}

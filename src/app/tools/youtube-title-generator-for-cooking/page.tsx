@@ -175,7 +175,7 @@ export default function CookingTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Cooking </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate mouthwatering titles for recipe tutorials, ASMR cooking, mukbang, meal prep, and food challenge videos. Powered by AI, built for food creators.
           </p>
           <div className="text-left mt-8">
@@ -259,7 +259,7 @@ export default function CookingTitleLandingPage() {
             {examplesByCategory.map((cat) => (
               <div key={cat.category} className="glass-card rounded-2xl p-6">
                 <h3 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h3>
-                <ul className="space-y-2 text-slate-700">
+                <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                   {cat.examples.map((example) => (
                     <li key={example} className="flex items-start gap-2">
                       <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -277,11 +277,11 @@ export default function CookingTitleLandingPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {tips.map((tip, i) => (
-                <div key={tip.title} className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                  <h3 className="font-semibold text-slate-900 mb-2">
+                <div key={tip.title} className="bg-slate-50 dark:bg-slate-950 rounded-xl p-5 border border-slate-100 dark:border-slate-800">
+                  <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-2">
                     {i + 1}. {tip.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{tip.description}</p>
+                  <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{tip.description}</p>
                 </div>
               ))}
             </div>
@@ -312,25 +312,25 @@ export default function CookingTitleLandingPage() {
             <h2 className="font-display text-2xl font-semibold mb-6">
               How Our Cooking Title Generator Works
             </h2>
-            <ol className="space-y-4 text-slate-600 mb-8">
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+            <ol className="space-y-4 text-slate-600 dark:text-slate-400 mb-8">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">1</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">Enter your cooking topic</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">Enter your cooking topic</strong>
                   <p className="text-sm">Describe your recipe, food challenge, or cooking style in a few words.</p>
                 </div>
               </li>
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">2</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">AI generates 10 titles</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">AI generates 10 titles</strong>
                   <p className="text-sm">Our model creates titles optimized with SEO keywords, emojis, and sensory hooks specific to food content.</p>
                 </div>
               </li>
-              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50">
+              <li className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950">
                 <span className="w-8 h-8 rounded-full bg-purple-100 border border-purple-200 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">3</span>
                 <div>
-                  <strong className="text-slate-900 block mb-1">Copy and use</strong>
+                  <strong className="text-slate-900 dark:text-slate-50 block mb-1">Copy and use</strong>
                   <p className="text-sm">Paste your favorite title directly into YouTube Studio to start getting more clicks.</p>
                 </div>
               </li>
@@ -351,9 +351,9 @@ export default function CookingTitleLandingPage() {
             </h2>
             <div className="space-y-6">
               {faqs.map((faq) => (
-                <div key={faq.question} className="border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                  <h3 className="font-semibold text-slate-900 mb-2 text-lg">{faq.question}</h3>
-                  <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                <div key={faq.question} className="border-b border-slate-100 dark:border-slate-800 last:border-0 pb-6 last:pb-0">
+                  <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-2 text-lg">{faq.question}</h3>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -366,31 +366,31 @@ export default function CookingTitleLandingPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
                 href="/tools/youtube-title-generator-for-gaming"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🎮 Title Generator for Gaming</span>
-                <p className="text-slate-600 text-sm">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🎮 Title Generator for Gaming</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
               </Link>
               <Link
                 href="/tools/youtube-title-generator-for-vlogs"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🎬 Title Generator for Vlogs</span>
-                <p className="text-slate-600 text-sm">Create relatable vlog titles for daily routines, travel, and lifestyle content.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🎬 Title Generator for Vlogs</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Create relatable vlog titles for daily routines, travel, and lifestyle content.</p>
               </Link>
               <Link
                 href="/youtube-description-generator"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">📝 YouTube Description Generator</span>
-                <p className="text-slate-600 text-sm">Write SEO-optimized descriptions with timestamps, links, and CTAs for your cooking videos.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">📝 YouTube Description Generator</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Write SEO-optimized descriptions with timestamps, links, and CTAs for your cooking videos.</p>
               </Link>
               <Link
                 href="/youtube-tags-generator"
-                className="block p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 hover:shadow-md transition-all"
+                className="block p-5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 hover:shadow-md transition-all"
               >
-                <span className="font-semibold text-slate-900 text-lg mb-1 block">🏷️ YouTube Tags Generator</span>
-                <p className="text-slate-600 text-sm">Generate optimized tags for your recipe and cooking videos to boost discoverability.</p>
+                <span className="font-semibold text-slate-900 dark:text-slate-50 text-lg mb-1 block">🏷️ YouTube Tags Generator</span>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Generate optimized tags for your recipe and cooking videos to boost discoverability.</p>
               </Link>
             </div>
           </div>
@@ -408,7 +408,7 @@ export default function CookingTitleLandingPage() {
                 <h3 className="font-display text-xl font-bold group-hover:text-purple-600 transition-colors leading-snug mb-2">
                   How to Write YouTube Titles That Actually Get Clicks
                 </h3>
-                <p className="text-slate-600 text-sm">Discover the psychological triggers and formatting secrets that top creators use to maximize CTR.</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Discover the psychological triggers and formatting secrets that top creators use to maximize CTR.</p>
               </Link>
               <Link
                 href="/blog/youtube-description-tips"
@@ -418,7 +418,7 @@ export default function CookingTitleLandingPage() {
                 <h3 className="font-display text-xl font-bold group-hover:text-purple-600 transition-colors leading-snug mb-2">
                   YouTube Description Tips to Rank Higher in Search
                 </h3>
-                <p className="text-slate-600 text-sm">Learn how to format your video descriptions to please the algorithm and provide value to your viewers.</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Learn how to format your video descriptions to please the algorithm and provide value to your viewers.</p>
               </Link>
             </div>
           </div>

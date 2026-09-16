@@ -195,12 +195,7 @@ export default function RootLayout({
             </div>
           </div>
         </noscript>
-        {/* Background ambient lighting */}
-        <div className="bg-animation">
-          <div className="bg-orb bg-orb-1" />
-          <div className="bg-orb bg-orb-2" />
-          <div className="bg-orb bg-orb-3" />
-        </div>
+        {/* Background ambient lighting removed — template-y aesthetic */}
 
         <ConsentProvider>
           <ConsentGatedScripts />

@@ -105,7 +105,7 @@ export default function ChannelNameGeneratorClient({ niche }: ChannelNameGenerat
 
         {/* Clickable Examples */}
         <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className="text-xs text-slate-500 font-medium">Examples:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Examples:</span>
           {getExamples().map(ex => (
             <button
               key={ex}
@@ -184,18 +184,18 @@ export default function ChannelNameGeneratorClient({ niche }: ChannelNameGenerat
                               <div className="flex items-center gap-1">
                                 <button
                                   onClick={() => toggleSave(name)}
-                                  className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                                  className="p-1 rounded hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                                 >
                                   <Star className={`w-3.5 h-3.5 ${isSaved ? 'text-yellow-500 fill-yellow-500' : 'text-slate-400'}`} />
                                 </button>
                                 <button
                                   onClick={() => copy(name, `${catKey}-${idx}`)}
-                                  className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                                  className="p-1 rounded hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                                 >
                                   {copiedStates[`${catKey}-${idx}`] ? (
                                     <CheckCircle2 className="w-3.5 h-3.5 text-green-400" />
                                   ) : (
-                                    <Copy className="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300" />
+                                    <Copy className="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 dark:text-slate-400 dark:group-hover:text-slate-300" />
                                   )}
                                 </button>
                               </div>

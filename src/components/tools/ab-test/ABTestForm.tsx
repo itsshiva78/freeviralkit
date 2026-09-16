@@ -50,7 +50,7 @@ export default function ABTestForm({
 
         {/* Quick Tone & Topic Selectors */}
         <div className="flex flex-wrap items-center gap-2 pt-1">
-          <span className="text-xs text-slate-500 font-medium">Quick Ideas:</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Quick Ideas:</span>
           {QUICK_TOPICS.map((t, idx) => (
             <button
               key={idx}

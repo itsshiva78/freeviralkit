@@ -286,7 +286,7 @@ export default function TopicResearcherPage() {
             <h3 className="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">
               Before You Hit Record Checklist
             </h3>
-            <ul className="space-y-2 text-slate-600">
+            <ul className="space-y-2 text-slate-600 dark:text-slate-400">
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Have you verified there is actual search demand for this topic?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Are there channels with under 10k subscribers ranking on page 1 for this term?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" /><span className="dark:text-slate-300">Can you make a better thumbnail than the top 3 videos currently ranking?</span></li>

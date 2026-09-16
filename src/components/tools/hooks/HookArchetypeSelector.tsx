@@ -14,7 +14,7 @@ export default function HookArchetypeSelector({
 }: HookArchetypeSelectorProps) {
   return (
     <div className="space-y-2 mb-6">
-      <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-slate-500">
+      <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-slate-500 dark:text-slate-400">
         <Flame className="w-3.5 h-3.5 text-orange-500" />
         <span>Select Hook Psychology Angle:</span>
       </div>
@@ -39,7 +39,7 @@ export default function HookArchetypeSelector({
                   {arch.badge}
                 </span>
               </div>
-              <span className="text-[11px] text-slate-500 line-clamp-1 font-medium">
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 font-medium">
                 {arch.prompt}
               </span>
             </button>

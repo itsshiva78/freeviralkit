@@ -175,7 +175,7 @@ export default function GamingTagsLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Tags Generator for Gaming </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Generate optimized tags for FPS, RPG, mobile gaming, streaming, and every genre. Maximize discoverability with AI-powered gaming tags.
           </p>
           <div className="text-left mt-8">
@@ -184,8 +184,8 @@ export default function GamingTagsLandingPage() {
         </section>
         {/* Huge SEO Content Expansion */}
         <section className="mt-16 mb-16 space-y-12">
-          <div className="prose prose-slate max-w-none text-slate-700">
-            <h2 className="font-display text-3xl font-bold text-slate-900">
+          <div className="prose prose-slate max-w-none text-slate-700 dark:text-slate-300">
+            <h2 className="font-display text-3xl font-bold text-slate-900 dark:text-slate-50">
               The Complete Guide to YouTube SEO for Gaming Channels
             </h2>
             <p>
@@ -194,7 +194,7 @@ export default function GamingTagsLandingPage() {
             <p>
               Many creators mistakenly believe that tags are a relic of the past, but in the gaming niche, they serve a very specific and powerful purpose. When a viewer is deep down the rabbit hole of an RPG walkthrough or searching for specific high-level competitive strategies in an FPS, they often use highly specific, long-tail search queries. Tags help bridge the gap between what the viewer is typing into the search bar and the content you have created. They provide the context that the algorithm needs to confidently serve your video as the solution to the viewer&apos;s query.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Understanding the Gaming Video Lifecycle
             </h3>
             <p>
@@ -203,7 +203,7 @@ export default function GamingTagsLandingPage() {
             <p>
               In this early phase, your tags need to be aggressively targeted toward the game&apos;s title, release year, and specific terms like &quot;gameplay,&quot; &quot;review,&quot; and &quot;walkthrough.&quot; However, as the game ages, the search volume naturally decays. The video&apos;s lifecycle shifts from being search-driven to being recommendation-driven. YouTube will start suggesting your video alongside other related content. This is where broad tags and genre tags become crucial. They help the algorithm group your video with similar games, ensuring that even months later, your content is being suggested to viewers who enjoy that specific genre, whether it&apos;s survival crafting, fast-paced shooters, or cozy farming simulators.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Short-Tail vs. Long-Tail Gaming Keywords
             </h3>
             <p>
@@ -212,7 +212,7 @@ export default function GamingTagsLandingPage() {
             <p>
               Long-tail keywords are where small and medium-sized channels can truly thrive and capture highly engaged audiences. These are longer, more specific phrases that viewers search for when they have a distinct problem or intent. Instead of just tagging &quot;Elden Ring,&quot; a long-tail tag would be <strong>&quot;Elden Ring Malenia boss fight guide melee build.&quot;</strong> While the overall search volume for this specific phrase is much lower, the competition is also significantly reduced. More importantly, the viewer searching for this phrase knows exactly what they want. If your video provides that specific solution, your click-through rate (CTR) and average view duration (AVD) will be exceptional, which signals to the algorithm that your video is high quality.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               The Importance of Variations and Misspellings
             </h3>
             <p>
@@ -221,7 +221,7 @@ export default function GamingTagsLandingPage() {
             <p>
               Furthermore, misspellings are incredibly common in gaming searches. Games with complex or foreign names, such as <em>Genshin Impact</em> or <em>Sekiro: Shadows Die Twice</em>, are routinely misspelled by users typing quickly on mobile devices. Including common misspellings in your tags (e.g., &quot;Genshin Imapct&quot; or &quot;Gensin&quot;) can help you capture traffic that other creators are ignoring. Since tags are invisible to the viewer, adding these misspelled variations won&apos;t make your channel look unprofessional; it simply acts as a safety net to ensure your video surfaces regardless of typos.
             </p>
-            <h3 className="font-display text-2xl font-bold text-slate-900 mt-8 mb-4">
+            <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50 mt-8 mb-4">
               Leveraging Trending Updates and Seasons
             </h3>
             <p>
@@ -237,25 +237,25 @@ export default function GamingTagsLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Tags Matter for Gaming Video Discoverability
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             YouTube tags are a secondary but important ranking signal that helps the algorithm understand what your video is about. For gaming videos, where competition is intense, tags can be the difference between appearing in suggested videos or being invisible.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Proper tags help YouTube connect your video with related content. When a viewer watches a Minecraft walkthrough, YouTube uses tags (among other signals) to decide whether to suggest your Minecraft video next. Without the right tags, you miss these opportunities entirely.
           </p>
-          <p className="text-slate-600">
-            The best gaming tag strategies combine <strong className="text-slate-900">game-specific keywords</strong>, <strong className="text-slate-900">genre tags</strong>, and <strong className="text-slate-900">trending terms</strong>. That&apos;s exactly what our AI generates for you.
+          <p className="text-slate-600 dark:text-slate-400">
+            The best gaming tag strategies combine <strong className="text-slate-900 dark:text-slate-50">game-specific keywords</strong>, <strong className="text-slate-900 dark:text-slate-50">genre tags</strong>, and <strong className="text-slate-900 dark:text-slate-50">trending terms</strong>. That&apos;s exactly what our AI generates for you.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Tags</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
-                  <span className="text-sm font-mono bg-slate-50 px-2 py-1 rounded">{example}</span>
+                  <span className="text-sm font-mono bg-slate-50 dark:bg-slate-950 px-2 py-1 rounded">{example}</span>
                 </li>
               ))}
             </ul>
@@ -269,10 +269,10 @@ export default function GamingTagsLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -282,18 +282,18 @@ export default function GamingTagsLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Gaming Tags Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your gaming topic</strong> — describe your game, genre, or video type.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your gaming topic</strong> — describe your game, genre, or video type.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates optimized tags</strong> — a mix of broad, niche, and trending gaming tags tailored to your content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized tags</strong> — a mix of broad, niche, and trending gaming tags tailored to your content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy all tags</strong> — paste the full tag set into YouTube Studio with one click.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy all tags</strong> — paste the full tag set into YouTube Studio with one click.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -313,8 +313,8 @@ export default function GamingTagsLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -327,24 +327,24 @@ export default function GamingTagsLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-gaming"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎮 Title Generator for Gaming</span>
-              <p className="text-slate-600 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎮 Title Generator for Gaming</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create click-worthy titles for gameplay walkthroughs, challenges, and reviews.</p>
             </Link>
             <Link
               href="/youtube-tags-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🏷️ YouTube Tags Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate optimized tags for any YouTube niche — not just gaming.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🏷️ YouTube Tags Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized tags for any YouTube niche — not just gaming.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Generate trending hashtags for your gaming videos to maximize reach.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate trending hashtags for your gaming videos to maximize reach.</p>
             </Link>
           </div>
         </section>

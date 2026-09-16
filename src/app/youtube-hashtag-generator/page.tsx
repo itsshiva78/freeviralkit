@@ -200,7 +200,7 @@ export default function HashtagGeneratorPage() {
             <h2 className="font-display text-2xl font-bold mb-6 text-slate-900 dark:text-white">
               The Ultimate Hashtag Best Practices Checklist
             </h2>
-            <ul className="space-y-4 text-slate-600 text-lg">
+            <ul className="space-y-4 text-slate-600 dark:text-slate-400 text-lg">
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Target exactly <strong className="text-slate-900 dark:text-white">8 to 15 hashtags</strong> per upload. This provides enough algorithmic signals without triggering spam filters.</span></li>
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Stack your 3 absolute most critical hashtags at the very top of your list. These are the ones that will be visually displayed above your title.</span></li>
               <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Always use CamelCase formatting for multi-word phrases (e.g., #HowToCook instead of #howtocook) to improve accessibility and human readability.</span></li>

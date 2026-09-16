@@ -55,4 +55,12 @@ lighthouse.json
 task.md
 implementation_plan.md
 
+# graphify knowledge graph artifacts
+graph.html
+graph.json
+GRAPH_REPORT.md
+graphify-out/
+.graphify/
+
+
 

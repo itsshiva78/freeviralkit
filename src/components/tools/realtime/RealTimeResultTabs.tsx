@@ -48,7 +48,7 @@ export function RealTimeResultTabs({ result, onRegenerate, isGenerating }: RealT
           className={`px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 active:scale-[0.96] transition-all duration-75 cursor-pointer ${
             activeTab === 'titles'
               ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800/60'
           }`}
         >
           <Wand2 className="w-4 h-4" /> Titles ({result.titles?.length || 0})
@@ -58,7 +58,7 @@ export function RealTimeResultTabs({ result, onRegenerate, isGenerating }: RealT
           className={`px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 active:scale-[0.96] transition-all duration-75 cursor-pointer ${
             activeTab === 'description'
               ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800/60'
           }`}
         >
           <FileText className="w-4 h-4" /> SEO Description
@@ -68,7 +68,7 @@ export function RealTimeResultTabs({ result, onRegenerate, isGenerating }: RealT
           className={`px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 active:scale-[0.96] transition-all duration-75 cursor-pointer ${
             activeTab === 'tags'
               ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800/60'
           }`}
         >
           <Tag className="w-4 h-4" /> Search Tags ({result.tags?.length || 0})
@@ -78,7 +78,7 @@ export function RealTimeResultTabs({ result, onRegenerate, isGenerating }: RealT
           className={`px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 active:scale-[0.96] transition-all duration-75 cursor-pointer ${
             activeTab === 'hashtags'
               ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800/60'
           }`}
         >
           <Hash className="w-4 h-4" /> Hashtags ({result.hashtags?.length || 0})

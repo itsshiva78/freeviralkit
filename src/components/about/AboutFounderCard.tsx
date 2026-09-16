@@ -23,7 +23,7 @@ export function AboutFounderCard() {
               href="https://github.com/shivasap27sh-del"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-100 hover:bg-purple-100 text-slate-600 hover:text-purple-600 transition-colors"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-purple-100 text-slate-600 dark:text-slate-400 hover:text-purple-600 transition-colors"
               aria-label="Shiva's GitHub profile"
               title="GitHub"
             >
@@ -33,7 +33,7 @@ export function AboutFounderCard() {
               href="https://www.linkedin.com/in/shiva-srivastava"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 transition-colors"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-blue-100 text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
               aria-label="Shiva's LinkedIn profile"
               title="LinkedIn"
             >
@@ -41,7 +41,7 @@ export function AboutFounderCard() {
             </a>
             <Link
               href="/contact"
-              className="p-2 rounded-lg bg-slate-100 hover:bg-green-100 text-slate-600 hover:text-green-600 transition-colors"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-green-100 text-slate-600 dark:text-slate-400 hover:text-green-600 transition-colors"
               aria-label="Contact Shiva"
               title="Contact"
             >
@@ -51,9 +51,9 @@ export function AboutFounderCard() {
         </div>
 
         {/* Bio Content */}
-        <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+        <div className="space-y-4 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
           <div>
-            <h3 className="font-display text-xl font-bold text-slate-900 mb-1">
+            <h3 className="font-display text-xl font-bold text-slate-900 dark:text-slate-50 mb-1">
               Shiva Srivastava
             </h3>
             <p className="text-purple-600 font-medium text-xs">
@@ -79,7 +79,7 @@ export function AboutFounderCard() {
             ].map((chip) => (
               <span
                 key={chip}
-                className="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200"
+                className="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700"
               >
                 {chip}
               </span>

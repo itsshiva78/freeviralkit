@@ -174,7 +174,7 @@ export default function TravelTitleLandingPage() {
         {/* Hero */}
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Travel </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
             Create engaging titles for destination guides, budget travel, solo adventures, and food travel vlogs. Optimized for clicks, powered by AI.
           </p>
           <div className="text-left mt-8">
@@ -186,21 +186,21 @@ export default function TravelTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             Why Your Travel Title Is Your Most Important SEO Asset
           </h2>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             Travel is one of the most searched categories on YouTube. Millions of people plan their trips by watching YouTube videos — and your title is what determines whether they click on your video or a competitor&apos;s.
           </p>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
             A generic title like &ldquo;My Trip to Thailand&rdquo; competes with millions of similar videos. But &ldquo;First Time in Thailand — 10 Days, $800 Budget (Complete Guide)&rdquo; immediately tells the viewer the destination, duration, cost, and value they&apos;ll get.
           </p>
-          <p className="text-slate-600">
-            The best travel titles combine a <strong className="text-slate-900">specific destination</strong>, <strong className="text-slate-900">concrete numbers</strong>, and <strong className="text-slate-900">a compelling hook</strong>. Our AI crafts these for you in seconds.
+          <p className="text-slate-600 dark:text-slate-400">
+            The best travel titles combine a <strong className="text-slate-900 dark:text-slate-50">specific destination</strong>, <strong className="text-slate-900 dark:text-slate-50">concrete numbers</strong>, and <strong className="text-slate-900 dark:text-slate-50">a compelling hook</strong>. Our AI crafts these for you in seconds.
           </p>
         </section>
         {/* Examples by category */}
         {examplesByCategory.map((cat) => (
           <section key={cat.category} className="glass-card rounded-2xl p-6 md:p-8 mb-4">
             <h2 className="font-display text-lg font-semibold mb-3">{cat.category} Titles</h2>
-            <ul className="space-y-2 text-slate-700">
+            <ul className="space-y-2 text-slate-700 dark:text-slate-300">
               {cat.examples.map((example) => (
                 <li key={example} className="flex items-start gap-2">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
@@ -218,10 +218,10 @@ export default function TravelTitleLandingPage() {
           <div className="space-y-5">
             {tips.map((tip, i) => (
               <div key={tip.title}>
-                <h3 className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">
                   {i + 1}. {tip.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{tip.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -229,14 +229,14 @@ export default function TravelTitleLandingPage() {
         {/* Advanced Travel SEO Deep Dive */}
         <section className="mt-16 mb-8 space-y-12">
           <div className="glass-card rounded-2xl p-6 md:p-8">
-            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900">
+            <h2 className="font-display text-2xl font-bold mb-6 text-slate-900 dark:text-slate-50">
               The Ultimate Guide to YouTube Titles for Travel Vloggers
             </h2>
-            <div className="prose prose-lg text-slate-600 max-w-none space-y-6">
+            <div className="prose prose-lg text-slate-600 dark:text-slate-400 max-w-none space-y-6">
               <p>
                 The travel vlogging niche is a visual feast. Creators spend thousands of dollars on drones, mirrorless cameras, and plane tickets to capture breathtaking cinematic sequences of remote beaches, bustling cityscapes, and towering mountains. But here is the brutal reality of YouTube: the algorithm cannot see your beautiful 4K drone footage. The algorithm can only read data. If your title fails to communicate the value of your video, all that expensive footage will sit unwatched. Mastering the art of travel video titles is the only way to ensure your adventures actually find an audience.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Why Chronological Titles Ruin Your Channel
               </h3>
               <p>
@@ -245,7 +245,7 @@ export default function TravelTitleLandingPage() {
               <p>
                 You must reframe your experience as a valuable asset for the viewer. Instead of &quot;Eurotrip Day 4,&quot; the title should be &quot;10 Things You MUST Know Before Visiting Rome in 2026.&quot; You can still use the exact same vlog footage from your trip, but the packaging has changed. You are no longer asking the viewer to care about your vacation; you are offering them free, valuable advice for their own future vacation. This psychological shift is the difference between 50 views and 500,000 views.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Power of Budget and Numbers
               </h3>
               <p>
@@ -254,7 +254,7 @@ export default function TravelTitleLandingPage() {
               <p>
                 Compare &quot;Traveling Around Japan&quot; to &quot;How I Survived 14 Days in Japan on $50 a Day.&quot; The second title is magnetic. It presents a seemingly impossible challenge (Japan is known for being expensive) and promises to reveal the secret of how to do it. Numbers provide concrete anchors. &quot;48 Hours in Paris,&quot; &quot;Top 5 Hidden Gems in Bali,&quot; or &quot;The $10 Street Food Tour of Bangkok.&quot; Specificity breeds curiosity and trust.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Leveraging the &quot;Expectation vs Reality&quot; Angle
               </h3>
               <p>
@@ -263,7 +263,7 @@ export default function TravelTitleLandingPage() {
               <p>
                 &quot;The Ugly Truth About Traveling to the Maldives&quot; or &quot;Is Santorini Actually Worth the Hype? (Honest Review).&quot; These titles work because they break the mold of the overly positive, glossy travel vlog. By positioning yourself as the honest friend who is willing to expose tourist traps, you instantly build rapport with the viewer. The information gap is strong: &quot;What is the ugly truth? Is it really that bad? I need to watch this before I book my tickets.&quot;
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Evergreen SEO: The Importance of the Year
               </h3>
               <p>
@@ -272,7 +272,7 @@ export default function TravelTitleLandingPage() {
               <p>
                 A title like &quot;Complete Travel Guide to Iceland 2026&quot; signals to the YouTube algorithm that your content is fresh and relevant. When a user searches for &quot;Iceland Travel Guide,&quot; they will instinctively click on the video with the current year in the title, even if an older video has more views. This strategy allows small creators to outrank massive, older videos simply by being the most up-to-date source of information.
               </p>
-              <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 Safety and Solo Travel Hooks
               </h3>
               <p>
@@ -289,18 +289,18 @@ export default function TravelTitleLandingPage() {
           <h2 className="font-display text-xl font-semibold mb-4">
             How Our Travel Title Generator Works
           </h2>
-          <ol className="space-y-3 text-slate-600">
+          <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900">Enter your travel topic</strong> — describe the destination, trip style, or travel experience.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your travel topic</strong> — describe the destination, trip style, or travel experience.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900">AI generates 10 optimized titles</strong> — each crafted with destination keywords, hooks, and SEO best practices.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> — each crafted with destination keywords, hooks, and SEO best practices.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -320,8 +320,8 @@ export default function TravelTitleLandingPage() {
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-slate-900 mb-1">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">{faq.question}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -334,24 +334,24 @@ export default function TravelTitleLandingPage() {
           <div className="space-y-3">
             <Link
               href="/tools/youtube-title-generator-for-vlogs"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">🎬 Title Generator for Vlogs</span>
-              <p className="text-slate-600 text-sm mt-1">Create relatable vlog titles for daily routines, lifestyle, and personal content.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">🎬 Title Generator for Vlogs</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Create relatable vlog titles for daily routines, lifestyle, and personal content.</p>
             </Link>
             <Link
               href="/youtube-description-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">📝 YouTube Description Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Write SEO-optimized descriptions with timestamps, links, and CTAs for your travel videos.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">📝 YouTube Description Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Write SEO-optimized descriptions with timestamps, links, and CTAs for your travel videos.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
-              className="block p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-purple-500/30 transition-all"
+              className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
-              <span className="font-semibold text-slate-900">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 text-sm mt-1">Find trending travel hashtags to boost your video&apos;s discoverability.</p>
+              <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Find trending travel hashtags to boost your video&apos;s discoverability.</p>
             </Link>
           </div>
         </section>

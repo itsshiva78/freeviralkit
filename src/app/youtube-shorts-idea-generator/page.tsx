@@ -248,7 +248,7 @@ export default function ShortsIdeaGeneratorPage() {
             <h3 className="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">
               Shorts Ideation & Scripting Checklist
             </h3>
-            <ul className="space-y-2 text-slate-600">
+            <ul className="space-y-2 text-slate-600 dark:text-slate-400">
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Does the script grab attention in the very first sentence?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Is the total read time of the script under 60 seconds?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" /><span className="dark:text-slate-300">Are there specific plans for B-roll or visual changes?</span></li>

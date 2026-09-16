@@ -9,8 +9,8 @@ export function AboutFaqSection() {
       <div className="space-y-6">
         {aboutFaqs.map((faq, index) => (
           <div key={index}>
-            <h3 className="font-bold text-slate-800 text-base mb-2">{faq.question}</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">{faq.answer}</p>
+            <h3 className="font-bold text-slate-800 dark:text-slate-200 text-base mb-2">{faq.question}</h3>
+            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{faq.answer}</p>
           </div>
         ))}
       </div>

@@ -239,7 +239,7 @@ export default function DescriptionGeneratorPage() {
             <h3 className="font-display text-xl font-bold mb-3 text-slate-900 dark:text-white">
               The 6-Step Description Checklist
             </h3>
-            <ul className="space-y-2 text-slate-600">
+            <ul className="space-y-2 text-slate-600 dark:text-slate-400">
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" /><span className="dark:text-slate-300">Is the primary keyword in the first sentence?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" /><span className="dark:text-slate-300">Is the summary at least 150-200 words long?</span></li>
               <li className="flex items-start gap-2"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" /><span className="dark:text-slate-300">Are there timestamps starting with 0:00?</span></li>

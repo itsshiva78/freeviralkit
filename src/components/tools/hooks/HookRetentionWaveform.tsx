@@ -64,7 +64,7 @@ export default function HookRetentionWaveform({ score }: HookRetentionWaveformPr
         </svg>
 
         {/* Time Labels */}
-        <div className="absolute bottom-1 left-3 right-3 flex justify-between text-[9px] font-mono text-slate-500 font-bold">
+        <div className="absolute bottom-1 left-3 right-3 flex justify-between text-[9px] font-mono text-slate-500 dark:text-slate-400 font-bold">
           <span>0:00 (Shock)</span>
           <span>0:15 (Proof)</span>
           <span>0:30 (Content Bridge)</span>

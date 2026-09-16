@@ -29,7 +29,7 @@ export default async function LatestBlogPosts() {
             <h3 className="font-semibold text-slate-900 dark:text-white group-hover:text-purple-500 dark:group-hover:text-purple-400 line-clamp-1 mb-1 transition-colors">
               {post.title}
             </h3>
-            <p className="text-xs text-slate-500 line-clamp-2">{post.description}</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">{post.description}</p>
           </Link>
         ))}
       </div>

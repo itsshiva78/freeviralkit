@@ -144,7 +144,7 @@ export default function SEOGraderClient() {
                       <span className="mt-1.5 w-2 h-2 rounded-full bg-green-500 shrink-0" /> {str}
                     </li>
                   ))}
-                  {result.strengths.length === 0 && <li className="text-slate-500 italic text-sm">No significant strengths found.</li>}
+                  {result.strengths.length === 0 && <li className="text-slate-500 dark:text-slate-400 italic text-sm">No significant strengths found.</li>}
                 </ul>
               </div>
 
@@ -159,7 +159,7 @@ export default function SEOGraderClient() {
                       <span className="mt-1.5 w-2 h-2 rounded-full bg-rose-500 shrink-0" /> {weak}
                     </li>
                   ))}
-                  {result.weaknesses.length === 0 && <li className="text-slate-500 italic text-sm">No significant weaknesses found. Great job!</li>}
+                  {result.weaknesses.length === 0 && <li className="text-slate-500 dark:text-slate-400 italic text-sm">No significant weaknesses found. Great job!</li>}
                 </ul>
               </div>
             </div>
