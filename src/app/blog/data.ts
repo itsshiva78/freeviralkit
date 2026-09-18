@@ -1,5 +1,6 @@
 import { Pool } from 'pg';
 import { unstable_cache } from 'next/cache';
+import { STATIC_BLOG_POSTS } from '@/data/blogPosts';
 
 export interface BlogPost {
   slug: string;
@@ -45,18 +46,28 @@ const SLUG_ALIASES: Record<string, string> = {
 
 // --- Database Connection Pool ---
 const rawUrl = process.env.DATABASE_URL;
-let DB_URL = '';
-if (rawUrl) {
-  DB_URL = rawUrl.includes('?') 
-    ? (rawUrl.includes('uselibpqcompat') ? rawUrl : `${rawUrl}&uselibpqcompat=true`)
-    : `${rawUrl}?sslmode=require&uselibpqcompat=true`;
-} else {
-  console.warn('[Database] DATABASE_URL is not defined in environment variables.');
-}
 
 const globalForPg = global as unknown as { pool: Pool | null };
-export const pool: Pool | null = rawUrl ? (globalForPg.pool || new Pool({ connectionString: DB_URL })) : null;
-if (process.env.NODE_ENV !== 'production' && pool) globalForPg.pool = pool;
+export const pool: Pool | null = rawUrl
+  ? (globalForPg.pool ||
+      new Pool({
+        connectionString: rawUrl,
+        ssl: { rejectUnauthorized: false },
+        connectionTimeoutMillis: 5000,
+        idleTimeoutMillis: 10000,
+        max: 10,
+      }))
+  : null;
+
+if (process.env.NODE_ENV !== 'production' && pool) {
+  globalForPg.pool = pool;
+}
+
+if (pool) {
+  pool.on('error', (err) => {
+    console.warn('[Neon DB Pool Notice]:', err.message);
+  });
+}
 
 function mapRowToBlogPost(row: Record<string, unknown>): BlogPost {
   let tags: string[] = [];
@@ -79,10 +90,10 @@ function mapRowToBlogPost(row: Record<string, unknown>): BlogPost {
   };
 }
 
-// --- Cached data functions directly querying Neon PostgreSQL database ---
+// --- Cached data functions querying Neon PostgreSQL database with resilient static fallbacks ---
 
 const _getPublishedPosts = async (): Promise<BlogPost[]> => {
-  if (!pool) return [];
+  if (!pool) return STATIC_BLOG_POSTS;
   try {
     const { rows } = await pool.query(`
       SELECT * FROM posts 
@@ -90,98 +101,113 @@ const _getPublishedPosts = async (): Promise<BlogPost[]> => {
       ORDER BY date DESC 
       LIMIT 1000;
     `);
-    return rows.map(mapRowToBlogPost);
+    const dbPosts = rows.map(mapRowToBlogPost);
+    if (dbPosts.length === 0) return STATIC_BLOG_POSTS;
+    
+    // Merge DB posts with any static posts not yet in DB to guarantee maximum rich content
+    const existingSlugs = new Set(dbPosts.map((p) => p.slug));
+    const missingStatic = STATIC_BLOG_POSTS.filter((p) => !existingSlugs.has(p.slug));
+    return [...dbPosts, ...missingStatic];
   } catch (error) {
-    console.error('getPublishedPosts DB error:', error);
-    return [];
+    console.warn('getPublishedPosts DB fallback:', error);
+    return STATIC_BLOG_POSTS;
   }
 };
 
 export const getPublishedPosts = unstable_cache(
   _getPublishedPosts,
-  ['blog-published-posts-v10'],
+  ['blog-published-posts-v11'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
 const _getPublishedPostBySlug = async (rawSlug: string): Promise<BlogPost | undefined> => {
   const canonicalSlug = SLUG_ALIASES[rawSlug] || rawSlug;
   
-  if (!pool) return undefined;
-  try {
-    const { rows } = await pool.query(`
-      SELECT * FROM posts 
-      WHERE (slug = $1 OR slug = $2)
-      AND (publish_date IS NULL OR publish_date <= NOW())
-      LIMIT 1;
-    `, [canonicalSlug, rawSlug]);
-    if (rows.length > 0) return mapRowToBlogPost(rows[0]);
-  } catch (error) {
-    console.error('getPublishedPostBySlug DB error:', error);
+  if (pool) {
+    try {
+      const { rows } = await pool.query(`
+        SELECT * FROM posts 
+        WHERE (slug = $1 OR slug = $2)
+        AND (publish_date IS NULL OR publish_date <= NOW())
+        LIMIT 1;
+      `, [canonicalSlug, rawSlug]);
+      if (rows.length > 0) return mapRowToBlogPost(rows[0]);
+    } catch (error) {
+      console.warn('getPublishedPostBySlug DB fallback:', error);
+    }
   }
-  return undefined;
+
+  // Graceful fallback to bundled static posts
+  return STATIC_BLOG_POSTS.find((p) => p.slug === canonicalSlug || p.slug === rawSlug);
 };
 
 export const getPublishedPostBySlug = unstable_cache(
   _getPublishedPostBySlug,
-  ['blog-published-post-by-slug-v10'],
+  ['blog-published-post-by-slug-v11'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
 const _getPostBySlug = async (rawSlug: string): Promise<BlogPost | undefined> => {
   const canonicalSlug = SLUG_ALIASES[rawSlug] || rawSlug;
-  if (!pool) return undefined;
-  try {
-    const { rows } = await pool.query('SELECT * FROM posts WHERE slug = $1 OR slug = $2 LIMIT 1;', [canonicalSlug, rawSlug]);
-    if (rows.length > 0) return mapRowToBlogPost(rows[0]);
-  } catch (error) {
-    console.error('getPostBySlug DB error:', error);
+  if (pool) {
+    try {
+      const { rows } = await pool.query('SELECT * FROM posts WHERE slug = $1 OR slug = $2 LIMIT 1;', [canonicalSlug, rawSlug]);
+      if (rows.length > 0) return mapRowToBlogPost(rows[0]);
+    } catch (error) {
+      console.warn('getPostBySlug DB fallback:', error);
+    }
   }
-  return undefined;
+
+  return STATIC_BLOG_POSTS.find((p) => p.slug === canonicalSlug || p.slug === rawSlug);
 };
 
 export const getPostBySlug = unstable_cache(
   _getPostBySlug,
-  ['blog-post-by-slug-v10'],
+  ['blog-post-by-slug-v11'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
 const _getAllSlugs = async (): Promise<string[]> => {
-  if (!pool) return Object.keys(SLUG_ALIASES);
+  const staticSlugs = STATIC_BLOG_POSTS.map((p) => p.slug);
+  const aliasSlugs = Object.keys(SLUG_ALIASES);
+  if (!pool) return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   try {
     const { rows } = await pool.query('SELECT slug FROM posts LIMIT 1000;');
-    const dbSlugs = rows.map(r => r.slug as string);
-    return Array.from(new Set([...dbSlugs, ...Object.keys(SLUG_ALIASES)]));
+    const dbSlugs = rows.map((r) => r.slug as string);
+    return Array.from(new Set([...dbSlugs, ...staticSlugs, ...aliasSlugs]));
   } catch (error) {
-    console.error('getAllSlugs DB error:', error);
-    return Object.keys(SLUG_ALIASES);
+    console.warn('getAllSlugs DB fallback:', error);
+    return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   }
 };
 
 export const getAllSlugs = unstable_cache(
   _getAllSlugs,
-  ['blog-all-slugs-v10'],
+  ['blog-all-slugs-v11'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
 const _getPublishedSlugs = async (): Promise<string[]> => {
-  if (!pool) return Object.keys(SLUG_ALIASES);
+  const staticSlugs = STATIC_BLOG_POSTS.map((p) => p.slug);
+  const aliasSlugs = Object.keys(SLUG_ALIASES);
+  if (!pool) return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   try {
     const { rows } = await pool.query(`
       SELECT slug FROM posts 
       WHERE publish_date IS NULL OR publish_date <= NOW()
       LIMIT 1000;
     `);
-    const dbSlugs = rows.map(r => r.slug as string);
-    return Array.from(new Set([...dbSlugs, ...Object.keys(SLUG_ALIASES)]));
+    const dbSlugs = rows.map((r) => r.slug as string);
+    return Array.from(new Set([...dbSlugs, ...staticSlugs, ...aliasSlugs]));
   } catch (error) {
-    console.error('getPublishedSlugs DB error:', error);
-    return Object.keys(SLUG_ALIASES);
+    console.warn('getPublishedSlugs DB fallback:', error);
+    return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   }
 };
 
 export const getPublishedSlugs = unstable_cache(
   _getPublishedSlugs,
-  ['blog-published-slugs-v10'],
+  ['blog-published-slugs-v11'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 

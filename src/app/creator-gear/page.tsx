@@ -72,6 +72,13 @@ export default function CreatorGearPage() {
           </p>
         </section>
 
+        {/* Editorial & Affiliate Transparency Banner */}
+        <div className="bg-slate-100/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 md:p-5 mb-10 text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed text-center max-w-3xl mx-auto backdrop-blur-sm">
+          <p>
+            <strong className="text-slate-800 dark:text-slate-200">Editorial & Affiliate Transparency:</strong> FreeViralKit is an independent creator resource. When you purchase through our links, we may earn an affiliate commission at no additional cost to you. We independently benchmark each tool and hardware piece for audio fidelity, build durability, and creator workflow efficiency.
+          </p>
+        </div>
+
         {/* Buyer's Guide - E-E-A-T Section */}
         <GearBuyersGuide />
 

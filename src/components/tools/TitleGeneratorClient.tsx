@@ -5,6 +5,7 @@ import { generateTitles } from '@/app/actions/titles';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Wand2, Copy, CheckCircle2, Loader2, RotateCcw, Eye, Award, Check, AlertTriangle } from 'lucide-react';
 import ErrorBanner from '@/components/ErrorBanner';
+import { useToast } from '@/components/ToastProvider';
 
 interface TitleGeneratorClientProps {
   niche?: string;
@@ -17,6 +18,7 @@ export default function TitleGeneratorClient({ niche }: TitleGeneratorClientProp
   const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>({});
   const [selectedIdx, setSelectedIdx] = useState<number>(0);
   const [error, setError] = useState<string | null>(null);
+  const { showToast } = useToast();
 
   const handleGenerate = async (isRegenerate = false) => {
     if (!topic.trim()) return;
@@ -36,8 +38,12 @@ export default function TitleGeneratorClient({ niche }: TitleGeneratorClientProp
     try {
       await navigator.clipboard.writeText(text);
       setCopiedStates(p => ({ ...p, [key]: true }));
+      showToast('Copied title to clipboard!', 'success');
       setTimeout(() => setCopiedStates(p => ({ ...p, [key]: false })), 2000);
-    } catch (err) { console.error('Failed to copy', err); }
+    } catch (err) {
+      console.error('Failed to copy', err);
+      showToast('Failed to copy title', 'error');
+    }
   };
 
   const charColor = (len: number) =>
@@ -62,13 +68,13 @@ export default function TitleGeneratorClient({ niche }: TitleGeneratorClientProp
       checks.length = { passed: false, text: 'Too short (underuse of keywords)', color: 'text-yellow-400' };
     }
 
-    const emojiRegex = /[p{Emoji_Presentation}p{Extended_Pictographic}]/u;
+    const emojiRegex = /[\p{Emoji_Presentation}\p{Extended_Pictographic}]/u;
     if (emojiRegex.test(titleText)) {
       score += 10;
       checks.emoji = { passed: true, text: 'Has visually appealing emojis', color: 'text-green-400' };
     }
 
-    if (/d+/.test(titleText)) {
+    if (/\d+/.test(titleText)) {
       score += 10;
       checks.number = { passed: true, text: 'Includes digits/statistics', color: 'text-green-400' };
     }

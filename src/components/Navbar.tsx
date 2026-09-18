@@ -23,6 +23,7 @@ import {
   User,
   Activity,
   Layers,
+  ChevronDown,
   type LucideIcon,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -103,6 +104,7 @@ const toolsMegaMenu: Record<string, MegaMenuGroup> = {
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openMobileCategory, setOpenMobileCategory] = useState<string | null>('flagship');
   const [toolsOpen, setToolsOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
@@ -139,7 +141,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 py-3 backdrop-blur-xl bg-white/90 dark:bg-[#030712]/95 border-b border-slate-200 dark:border-slate-800 shadow-md">
+    <header className="sticky top-0 z-50 py-3 backdrop-blur-xl bg-white/90 dark:bg-[#09090b]/90 border-b border-slate-200 dark:border-white/[0.08] shadow-md">
       <div className="container mx-auto px-6 max-w-6xl flex justify-between items-center relative">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group active:scale-[0.96] transition-transform duration-75 ease-out" aria-label="FreeViralKit Home">
@@ -177,15 +179,15 @@ export default function Navbar() {
                       transition={{ type: 'spring', bounce: 0, duration: 0.25 }}
                       className="absolute top-full -left-48 pt-3 w-[840px] z-50 pointer-events-auto"
                     >
-                      {/* Solid Opaque Container (Zero Background Bleed) */}
-                      <div className="bg-white dark:bg-[#0B0F19] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl shadow-black/80 ring-1 ring-slate-800/80 overflow-hidden flex flex-col max-h-[82vh]">
+                      {/* Solid Opaque Container (Zero Background Bleed) with Specular Rim */}
+                      <div className="bg-white dark:bg-[#121216] border border-slate-200 dark:border-white/[0.08] rounded-3xl shadow-2xl shadow-black/80 ring-1 ring-white/[0.04] dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.09),0_24px_50px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col max-h-[82vh]">
                         {/* 3 Spacious Columns */}
                         <div className="p-6 grid grid-cols-3 gap-6 overflow-y-auto">
                           {Object.entries(toolsMegaMenu).map(([key, group]) => {
                             const GroupIcon = group.icon;
                             return (
                               <div key={key} className="space-y-3">
-                                <div className="px-2 pb-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800">
+                                <div className="px-2 pb-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2 border-b border-slate-100 dark:border-white/[0.06]">
                                   <GroupIcon className={`w-4 h-4 ${group.color}`} />
                                   <span>{group.category}</span>
                                 </div>
@@ -197,9 +199,9 @@ export default function Navbar() {
                                       <Link
                                         key={t.href}
                                         href={t.href}
-                                        className="p-2.5 rounded-2xl hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-900/90 active:scale-[0.98] transition-all flex items-start gap-3 group/item cursor-pointer border border-transparent hover:border-slate-200 dark:border-slate-700 dark:hover:border-slate-800"
+                                        className="p-2.5 rounded-2xl hover:bg-slate-100 dark:bg-[#16161b] dark:hover:bg-[#1c1c23] active:scale-[0.98] transition-all flex items-start gap-3 group/item cursor-pointer border border-transparent hover:border-slate-200 dark:border-white/[0.05] dark:hover:border-purple-500/30"
                                       >
-                                        <div className="p-2 rounded-xl bg-slate-100 dark:bg-slate-950 text-slate-500 dark:text-slate-400 group-hover/item:text-cyan-400 group-hover/item:bg-blue-500/10 transition-colors shrink-0 mt-0.5 border border-slate-200/50 dark:border-slate-800">
+                                        <div className="p-2 rounded-xl bg-slate-100 dark:bg-[#09090b] text-slate-500 dark:text-slate-400 group-hover/item:text-cyan-400 group-hover/item:bg-blue-500/10 transition-colors shrink-0 mt-0.5 border border-slate-200/50 dark:border-white/[0.08]">
                                           <ToolIcon className="w-3.5 h-3.5" />
                                         </div>
                                         <div className="flex-1 min-w-0">
@@ -333,7 +335,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ type: 'spring', bounce: 0, duration: 0.3 }}
-            className="md:hidden overflow-hidden border-t border-slate-200 dark:border-slate-800 bg-white/98 dark:bg-[#0B0F19] backdrop-blur-xl"
+            className="md:hidden overflow-hidden border-t border-slate-200 dark:border-white/[0.08] bg-white/98 dark:bg-[#0c0c10] backdrop-blur-xl"
           >
             <nav className="container mx-auto px-6 py-4 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
               {navLinks.map((link) => (
@@ -343,29 +345,66 @@ export default function Navbar() {
                     onClick={() => link.label !== 'Tools' && setMobileOpen(false)}
                     className={`px-4 py-3 rounded-lg text-sm font-medium transition-all active:scale-[0.98] ${
                       pathname === link.href
-                        ? 'text-slate-900 dark:text-white bg-slate-200 dark:bg-slate-800'
-                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800'
+                        ? 'text-slate-900 dark:text-white bg-slate-200 dark:bg-[#1c1c24]'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:bg-[#121216] dark:hover:bg-[#1a1a22]'
                     }`}
                   >
                     {link.label}
                   </Link>
                   {link.label === 'Tools' && (
-                    <div className="flex flex-col ml-4 mt-1 border-l border-slate-200 dark:border-slate-700 pl-2 space-y-1">
-                      {Object.values(toolsMegaMenu).flatMap((g) => g.tools).map((tool) => (
-                        <Link
-                          key={tool.href}
-                          href={tool.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="px-4 py-2 text-xs text-slate-500 dark:text-slate-400 hover:text-cyan-400 active:scale-[0.98] transition-all flex items-center justify-between"
-                        >
-                          <span>{tool.label}</span>
-                          {tool.badge && (
-                            <span className="text-[9px] font-mono font-bold px-1.5 py-0.2 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-                              {tool.badge}
-                            </span>
-                          )}
-                        </Link>
-                      ))}
+                    <div className="flex flex-col ml-2 mt-2 space-y-2">
+                      {Object.entries(toolsMegaMenu).map(([catKey, group]) => {
+                        const isCatOpen = openMobileCategory === catKey;
+                        const GroupIcon = group.icon;
+                        return (
+                          <div
+                            key={catKey}
+                            className="rounded-xl border border-slate-200/80 dark:border-white/[0.08] bg-slate-50/60 dark:bg-[#141419] overflow-hidden"
+                          >
+                            <button
+                              type="button"
+                              onClick={() => setOpenMobileCategory(isCatOpen ? null : catKey)}
+                              className="w-full px-3.5 py-2.5 flex items-center justify-between text-xs font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer min-h-[44px]"
+                            >
+                              <div className="flex items-center gap-2">
+                                <GroupIcon className={`w-4 h-4 ${group.color}`} />
+                                <span>{group.category}</span>
+                              </div>
+                              <ChevronDown
+                                className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                                  isCatOpen ? 'rotate-180 text-purple-500' : 'text-slate-400'
+                                }`}
+                              />
+                            </button>
+
+                            {isCatOpen && (
+                              <div className="px-2 pb-2.5 pt-1 grid grid-cols-1 gap-1 border-t border-slate-200/60 dark:border-slate-800/80">
+                                {group.tools.map((tool) => {
+                                  const ToolIcon = tool.icon;
+                                  return (
+                                    <Link
+                                      key={tool.href}
+                                      href={tool.href}
+                                      onClick={() => setMobileOpen(false)}
+                                      className="px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-purple-600 dark:hover:text-purple-300 hover:bg-purple-500/10 active:scale-[0.98] transition-all flex items-center justify-between min-h-[44px]"
+                                    >
+                                      <div className="flex items-center gap-2.5">
+                                        <ToolIcon className="w-4 h-4 text-slate-400 shrink-0" />
+                                        <span>{tool.label}</span>
+                                      </div>
+                                      {tool.badge && (
+                                        <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-500 dark:text-purple-400 border border-purple-500/20">
+                                          {tool.badge}
+                                        </span>
+                                      )}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   )}
                 </div>

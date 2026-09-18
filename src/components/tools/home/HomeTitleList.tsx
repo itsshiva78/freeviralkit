@@ -58,14 +58,14 @@ export function HomeTitleList({
             <div
               key={index}
               onClick={() => onSelectTitle(title)}
-              className={`glass-card rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer transition-all ${
+              className={`glass-card rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer transition-all ease-spring duration-200 active:scale-[0.99] ${
                 isSelected
-                  ? 'border-purple-500/80 ring-2 ring-purple-500/20 bg-purple-50/50 dark:bg-purple-950/20 shadow-lg'
-                  : 'hover:border-purple-400/50 hover:bg-slate-50 dark:bg-slate-950/80 dark:hover:bg-slate-850/50'
+                  ? 'border-purple-500/80 ring-2 ring-purple-500/25 bg-purple-50/50 dark:bg-purple-950/30 dark:border-purple-500/60 shadow-lg'
+                  : 'hover:border-purple-400/50 hover:-translate-y-[1px] hover:bg-slate-50 dark:bg-[#121216] dark:hover:bg-[#17171d] dark:hover:border-purple-500/40 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07)]'
               }`}
             >
               <div className="flex-1">
-                <p className="text-slate-900 dark:text-white font-semibold text-base mb-1">
+                <p className="text-slate-900 dark:text-slate-200 font-semibold text-base mb-1 leading-snug">
                   {title}
                 </p>
                 <div className="flex items-center gap-2 text-xs">
@@ -90,7 +90,7 @@ export function HomeTitleList({
                     e.stopPropagation();
                     onCopy(title, key);
                   }}
-                  className="p-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all shrink-0"
+                  className="p-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-[#18181f] hover:bg-slate-200 dark:hover:bg-[#22222b] text-slate-700 dark:text-slate-200 border border-transparent dark:border-white/[0.06] active:scale-[0.92] transition-all shrink-0 cursor-pointer"
                   title="Copy title"
                 >
                   {isCopied ? (

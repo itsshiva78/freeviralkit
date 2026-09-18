@@ -4,7 +4,7 @@ export function HomeHero() {
   return (
     <section className="relative text-center pt-6 pb-10 space-y-6 overflow-hidden">
       {/* Background Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-purple-600/15 via-indigo-500/15 to-pink-500/10 blur-[100px] pointer-events-none -z-10 rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[640px] h-[280px] bg-gradient-to-b from-indigo-500/12 via-purple-600/8 to-transparent blur-[120px] pointer-events-none -z-10 rounded-full" />
 
       {/* Pill Badge */}
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold bg-purple-500/10 border border-purple-500/30 text-purple-600 dark:text-purple-300 backdrop-blur-md shadow-sm">

@@ -7,6 +7,7 @@ import CookieBanner from '@/components/CookieBanner';
 import { ConsentProvider } from '@/components/ConsentProvider';
 import ConsentGatedScripts from '@/components/ConsentGatedScripts';
 import { buildAbsoluteUrl, getBaseUrl, siteConfig } from '@/lib/site';
+import { ToastProvider } from '@/components/ToastProvider';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -198,11 +199,13 @@ export default function RootLayout({
         {/* Background ambient lighting removed — template-y aesthetic */}
 
         <ConsentProvider>
-          <ConsentGatedScripts />
-          <Navbar />
-          {children}
-          <CookieBanner />
-          <Footer />
+          <ToastProvider>
+            <ConsentGatedScripts />
+            <Navbar />
+            {children}
+            <CookieBanner />
+            <Footer />
+          </ToastProvider>
         </ConsentProvider>
         <Analytics />
         <SpeedInsights />

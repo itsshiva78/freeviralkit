@@ -3,8 +3,22 @@
 import { useState } from 'react';
 import { generateDescriptionOnly } from '@/app/actions/descriptions';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AlignLeft, Copy, CheckCircle2, Loader2, Sparkles, RotateCcw, Eye, Award, Check, AlertTriangle } from 'lucide-react';
+import {
+  AlignLeft,
+  Copy,
+  CheckCircle2,
+  Loader2,
+  Sparkles,
+  RotateCcw,
+  Eye,
+  Award,
+  Check,
+  AlertTriangle,
+  Edit3,
+} from 'lucide-react';
 import ErrorBanner from '@/components/ErrorBanner';
+import { useToast } from '@/components/ToastProvider';
+import { CharacterLimitGauge } from './CharacterLimitGauge';
 
 interface DescriptionGeneratorClientProps {
   niche?: string;
@@ -15,7 +29,9 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
   const [isGenerating, setIsGenerating] = useState(false);
   const [description, setDescription] = useState('');
   const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>({});
+  const [isEditing, setIsEditing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { showToast } = useToast();
 
   const handleGenerate = async (val?: string, isRegenerate = false) => {
     const inputVal = val !== undefined ? val : topic;
@@ -35,9 +51,13 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
   const copy = async (text: string, key: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      setCopiedStates(p => ({ ...p, [key]: true }));
-      setTimeout(() => setCopiedStates(p => ({ ...p, [key]: false })), 2000);
-    } catch (err) { console.error('Failed to copy', err); }
+      setCopiedStates((p) => ({ ...p, [key]: true }));
+      showToast('Copied description to clipboard!', 'success');
+      setTimeout(() => setCopiedStates((p) => ({ ...p, [key]: false })), 2000);
+    } catch (err) {
+      console.error('Failed to copy', err);
+      showToast('Failed to copy to clipboard', 'error');
+    }
   };
 
   const renderFormattedText = (text: string) => {
@@ -157,14 +177,56 @@ export default function DescriptionGeneratorClient({ niche }: DescriptionGenerat
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               {/* Description Output */}
               <div className="lg:col-span-7 space-y-4">
-                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 flex flex-col group hover:border-slate-300 dark:hover:border-slate-700 transition-all">
+                <CharacterLimitGauge
+                  current={description.length}
+                  max={5000}
+                  recommendedMax={4500}
+                  label="Description Length"
+                  warningNote="First 150-200 chars appear before 'Show more' fold"
+                />
+
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex flex-col group hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm">
                   <div className="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-3 font-mono border-b dark:border-slate-800 pb-2">
-                    <span>OUTPUT TEXT</span>
-                    <span>{description.split(/\s+/).length} words • {description.length} chars</span>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setIsEditing(false)}
+                        className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                          !isEditing
+                            ? 'bg-purple-500/15 text-purple-600 dark:text-purple-300 border border-purple-500/30'
+                            : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white'
+                        }`}
+                      >
+                        Formatted Preview
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setIsEditing(true)}
+                        className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer ${
+                          isEditing
+                            ? 'bg-purple-500/15 text-purple-600 dark:text-purple-300 border border-purple-500/30'
+                            : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white'
+                        }`}
+                      >
+                        <Edit3 className="w-3 h-3" /> Edit In-Place
+                      </button>
+                    </div>
+                    <span>{description.split(/\s+/).filter(Boolean).length} words • {description.length} chars</span>
                   </div>
-                  <p className="whitespace-pre-wrap text-slate-700 dark:text-slate-300 leading-relaxed text-[0.95rem]">
-                    {renderFormattedText(description)}
-                  </p>
+
+                  {isEditing ? (
+                    <textarea
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                      rows={14}
+                      className="w-full bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 font-mono text-sm leading-relaxed focus:ring-2 focus:ring-purple-500/40 focus:border-purple-500 outline-none resize-y"
+                      placeholder="Write or edit your description..."
+                    />
+                  ) : (
+                    <div className="whitespace-pre-wrap text-slate-700 dark:text-slate-300 leading-relaxed text-[0.95rem]">
+                      {renderFormattedText(description)}
+                    </div>
+                  )}
                 </div>
               </div>
 

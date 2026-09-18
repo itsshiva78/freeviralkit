@@ -5,6 +5,7 @@ import { gradeVideoSEO, type SEOResult } from '@/app/actions/seoGrader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2, Activity, CheckCircle2, XCircle, AlertTriangle, ChevronRight } from 'lucide-react';
 import ErrorBanner from '@/components/ErrorBanner';
+import { CharacterLimitGauge } from './CharacterLimitGauge';
 
 export default function SEOGraderClient() {
   const [title, setTitle] = useState('');
@@ -47,18 +48,39 @@ export default function SEOGraderClient() {
             <input type="text" value={title} onChange={e => setTitle(e.target.value)}
               placeholder="E.g., How to Code in React (2026 Guide)"
               className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-3 text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-base" />
+            <CharacterLimitGauge
+              current={title.length}
+              max={100}
+              recommendedMax={70}
+              label="Title Length"
+              warningNote="YouTube mobile truncates around 50-60 chars"
+            />
           </div>
           <div>
             <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Video Description</label>
             <textarea value={description} onChange={e => setDescription(e.target.value)}
               placeholder="Paste your full description here..."
               className="w-full h-32 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-3 text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-base resize-none" />
+            <CharacterLimitGauge
+              current={description.length}
+              max={5000}
+              recommendedMax={4500}
+              label="Description Length"
+              warningNote="First 150-200 chars appear before 'Show more' fold"
+            />
           </div>
           <div>
             <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Tags (Comma separated) <span className="font-normal text-slate-400">(Optional)</span></label>
             <input type="text" value={tags} onChange={e => setTags(e.target.value)}
               placeholder="react, coding, tutorial..."
               className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-3 text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-base" />
+            <CharacterLimitGauge
+              current={tags.length}
+              max={500}
+              recommendedMax={480}
+              label="Tags Total Chars"
+              warningNote="YouTube Studio allows max 500 characters total"
+            />
           </div>
         </div>
 

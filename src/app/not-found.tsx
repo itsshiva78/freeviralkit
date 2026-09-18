@@ -5,14 +5,18 @@ import { Home, Search, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Page Not Found',
   description: 'The page you are looking for does not exist. Explore our free AI YouTube SEO tools instead.',
-  robots: { index: false, follow: true },
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    noarchive: true,
+  },
 };
 
 /**
  * Custom 404 page for FreeViralKit.
- * Keeps users on the site by suggesting popular tools
- * instead of showing a dead-end error. This lowers bounce rate
- * which directly improves AdSense RPM.
+ * Strictly pauses AdSense ad requests to comply with Google AdSense
+ * "Valuable Inventory: No Content / Error Page" monetization policies.
  */
 
 const popularTools = [
@@ -24,7 +28,21 @@ const popularTools = [
 
 export default function NotFound() {
   return (
-    <main className="min-h-[70vh] flex items-center justify-center px-4 py-16">
+    <main
+      className="min-h-[70vh] flex items-center justify-center px-4 py-16"
+      data-no-ads="true"
+    >
+      {/* Explicitly pause any automated AdSense requests on error pages */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            if (typeof window !== 'undefined') {
+              window.adsbygoogle = window.adsbygoogle || [];
+              window.adsbygoogle.pauseAdRequests = 1;
+            }
+          `,
+        }}
+      />
       <div className="max-w-lg w-full text-center">
         {/* 404 number with gradient */}
         <h1

@@ -60,7 +60,7 @@ export function GearCategoryCard({ category }: GearCategoryCardProps) {
               <a
                 href={item.link}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow sponsored"
                 className="inline-flex items-center gap-1 text-xs font-bold text-purple-400 group-hover:text-purple-300 transition-colors"
               >
                 Check Price <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
