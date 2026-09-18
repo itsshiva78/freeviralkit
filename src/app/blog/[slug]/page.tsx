@@ -6,6 +6,7 @@ import { buildAbsoluteUrl } from '@/lib/site';
 import { Calendar, Clock, ArrowLeft, Tag, User, Sparkles } from 'lucide-react';
 
 export const revalidate = 3600; // Cache on Vercel Edge CDN for 1 hour with SWR background revalidation
+export const dynamicParams = false; // Return a real HTTP 404 for any slug not present in the database
 
 type Props = {
   params: Promise<{ slug: string }>;
