@@ -38,6 +38,9 @@ const SLUG_ALIASES: Record<string, string> = {
   'how-to-add-youtube-chapters': 'youtube-description-optimization',
   'grow-educational-youtube-channel': 'how-to-grow-youtube-channel-from-zero',
   'how-to-promote-youtube-videos': 'how-to-grow-youtube-channel-from-zero',
+  'freeviralkit-vs-vidiq': 'freeviralkit-vs-vidiq-tubebuddy',
+  'freeviralkit-vs-tubebuddy': 'freeviralkit-vs-vidiq-tubebuddy',
+  'freeviralkit-vs-chatgpt': 'freeviralkit-vs-chatgpt-youtube-seo',
 };
 
 // --- Database Connection Pool ---
