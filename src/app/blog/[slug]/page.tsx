@@ -66,14 +66,14 @@ export default async function BlogPostPage({ params }: Props) {
     let result = '';
     let i = 0;
     while (i < str.length) {
-      if (str.substring(i, 4).toLowerCase() === '<div') {
+      if (str.slice(i, i + 4).toLowerCase() === '<div') {
         let depth = 0;
         const start = i;
         while (i < str.length) {
-          if (str.substring(i, 4).toLowerCase() === '<div') {
+          if (str.slice(i, i + 4).toLowerCase() === '<div') {
             depth++;
             i += 4;
-          } else if (str.substring(i, 6).toLowerCase() === '</div>') {
+          } else if (str.slice(i, i + 6).toLowerCase() === '</div>') {
             depth--;
             i += 6;
             if (depth === 0) {
