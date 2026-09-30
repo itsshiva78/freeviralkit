@@ -5,10 +5,10 @@ import Link from 'next/link';
 export default function RelatedTools({ currentToolPath }: { currentToolPath?: string }) {
   const tools = [
     { href: '/', label: 'Full SEO Optimizer' },
-    { href: '/youtube-thumbnail-downloader', label: 'Thumbnail Downloader ⚡' },
-    { href: '/youtube-money-calculator', label: 'Money & RPM Calculator 💰' },
-    { href: '/youtube-ab-test-generator', label: '3-Way A/B Test Pack ⚡' },
-    { href: '/youtube-realtime-title-generator', label: 'Movie & Live AI Tool ⚡' },
+    { href: '/youtube-thumbnail-downloader', label: 'Thumbnail Downloader' },
+    { href: '/youtube-money-calculator', label: 'Money & RPM Calculator' },
+    { href: '/youtube-ab-test-generator', label: '3-Way A/B Test Pack' },
+    { href: '/youtube-realtime-title-generator', label: 'Movie & Live Trend Tool' },
     { href: '/youtube-title-generator', label: 'Title Generator' },
     { href: '/youtube-description-generator', label: 'Description Generator' },
     { href: '/youtube-tags-generator', label: 'Tags Generator' },
@@ -16,11 +16,11 @@ export default function RelatedTools({ currentToolPath }: { currentToolPath?: st
     { href: '/youtube-script-generator', label: 'Script Generator' },
     { href: '/youtube-thumbnail-generator', label: 'Thumbnail Ideas' },
     { href: '/youtube-hook-generator', label: 'Hook Generator' },
-    { href: '/tools/youtube-title-generator-for-finance', label: 'Finance Titles 💰' },
-    { href: '/tools/youtube-title-generator-for-ai-and-tech', label: 'AI Tools & Tech ⚡' },
-    { href: '/tools/youtube-title-generator-for-anime', label: 'Anime Titles ⚔️' },
-    { href: '/tools/youtube-title-generator-for-asmr', label: 'ASMR Titles 🎧' },
-    { href: '/tools/youtube-title-generator-for-faceless-channels', label: 'Faceless Channels 💼' },
+    { href: '/tools/youtube-title-generator-for-finance', label: 'Finance Titles' },
+    { href: '/tools/youtube-title-generator-for-ai-and-tech', label: 'AI Tools & Tech' },
+    { href: '/tools/youtube-title-generator-for-anime', label: 'Anime Titles' },
+    { href: '/tools/youtube-title-generator-for-asmr', label: 'ASMR Titles' },
+    { href: '/tools/youtube-title-generator-for-faceless-channels', label: 'Faceless Channels' },
   ];
 
   // Filter out the current tool so we don't link to the current page
@@ -32,14 +32,14 @@ export default function RelatedTools({ currentToolPath }: { currentToolPath?: st
         Explore More Free YouTube Tools
       </h2>
       <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-2xl mx-auto">
-        Level up every aspect of your YouTube channel with our suite of free, AI-powered tools designed specifically for creators.
+        Level up every aspect of your YouTube channel with our suite of free creator tools engineered for maximum discoverability.
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         {filteredTools.map(tool => (
           <Link
             key={tool.href}
             href={tool.href}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-purple-400/40 hover:bg-purple-50 dark:hover:bg-purple-900/10 transition-colors bg-white dark:bg-slate-800"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-slate-300 hover:border-zinc-500 hover:text-red-500 dark:hover:text-red-400 transition-colors bg-white dark:bg-zinc-900/60"
           >
             {tool.label}
           </Link>

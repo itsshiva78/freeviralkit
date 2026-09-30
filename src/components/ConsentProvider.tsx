@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
 
 export interface ConsentState {
-  /** Essential cookies — always true, cannot be disabled */
+  /** Essential cookies - always true, cannot be disabled */
   essential: true;
   /** Analytics: GA4, Vercel Analytics */
   analytics: boolean;
@@ -79,7 +79,7 @@ export function ConsentProvider({ children }: { children: ReactNode }) {
       setConsent(stored);
       setHasDecided(true);
     } else {
-      // First visit — show banner after a short delay for UX
+      // First visit - show banner after a short delay for UX
       const timer = setTimeout(() => setIsBannerOpen(true), 800);
       return () => clearTimeout(timer);
     }

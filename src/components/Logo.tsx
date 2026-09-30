@@ -48,7 +48,7 @@ export default function Logo({
 
   return (
     <div className={`flex items-center gap-2.5 group ${className}`}>
-      {/* Butterfly icon — inline SVG */}
+      {/* Butterfly icon - inline SVG */}
       <div
         className={`${containerSizes[size]} rounded-xl bg-purple-50/40 dark:bg-purple-950/20 border border-purple-100/60 dark:border-purple-900/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-purple-500/10`}
       >
@@ -121,7 +121,7 @@ export default function Logo({
         </svg>
       </div>
 
-      {/* Text branding — matches the brand reference:
+      {/* Text branding - matches the brand reference:
            FREEVIRAL = heavy/black weight, dark plum
            KIT = lighter weight, magenta-pink
            Since 2026 = cursive italic pink */}

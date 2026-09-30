@@ -150,7 +150,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Tags Generator for Gaming — FreeViralKit',
+      name: 'YouTube Tags Generator for Gaming - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-tags-generator-for-gaming',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -189,7 +189,7 @@ export default function GamingTagsLandingPage() {
               The Complete Guide to YouTube SEO for Gaming Channels
             </h2>
             <p>
-              Growing a gaming channel on YouTube is widely considered one of the most challenging endeavors for new creators. The barrier to entry is virtually nonexistent—anyone with a console or a PC and screen recording software can upload gameplay. This results in an incredibly saturated market where thousands of hours of Let&apos;s Plays, montages, and reviews are uploaded every single day. In this hyper-competitive environment, simply uploading good gameplay is no longer enough. You must master the art of YouTube SEO, and specifically, the strategic use of tags, titles, and metadata to signal to the algorithm exactly who your content is for.
+              Growing a gaming channel on YouTube is widely considered one of the most challenging endeavors for new creators. The barrier to entry is virtually nonexistent-anyone with a console or a PC and screen recording software can upload gameplay. This results in an incredibly saturated market where thousands of hours of Let&apos;s Plays, montages, and reviews are uploaded every single day. In this hyper-competitive environment, simply uploading good gameplay is no longer enough. You must master the art of YouTube SEO, and specifically, the strategic use of tags, titles, and metadata to signal to the algorithm exactly who your content is for.
             </p>
             <p>
               Many creators mistakenly believe that tags are a relic of the past, but in the gaming niche, they serve a very specific and powerful purpose. When a viewer is deep down the rabbit hole of an RPG walkthrough or searching for specific high-level competitive strategies in an FPS, they often use highly specific, long-tail search queries. Tags help bridge the gap between what the viewer is typing into the search bar and the content you have created. They provide the context that the algorithm needs to confidently serve your video as the solution to the viewer&apos;s query.
@@ -285,15 +285,15 @@ export default function GamingTagsLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your gaming topic</strong> — describe your game, genre, or video type.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your gaming topic</strong> - describe your game, genre, or video type.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized tags</strong> — a mix of broad, niche, and trending gaming tags tailored to your content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized tags</strong> - a mix of broad, niche, and trending gaming tags tailored to your content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy all tags</strong> — paste the full tag set into YouTube Studio with one click.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy all tags</strong> - paste the full tag set into YouTube Studio with one click.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -337,7 +337,7 @@ export default function GamingTagsLandingPage() {
               className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
               <span className="font-semibold text-slate-900 dark:text-slate-50">🏷️ YouTube Tags Generator</span>
-              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized tags for any YouTube niche — not just gaming.</p>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized tags for any YouTube niche - not just gaming.</p>
             </Link>
             <Link
               href="/youtube-hashtag-generator"
@@ -369,7 +369,7 @@ export default function GamingTagsLandingPage() {
             >
               <span className="text-xs text-purple-400 font-medium">Growth</span>
               <h3 className="font-display text-sm font-bold mt-1 group-hover:text-purple-400 transition-colors leading-snug">
-                YouTube Gaming Channel Growth Guide — From Zero to Thousands
+                YouTube Gaming Channel Growth Guide - From Zero to Thousands
               </h3>
             </Link>
           </div>

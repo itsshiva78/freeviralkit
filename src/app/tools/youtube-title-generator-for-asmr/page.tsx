@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Free AI YouTube title generator for ASMR artists. Generate high-retention titles with sensory trigger tags, sleep keywords, and binaural audio formatting.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'YouTube Title Generator for ASMR Channels — Sensory & Sleep Titles',
+  title: 'YouTube Title Generator for ASMR Channels - Sensory & Sleep Titles',
   description:
     'Free AI YouTube title generator for ASMR creators. Create click-worthy titles for whispering, tapping, cranial nerve exams, and deep sleep triggers.',
   alternates: {
@@ -127,7 +127,7 @@ const tips = [
   {
     title: '5. Calibrate Title Pacing with Video Duration',
     description:
-      'For sleep videos, explicitly state the duration (e.g. "1 Hour", "3 Hours", "All Night") — sleep viewers prefer longer tracks they don’t have to manually restart.',
+      'For sleep videos, explicitly state the duration (e.g. "1 Hour", "3 Hours", "All Night") - sleep viewers prefer longer tracks they don’t have to manually restart.',
   },
   {
     title: '6. Maintain Calming Visual Tone',

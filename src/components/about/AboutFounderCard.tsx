@@ -62,7 +62,7 @@ export function AboutFounderCard() {
           </div>
 
           <p>
-            Hi, I&apos;m Shiva — a software engineer and full-stack developer based in Greater Noida, India. I hold a degree in Computer Science and Engineering from Sharda University, where I specialized in modern web architectures and AI application integration.
+            Hi, I&apos;m Shiva - a software engineer and full-stack developer based in Greater Noida, India. I hold a degree in Computer Science and Engineering from Sharda University, where I specialized in modern web architectures and AI application integration.
           </p>
           <p>
             I built FreeViralKit from the ground up because I saw too many creators getting stuck paying monthly subscription fees for basic tools. As someone who writes code, studies search algorithms, and creates content, I wanted to build something genuinely useful, completely free, and lightning-fast.

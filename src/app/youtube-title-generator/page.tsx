@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { buildAbsoluteUrl } from '@/lib/site';
 import TitleGeneratorClient from '@/components/tools/TitleGeneratorClient';
-import { Sparkles } from 'lucide-react';
+import { Wand2 } from 'lucide-react';
 import Link from 'next/link';
 import RelatedTools from '@/components/RelatedTools';
 import LatestBlogPosts from '@/components/LatestBlogPosts';
@@ -13,16 +13,16 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Free AI YouTube Title Generator',
-    description: 'Generate 10 viral, SEO-optimized YouTube titles instantly with our free AI title generator. Boost CTR and rank higher — no signup required.',
+    description: 'Generate 10 viral, SEO-optimized YouTube titles instantly with our free AI title generator. Boost CTR and rank higher - no signup required.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
   title: 'Free AI YouTube Title Generator',
   description:
-    'Generate 10 viral, SEO-optimized YouTube titles instantly with our free AI title generator. Boost CTR and rank higher — no signup required.',
+    'Generate 10 viral, SEO-optimized YouTube titles instantly with our free AI title generator. Boost CTR and rank higher - no signup required.',
   openGraph: {
-    title: 'Free YouTube Title Generator — AI Viral Titles',
+    title: 'Free YouTube Title Generator - AI Viral Titles',
     description:
-      'Generate 10 viral, SEO-optimized YouTube titles instantly. Boost CTR, rank higher, and grow your channel — no signup required.',
+      'Generate 10 viral, SEO-optimized YouTube titles instantly. Boost CTR, rank higher, and grow your channel - no signup required.',
     url: buildAbsoluteUrl('/youtube-title-generator'),
     type: 'website',
     images: [
@@ -75,7 +75,7 @@ const faqItems = [
   {
     question: 'Should I use emojis in my YouTube titles?',
     answer:
-      'Emojis can increase click-through rates by up to 33% when used strategically. One or two relevant emojis make your title stand out visually in search results and suggested videos. However, avoid overloading your title with emojis — stick to 1-2 that reinforce the emotion or topic of your video.',
+      'Emojis can increase click-through rates by up to 33% when used strategically. One or two relevant emojis make your title stand out visually in search results and suggested videos. However, avoid overloading your title with emojis - stick to 1-2 that reinforce the emotion or topic of your video.',
   },
   {
     question: 'How often should I update or change my YouTube titles?',
@@ -131,12 +131,12 @@ export default function TitleGeneratorPage() {
       <main className="container mx-auto px-6 py-12 max-w-5xl relative z-10 min-h-screen">
         {/* Hero */}
         <section className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-purple-400 bg-purple-400/10 border border-purple-400/20 mb-6 uppercase tracking-wider">
-            <Sparkles className="w-4 h-4" /> AI Title Generator
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-mono font-medium text-slate-300 bg-zinc-900 border border-zinc-800 mb-6 uppercase tracking-wider">
+            <Wand2 className="w-3.5 h-3.5 text-red-500" /> Title Packaging Architecture
           </div>
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> Free YouTube Title Generator </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
-            Generate 10 viral, SEO-optimized YouTube titles with emojis and hashtags. Powered by AI — crafted for every niche.
+            Generate 10 high-CTR, SEO-optimized YouTube titles engineered for search discovery and suggested feeds. Tuned for every creator niche.
           </p>
         </section>
 
@@ -150,13 +150,13 @@ export default function TitleGeneratorPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
               <p>
-                Every minute, over 500 hours of video are uploaded to YouTube. In that ocean of content, your title is the single most powerful lever you control. It determines whether a viewer scrolls past your video or stops to click. It tells the YouTube algorithm what your content is about. And it shapes your video&apos;s entire lifecycle — from initial impressions in search results to long-term traffic from suggested videos and browse features.
+                Every minute, over 500 hours of video are uploaded to YouTube. In that ocean of content, your title is the single most powerful lever you control. It determines whether a viewer scrolls past your video or stops to click. It tells the YouTube algorithm what your content is about. And it shapes your video&apos;s entire lifecycle - from initial impressions in search results to long-term traffic from suggested videos and browse features.
               </p>
               <p>
                 YouTube&apos;s own Creator Academy confirms that <strong className="text-slate-900 dark:text-white">the title and thumbnail together account for the majority of a video&apos;s click-through rate</strong>. While you can&apos;t control which viewers see your video, you can absolutely control how compelling your title is when they do. That&apos;s why professional creators spend as much time crafting their title as they do editing the video itself.
               </p>
               <p>
-                Our free AI YouTube title generator was built to give every creator — from beginners to seasoned professionals — access to the same title strategies that drive millions of views. Instead of staring at a blank text field, you get 10 polished, niche-aware title options in seconds.
+                Our free AI YouTube title generator was built to give every creator - from beginners to seasoned professionals - access to the same title strategies that drive millions of views. Instead of staring at a blank text field, you get 10 polished, niche-aware title options in seconds.
               </p>
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function TitleGeneratorPage() {
                 1. Front-Load Your Primary Keyword
               </h3>
               <p>
-                YouTube weighs the beginning of your title more heavily than the end. If your video is about &quot;beginner yoga stretches,&quot; that phrase should appear in the first 50 characters — not buried after a clever hook. This ensures the keyword is visible even when titles are truncated on mobile devices, which account for over 70% of YouTube watch time.
+                YouTube weighs the beginning of your title more heavily than the end. If your video is about &quot;beginner yoga stretches,&quot; that phrase should appear in the first 50 characters - not buried after a clever hook. This ensures the keyword is visible even when titles are truncated on mobile devices, which account for over 70% of YouTube watch time.
               </p>
               <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white pt-2">
                 2. Use Specific Numbers and Timeframes
@@ -187,13 +187,13 @@ export default function TitleGeneratorPage() {
                 3. Trigger Curiosity Without Clickbait
               </h3>
               <p>
-                Power words like &quot;secret,&quot; &quot;mistake,&quot; &quot;actually,&quot; and &quot;nobody tells you&quot; create an information gap — the viewer feels compelled to click because they want to close that gap. The critical rule, however, is that <strong className="text-slate-900 dark:text-white">your video must deliver on the title&apos;s promise</strong>. Misleading titles tank your audience retention, which signals to YouTube that your content isn&apos;t satisfying viewers. The algorithm responds by reducing your impressions.
+                Power words like &quot;secret,&quot; &quot;mistake,&quot; &quot;actually,&quot; and &quot;nobody tells you&quot; create an information gap - the viewer feels compelled to click because they want to close that gap. The critical rule, however, is that <strong className="text-slate-900 dark:text-white">your video must deliver on the title&apos;s promise</strong>. Misleading titles tank your audience retention, which signals to YouTube that your content isn&apos;t satisfying viewers. The algorithm responds by reducing your impressions.
               </p>
               <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white pt-2">
                 4. Match Search Intent
               </h3>
               <p>
-                Every search query carries intent: the viewer wants to learn something, be entertained, solve a problem, or compare options. Your title must mirror that intent. A tutorial searcher expects &quot;How to&quot; or &quot;Step-by-Step&quot; in the title. An entertainment searcher expects drama, humor, or surprise. Mismatching intent causes viewers to bounce — even if your video is excellent — because it wasn&apos;t what they were looking for in that moment.
+                Every search query carries intent: the viewer wants to learn something, be entertained, solve a problem, or compare options. Your title must mirror that intent. A tutorial searcher expects &quot;How to&quot; or &quot;Step-by-Step&quot; in the title. An entertainment searcher expects drama, humor, or surprise. Mismatching intent causes viewers to bounce - even if your video is excellent - because it wasn&apos;t what they were looking for in that moment.
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function TitleGeneratorPage() {
                 For example, if someone searches for &quot;how to drop a few pounds before summer,&quot; YouTube understands that this means the same thing as &quot;quick weight loss tips.&quot; Your title should be written for a human first, and a search engine second. It needs to read naturally, sound conversational, and convey emotion. Our AI title generator inherently understands semantic search, ensuring the titles it outputs contain related latent semantic indexing (LSI) keywords that boost your relevance without looking spammy.
               </p>
               <p>
-                Furthermore, YouTube uses AI to analyze the visual contents of your video, your auto-generated subtitles, and your thumbnail image. Your title must perfectly align with all of these elements to create a cohesive package. If the algorithm detects a mismatch—for instance, a title promising a tutorial but a video consisting entirely of a vlog—it will rapidly suppress the video&apos;s reach.
+                Furthermore, YouTube uses AI to analyze the visual contents of your video, your auto-generated subtitles, and your thumbnail image. Your title must perfectly align with all of these elements to create a cohesive package. If the algorithm detects a mismatch-for instance, a title promising a tutorial but a video consisting entirely of a vlog-it will rapidly suppress the video&apos;s reach.
               </p>
             </div>
           </div>

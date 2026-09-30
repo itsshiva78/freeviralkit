@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: 'What makes a YouTube channel name catchy?',
     answer:
-      'Catchy names usually feature alliteration (e.g., Linus Tech Tips), rhyming, or combining two unexpected words (e.g., Smosh). They are easy to pronounce out loud without having to spell them out. A good test is the "radio test" — if you say your channel name on a podcast or radio show, will listeners know exactly how to type it into YouTube?',
+      'Catchy names usually feature alliteration (e.g., Linus Tech Tips), rhyming, or combining two unexpected words (e.g., Smosh). They are easy to pronounce out loud without having to spell them out. A good test is the "radio test" - if you say your channel name on a podcast or radio show, will listeners know exactly how to type it into YouTube?',
   },
 ];
 
@@ -161,7 +161,7 @@ export default function ChannelNameGeneratorPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
               <p>
-                The science behind naming extends far beyond basic aesthetics. The phonetics of your channel name can subconsciously impact how viewers perceive your brand. Studies in linguistics suggest that words containing &quot;hard&quot; consonants (like k, t, and p) are often perceived as more energetic, bold, and dynamic. Think of brands like &quot;TikTok&quot; or &quot;Kodak.&quot; Conversely, names with &quot;soft&quot; consonants and vowels (like l, m, and s) feel smoother, more relaxing, and friendlier—perfect for vlogs, ASMR channels, or lifestyle content.
+                The science behind naming extends far beyond basic aesthetics. The phonetics of your channel name can subconsciously impact how viewers perceive your brand. Studies in linguistics suggest that words containing &quot;hard&quot; consonants (like k, t, and p) are often perceived as more energetic, bold, and dynamic. Think of brands like &quot;TikTok&quot; or &quot;Kodak.&quot; Conversely, names with &quot;soft&quot; consonants and vowels (like l, m, and s) feel smoother, more relaxing, and friendlier-perfect for vlogs, ASMR channels, or lifestyle content.
               </p>
               <p>
                 When a user encounters your channel in their recommended feed, they make a split-second judgment based heavily on how your channel name resonates with them emotionally. If you are starting an intense gaming channel focused on competitive esports, a name like &quot;Kritik&quot; or &quot;ApexStrike&quot; hits those hard, energetic notes. On the other hand, a calming baking channel would benefit from a softer sound profile, like &quot;Lumina Bakes&quot; or &quot;Meadow Sweets.&quot;
@@ -187,7 +187,7 @@ export default function ChannelNameGeneratorPage() {
                 1. The Personal Brand (e.g., Peter McKinnon, Marques Brownlee)
               </h3>
               <p>
-                Using your real first and last name (or a variation of it) is incredibly popular. This approach is highly flexible — if you start out making tech reviews but pivot to travel vlogging three years later, your name still fits perfectly. It builds a deep parasocial relationship with the viewer because they feel they are subscribing to a person, not a corporation. Viewers connect deeply with faces and real identities, meaning your primary asset is your own personality.
+                Using your real first and last name (or a variation of it) is incredibly popular. This approach is highly flexible - if you start out making tech reviews but pivot to travel vlogging three years later, your name still fits perfectly. It builds a deep parasocial relationship with the viewer because they feel they are subscribing to a person, not a corporation. Viewers connect deeply with faces and real identities, meaning your primary asset is your own personality.
               </p>
 
               <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white pt-2">
@@ -208,7 +208,7 @@ export default function ChannelNameGeneratorPage() {
                 4. The Hybrid (e.g., Linus Tech Tips, Binging with Babish)
               </h3>
               <p>
-                Hybrid names combine the personal element of a host&apos;s name with a descriptive keyword of their niche. This is often the &quot;sweet spot&quot; for new creators. It provides the SEO benefits and immediate clarity of a descriptive name, while still anchoring the channel to a recognizable personality. It gives you the best of both worlds—discoverability and parasocial connection—making it a highly recommended format for beginners.
+                Hybrid names combine the personal element of a host&apos;s name with a descriptive keyword of their niche. This is often the &quot;sweet spot&quot; for new creators. It provides the SEO benefits and immediate clarity of a descriptive name, while still anchoring the channel to a recognizable personality. It gives you the best of both worlds-discoverability and parasocial connection-making it a highly recommended format for beginners.
               </p>
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function ChannelNameGeneratorPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
               <p>
-                You have generated the perfect name. It sounds great, fits your niche, and passes the radio test. But when you go to register it, disaster strikes—someone else already owns the YouTube handle or the .com domain. This is one of the most frustrating bottlenecks for new creators. However, there are advanced naming strategies you can use to secure your brand identity even if your exact match is taken.
+                You have generated the perfect name. It sounds great, fits your niche, and passes the radio test. But when you go to register it, disaster strikes-someone else already owns the YouTube handle or the .com domain. This is one of the most frustrating bottlenecks for new creators. However, there are advanced naming strategies you can use to secure your brand identity even if your exact match is taken.
               </p>
               <p>
                 First, consider adding powerful &quot;modifier&quot; words to your core name. If &quot;TechNova&quot; is taken, try modifiers like &quot;Studio,&quot; &quot;Media,&quot; &quot;HQ,&quot; or &quot;Official.&quot; Names like &quot;TechNovaStudio&quot; or &quot;TheTechNovaHQ&quot; are often available and still sound highly professional. These modifiers tell the audience that you are a serious entity without compromising the core brand identity you fell in love with.

@@ -9,11 +9,11 @@ import RelatedTools from '@/components/RelatedTools';
 export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
-    title: 'Free YouTube Hook Generator — AI Hooks',
+    title: 'Free YouTube Hook Generator - AI Hooks',
     description: 'Generate high-retention YouTube video hooks instantly with our free AI tool. Hook your viewers in the first 5 seconds to increase watch time and views.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'Free YouTube Hook Generator — AI Hooks',
+  title: 'Free YouTube Hook Generator - AI Hooks',
   description: 'Generate high-retention YouTube video hooks instantly with our free AI tool. Hook your viewers in the first 5 seconds to increase watch time and views.',
   openGraph: {
     title: 'YouTube Hook Generator - Get 5 AI Script Hooks Free',
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     question: 'How does this AI Hook Generator work?',
-    answer: 'Our tool uses advanced language models trained on high-performing YouTube scripts. By analyzing the psychological triggers that retain attention—such as the Curiosity Gap, the Problem/Agitation method, and the Direct Promise—the AI crafts 5 unique, proven hook formulas tailored precisely to your video topic.',
+    answer: 'Our tool uses advanced language models trained on high-performing YouTube scripts. By analyzing the psychological triggers that retain attention-such as the Curiosity Gap, the Problem/Agitation method, and the Direct Promise-the AI crafts 5 unique, proven hook formulas tailored precisely to your video topic.',
   },
   {
     question: 'Is the YouTube Hook Generator free to use?',
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     question: 'Should my hook exactly match my title?',
-    answer: 'No, you should never read your title word-for-word as your hook. Viewers already read the title—that\'s why they clicked! Instead, your hook should complement the title, raise the stakes, or immediately plunge the viewer into the action.',
+    answer: 'No, you should never read your title word-for-word as your hook. Viewers already read the title-that\'s why they clicked! Instead, your hook should complement the title, raise the stakes, or immediately plunge the viewer into the action.',
   },
   {
     question: 'What is a "Curiosity Loop"?',
@@ -95,7 +95,7 @@ export default function HookGeneratorPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-rose-500 bg-rose-500/10 border border-rose-500/20 mb-6 uppercase tracking-wider">
             <Target className="w-4 h-4" /> AI Hook Generator
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Hook Generator — Grab Attention Instantly </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Hook Generator - Grab Attention Instantly </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             The first 5 seconds of your video determine if viewers stay or scroll away. Enter your video topic and generate 5 highly engaging, retention-optimized script hooks instantly.
           </p>
@@ -193,7 +193,7 @@ export default function HookGeneratorPage() {
                 You have to mathematically earn the right to introduce yourself. Hit them with a powerful, fast-paced hook first to lock in their attention. Validate the click. Once they are hooked and the curiosity loop is open, <em>then</em> you can roll a rapid, 3-second visual intro if you absolutely must, and quickly introduce your credentials before getting directly into the meat of the content. Never put the introduction before the hook.
               </p>
               <p>
-                Similarly, another massive mistake is reading your title aloud as your hook. The viewer just read your title—that is literally why they clicked! Repeating it word-for-word adds zero new information and instantly bores them. Your hook should always complement the title, raise the stakes significantly, or plunge the viewer directly in media res (into the middle of the action).
+                Similarly, another massive mistake is reading your title aloud as your hook. The viewer just read your title-that is literally why they clicked! Repeating it word-for-word adds zero new information and instantly bores them. Your hook should always complement the title, raise the stakes significantly, or plunge the viewer directly in media res (into the middle of the action).
               </p>
             </div>
           </div>

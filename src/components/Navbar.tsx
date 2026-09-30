@@ -26,7 +26,7 @@ import {
   ChevronDown,
   type LucideIcon,
 } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '@/components/Logo';
 
@@ -55,12 +55,12 @@ interface MegaMenuGroup {
 
 const toolsMegaMenu: Record<string, MegaMenuGroup> = {
   flagship: {
-    category: '⚡ Flagship & SEO',
+    category: 'Flagship & Metadata',
     icon: Sparkles,
-    color: 'text-cyan-400',
+    color: 'text-red-500',
     tools: [
-      { href: '/youtube-thumbnail-downloader', label: 'Thumbnail Downloader', desc: '4K Ultra HD & hidden tag extractor', icon: ImageIcon, badge: '500k+' },
-      { href: '/youtube-money-calculator', label: 'Money / RPM Calculator', desc: 'Real 2026 niche revenue simulator', icon: DollarSign, badge: '300k+' },
+      { href: '/youtube-thumbnail-downloader', label: 'Thumbnail Downloader', desc: '4K Ultra HD & hidden tag extractor', icon: ImageIcon },
+      { href: '/youtube-money-calculator', label: 'Money / RPM Calculator', desc: 'Real 2026 niche revenue simulator', icon: DollarSign },
       { href: '/youtube-ab-test-generator', label: '3-Way A/B Test Pack', desc: 'YouTube Studio test & compare variants', icon: Wand2, badge: 'PRO' },
       { href: '/youtube-realtime-title-generator', label: 'Real-Time Movie & Live AI', desc: 'Verified live facts & cast data', icon: Clapperboard, badge: 'LIVE' },
       { href: '/youtube-title-generator', label: 'Title Generator', desc: '10 viral high-CTR titles', icon: Wand2 },
@@ -70,9 +70,9 @@ const toolsMegaMenu: Record<string, MegaMenuGroup> = {
     ],
   },
   retention: {
-    category: '🎬 Retention & Production',
+    category: 'Retention & Scripts',
     icon: Zap,
-    color: 'text-indigo-400',
+    color: 'text-zinc-400',
     tools: [
       { href: '/youtube-hook-generator', label: 'Retention Hook Cockpit', desc: '4-beat 30s retention script hooks', icon: Zap },
       { href: '/youtube-shorts-idea-generator', label: 'Shorts Idea Generator', desc: 'Viral 9:16 vertical video outlines', icon: Sparkles },
@@ -85,9 +85,9 @@ const toolsMegaMenu: Record<string, MegaMenuGroup> = {
     ],
   },
   niches: {
-    category: '🎯 Niche AI Studios',
+    category: 'Niche Category Studios',
     icon: Compass,
-    color: 'text-purple-400',
+    color: 'text-zinc-400',
     tools: [
       { href: '/tools/youtube-title-generator-for-finance', label: 'Finance & Wealth', desc: 'Investing & crypto titles', icon: DollarSign },
       { href: '/tools/youtube-title-generator-for-ai-and-tech', label: 'AI & Tech Tools', desc: 'Software & gadget titles', icon: Cpu },
@@ -108,6 +108,7 @@ export default function Navbar() {
   const [toolsOpen, setToolsOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
+  const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -154,8 +155,17 @@ export default function Navbar() {
             <div
               key={link.href}
               className="relative group"
-              onMouseEnter={() => link.label === 'Tools' && setToolsOpen(true)}
-              onMouseLeave={() => link.label === 'Tools' && setToolsOpen(false)}
+              onMouseEnter={() => {
+                if (link.label === 'Tools') {
+                  hoverTimeoutRef.current = setTimeout(() => setToolsOpen(true), 150);
+                }
+              }}
+              onMouseLeave={() => {
+                if (link.label === 'Tools') {
+                  if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+                  setToolsOpen(false);
+                }
+              }}
             >
               <Link
                 href={link.href}
@@ -233,11 +243,11 @@ export default function Navbar() {
                         {/* Mega-Menu Bottom Action Bar */}
                         <div className="p-4 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs px-6">
                           <span className="text-slate-500 dark:text-slate-400 font-medium">
-                            ⚡ 100% Free Multi-AI YouTube Creator Tools
+                            Free YouTube Metadata &amp; Creator Suite
                           </span>
                           <Link
                             href="/tools"
-                            className="font-bold text-cyan-600 dark:text-cyan-400 hover:underline flex items-center gap-1.5"
+                            className="font-bold text-red-500 hover:text-red-400 hover:underline flex items-center gap-1.5"
                           >
                             Explore All 30+ Tools <ArrowRight className="w-4 h-4" />
                           </Link>
@@ -249,10 +259,6 @@ export default function Navbar() {
               )}
             </div>
           ))}
-
-          <span className="ml-3 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-purple-500/10 border border-purple-500/20 text-purple-400">
-            Groq AI
-          </span>
 
           <a
             href="https://www.producthunt.com/products/freeviralkit?utm_source=badge-follow&utm_medium=badge&utm_campaign=badge-freeviralkit"
@@ -288,22 +294,6 @@ export default function Navbar() {
 
         {/* Mobile Controls */}
         <div className="flex items-center gap-2 md:hidden">
-          <a
-            href="https://www.producthunt.com/products/freeviralkit?utm_source=badge-follow&utm_medium=badge&utm_campaign=badge-freeviralkit"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-105 active:scale-[0.96] transition-transform duration-150 inline-flex items-center shrink-0"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1223625&theme=${theme === 'dark' ? 'dark' : 'light'}&size=small`}
-              alt="FreeViralKit - Product Hunt"
-              width="86"
-              height="32"
-              loading="lazy"
-              className="w-[86px] h-[32px]"
-            />
-          </a>
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-800 active:scale-[0.92] transition-all duration-75 text-slate-500 hover:text-slate-900 dark:text-slate-50 dark:hover:text-white flex items-center justify-center cursor-pointer"

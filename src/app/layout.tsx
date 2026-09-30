@@ -17,11 +17,11 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 export const metadata: Metadata = {
   metadataBase: getBaseUrl(),
   title: {
-    default: 'FreeViralKit — Free AI YouTube SEO Optimizer',
+    default: 'FreeViralKit - YouTube SEO Optimizer & Metadata Engine',
     template: '%s | FreeViralKit',
   },
   description:
-    'Free AI YouTube SEO tool. Generate viral titles, descriptions, hashtags & tags. Boost your video views and rankings instantly.',
+    'Free YouTube SEO generator. Generate viral titles, descriptions, hashtags, and Studio tags. Maximize video discoverability and search ranking.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32' },
@@ -53,23 +53,23 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: buildAbsoluteUrl('/'),
     siteName: 'FreeViralKit',
-    title: 'FreeViralKit — Free AI YouTube SEO Optimizer',
+    title: 'FreeViralKit - YouTube SEO Optimizer & Metadata Engine',
     description:
-      'Free AI YouTube SEO tool. Generate viral titles, descriptions, hashtags & tags. Boost your video views and rankings instantly.',
+      'Free YouTube SEO generator. Generate viral titles, descriptions, hashtags, and Studio tags. Maximize video discoverability and search ranking.',
     images: [
       {
         url: buildAbsoluteUrl('/banner.png'),
         width: 1200,
         height: 630,
-        alt: 'FreeViralKit — Free AI YouTube SEO Optimizer',
+        alt: 'FreeViralKit - YouTube SEO Optimizer & Metadata Engine',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FreeViralKit — Free AI YouTube SEO Optimizer',
+    title: 'FreeViralKit - YouTube SEO Optimizer & Metadata Engine',
     description:
-      'Free AI YouTube SEO tool. Generate viral titles, descriptions, hashtags & tags. Boost your video views and rankings instantly.',
+      'Free YouTube SEO generator. Generate viral titles, descriptions, hashtags, and Studio tags. Maximize video discoverability and search ranking.',
     creator: siteConfig.xHandle || '@FreeViralKit',
     site: siteConfig.xHandle || '@FreeViralKit',
     images: [buildAbsoluteUrl('/banner.png')],
@@ -93,6 +93,11 @@ export const metadata: Metadata = {
     : undefined,
   other: {
     'google-adsense-account': 'ca-pub-7893678534155164',
+    'saasrocket-verify': 'saasrocket-verify=4e67e032859b864899022b0f8f40d6b383fb0076564d557098ecbde1dda28006',
+    'directree-verify': [
+      'directree-verify=598ea56db92aa6d9e23bdb9895b408de',
+      '598ea56db92aa6d9e23bdb9895b408de',
+    ],
   },
 };
 
@@ -158,6 +163,8 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <script
+          id="theme-initializer"
+          type="text/javascript"
           suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `
@@ -175,14 +182,16 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Preconnect to external domains — saves 200-400ms on first load */}
+        {/* Preconnect to external domains - saves 200-400ms on first load */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <script
+          id="root-jsonld"
           type="application/ld+json"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
         />
       </head>
@@ -196,7 +205,7 @@ export default function RootLayout({
             </div>
           </div>
         </noscript>
-        {/* Background ambient lighting removed — template-y aesthetic */}
+        {/* Background ambient lighting removed - template-y aesthetic */}
 
         <ConsentProvider>
           <ToastProvider>

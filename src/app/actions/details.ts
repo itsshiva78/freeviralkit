@@ -23,7 +23,7 @@ Write an authentic, highly engaging pinned comment for a YouTube video titled: "
 - Length: Exactly 2-3 short, punchy lines.
 - Include 1-2 natural emojis (e.g. 👇, 💬, 🚀).
 - End with a friendly, conversational invitation (e.g. "Be honest 👇", "What would you have done? Let me know below").
-- Sound like the creator speaking directly from their heart — NOT a bot.
+- Sound like the creator speaking directly from their heart - NOT a bot.
 - NEVER use phrases like "Pin this" or "Here is my pinned comment".
 </rules>
 

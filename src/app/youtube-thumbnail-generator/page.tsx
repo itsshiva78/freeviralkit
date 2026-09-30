@@ -95,7 +95,7 @@ export default function ThumbnailGeneratorPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-amber-500 bg-amber-500/10 border border-amber-500/20 mb-6 uppercase tracking-wider">
             <ImageIcon className="w-4 h-4" /> AI Thumbnail Concepts
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Thumbnail Idea Generator — Maximize Your CTR </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Thumbnail Idea Generator - Maximize Your CTR </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             The best thumbnails tell a visual story and invoke curiosity. Enter your video topic, and our AI will generate 3 proven thumbnail concepts, including the exact text overlay to use.
           </p>
@@ -170,7 +170,7 @@ export default function ThumbnailGeneratorPage() {
                 Because the YouTube interface is heavily reliant on White, Black, and Red, you want to avoid using these as the primary background colors for your thumbnails. If you use a white background in light mode, your thumbnail blends into the platform. If you use a black background in dark mode, it disappears. Instead, rely on vibrant colors that break the UI&apos;s pattern. Bright yellow, neon green, cyan, and deep purple are excellent choices because they create immediate visual disruption.
               </p>
               <p>
-                Furthermore, different colors evoke different psychological responses. Yellow and orange communicate high energy, excitement, and urgency—which is why they are heavily favored by gaming and challenge creators. Blue communicates trust and authority, making it the dominant choice for tech reviews, educational content, and personal finance videos. Green often implies money, growth, or a &quot;go&quot; signal. By intentionally selecting your color palette, you are subliminally communicating the vibe of your video before the viewer even reads a single word.
+                Furthermore, different colors evoke different psychological responses. Yellow and orange communicate high energy, excitement, and urgency-which is why they are heavily favored by gaming and challenge creators. Blue communicates trust and authority, making it the dominant choice for tech reviews, educational content, and personal finance videos. Green often implies money, growth, or a &quot;go&quot; signal. By intentionally selecting your color palette, you are subliminally communicating the vibe of your video before the viewer even reads a single word.
               </p>
             </div>
           </div>

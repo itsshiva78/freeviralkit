@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Free AI YouTube title generator for faceless automation channels and video essayists. Generate high-RPM titles for business, true crime, tech, and history documentaries.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'YouTube Title Generator for Faceless Channels — High RPM Titles',
+  title: 'YouTube Title Generator for Faceless Channels - High RPM Titles',
   description:
     'Free AI YouTube title generator for faceless channels. Create click-worthy documentary titles for business exposés, true crime mysteries, and tech video essays.',
   alternates: {

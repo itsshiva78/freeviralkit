@@ -91,7 +91,7 @@ export default function ChapterGeneratorPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-indigo-500 bg-indigo-500/10 border border-indigo-500/20 mb-6 uppercase tracking-wider">
             <Clock className="w-4 h-4" /> AI Chapter Generator
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Chapter Generator — Automate Timestamps </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube Chapter Generator - Automate Timestamps </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             YouTube chapters improve user experience and boost your video&apos;s search ranking on Google. Paste your script or bullet points below, and our AI will automatically generate perfectly formatted timestamps for your description.
           </p>

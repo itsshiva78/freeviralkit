@@ -95,7 +95,7 @@ export function BannerAd({ slot, className = '' }: { slot: string; className?: s
 }
 
 /**
- * AdSense head script — inject into layout.
+ * AdSense head script - inject into layout.
  * NOTE: With ConsentGatedScripts, this is no longer used directly in layout, 
  * but kept for backward compatibility if used elsewhere.
  */

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Copy, CheckCircle2, ChevronRight, RotateCcw, Loader2, Sparkles } from 'lucide-react';
+import { Copy, CheckCircle2, ChevronRight, RotateCcw, Loader2 } from 'lucide-react';
 
 interface HomeTitleListProps {
   titles: string[];
@@ -23,11 +23,11 @@ export function HomeTitleList({
   onCopy,
 }: HomeTitleListProps) {
   const charColor = (len: number) =>
-    len >= 50 && len <= 70
+    len >= 30 && len <= 70
       ? 'text-green-600 dark:text-green-400'
-      : len < 50
-      ? 'text-yellow-600 dark:text-yellow-400'
-      : 'text-red-600 dark:text-red-400';
+      : len > 80
+      ? 'text-red-600 dark:text-red-400'
+      : 'text-yellow-600 dark:text-yellow-400';
 
   return (
     <motion.div
@@ -36,16 +36,28 @@ export function HomeTitleList({
       className="space-y-4"
     >
       <div className="flex items-center justify-between">
-        <h2 className="font-display text-xl font-bold text-slate-900 dark:text-white">
-          Step 1: Choose Your Viral Title
+        <h2 className="font-display text-lg md:text-xl font-bold text-slate-900 dark:text-white">
+          Select Title Candidate
         </h2>
-        <button
-          onClick={onRegenerate}
-          disabled={isGeneratingTitles}
-          className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 flex items-center gap-1.5 cursor-pointer active:scale-[0.96] transition-all"
-        >
-          <RotateCcw className="w-3.5 h-3.5" /> Regenerate 10 Titles
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              const allTitles = titles.join('\n');
+              onCopy(allTitles, 'all-titles');
+            }}
+            className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-slate-300 flex items-center gap-1.5 cursor-pointer active:scale-[0.96] transition-all font-mono"
+          >
+            <Copy className="w-3.5 h-3.5" /> Copy All 10
+          </button>
+          <button
+            onClick={onRegenerate}
+            disabled={isGeneratingTitles}
+            className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-slate-300 flex items-center gap-1.5 cursor-pointer active:scale-[0.96] transition-all font-mono"
+          >
+            <RotateCcw className="w-3.5 h-3.5" /> Regenerate 10
+          </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 gap-3">
@@ -60,8 +72,8 @@ export function HomeTitleList({
               onClick={() => onSelectTitle(title)}
               className={`glass-card rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer transition-all ease-spring duration-200 active:scale-[0.99] ${
                 isSelected
-                  ? 'border-purple-500/80 ring-2 ring-purple-500/25 bg-purple-50/50 dark:bg-purple-950/30 dark:border-purple-500/60 shadow-lg'
-                  : 'hover:border-purple-400/50 hover:-translate-y-[1px] hover:bg-slate-50 dark:bg-[#121216] dark:hover:bg-[#17171d] dark:hover:border-purple-500/40 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07)]'
+                  ? 'border-red-500/80 ring-2 ring-red-500/20 bg-red-500/[0.04] dark:bg-red-950/20 dark:border-red-500/60 shadow-lg'
+                  : 'hover:border-zinc-400 dark:hover:border-zinc-700 hover:-translate-y-[1px] hover:bg-slate-50 dark:bg-[#121216] dark:hover:bg-[#17171d] dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07)]'
               }`}
             >
               <div className="flex-1">
@@ -73,12 +85,12 @@ export function HomeTitleList({
                     {title.length} chars
                   </span>
                   <span className="text-slate-400">•</span>
-                  <span className="text-slate-500 dark:text-slate-400 text-xs">
-                    {title.length >= 50 && title.length <= 70
-                      ? '✓ Ideal YouTube Search Length'
-                      : title.length > 70
-                      ? '⚠️ May truncate on mobile'
-                      : 'Short keyword title'}
+                  <span className="text-slate-500 dark:text-slate-400 text-xs font-mono">
+                    {title.length >= 30 && title.length <= 70
+                      ? 'Good length for YouTube'
+                      : title.length > 80
+                      ? 'May get cut off on mobile'
+                      : 'A bit short, but can still work'}
                   </span>
                 </div>
               </div>
@@ -103,19 +115,23 @@ export function HomeTitleList({
                 <button
                   type="button"
                   onClick={() => onSelectTitle(title)}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shadow-md ${
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
                     isSelected
-                      ? 'bg-purple-600 text-white shadow-purple-600/30'
-                      : 'bg-purple-500/10 hover:bg-purple-600 hover:text-white text-purple-600 dark:text-purple-400'
+                      ? 'btn-primary'
+                      : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/60 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-950 dark:hover:text-white active:scale-[0.97]'
                   }`}
                 >
                   {isSelected && isGeneratingDetails ? (
                     <>
                       <Loader2 className="w-3.5 h-3.5 animate-spin" /> Packaging...
                     </>
+                  ) : isSelected ? (
+                    <>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-white" /> Active Package
+                    </>
                   ) : (
                     <>
-                      <Sparkles className="w-3.5 h-3.5" /> Full SEO Pack <ChevronRight className="w-3.5 h-3.5" />
+                      Package This Title <ChevronRight className="w-3.5 h-3.5 opacity-60" />
                     </>
                   )}
                 </button>

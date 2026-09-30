@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: [buildAbsoluteUrl('/banner.png')],
   },
   openGraph: {
-    title: 'FreeViralKit — Free AI YouTube SEO & Title Tool',
+    title: 'FreeViralKit - Free AI YouTube SEO & Title Tool',
     description:
       'Free YouTube SEO tool. Generate viral titles, descriptions, hashtags, and tags instantly. No signup required to boost your channel.',
     url: buildAbsoluteUrl('/'),
@@ -68,36 +68,37 @@ export default function HomePage() {
     },
   };
 
+  const pageJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [faqJsonLd, softwareJsonLd],
+  };
+
   return (
-    <>
+    <main className="container mx-auto px-4 py-8 max-w-6xl space-y-20">
       <script
+        id="homepage-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }}
       />
 
-      <main className="container mx-auto px-4 py-8 max-w-6xl space-y-20">
-        {/* Flagship Hero & Value Prop */}
-        <HomeHero />
+      {/* Flagship Hero & Value Prop */}
+      <HomeHero />
 
-        {/* Flagship Generator Client Interactive Cockpit */}
-        <HomePageClient />
+      {/* Flagship Generator Client Interactive Cockpit */}
+      <HomePageClient />
 
-        {/* Tools Quick Access Directory */}
-        <HomeToolsQuickAccess />
+      {/* Tools Quick Access Directory */}
+      <HomeToolsQuickAccess />
 
-        {/* SEO Masterclass & Value Props */}
-        <HomeSeoMasterclass />
+      {/* SEO Masterclass & Value Props */}
+      <HomeSeoMasterclass />
 
-        {/* Featured Editorial Blog Guides */}
-        <HomeBlogShowcase />
+      {/* Featured Editorial Blog Guides */}
+      <HomeBlogShowcase />
 
-        {/* Homepage SEO FAQ Accordion */}
-        <HomeFaqAccordion />
-      </main>
-    </>
+      {/* Homepage SEO FAQ Accordion */}
+      <HomeFaqAccordion />
+    </main>
   );
 }

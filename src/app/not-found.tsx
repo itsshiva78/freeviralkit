@@ -34,6 +34,9 @@ export default function NotFound() {
     >
       {/* Explicitly pause any automated AdSense requests on error pages */}
       <script
+        id="adsense-pause-script"
+        type="text/javascript"
+        suppressHydrationWarning
         dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== 'undefined') {

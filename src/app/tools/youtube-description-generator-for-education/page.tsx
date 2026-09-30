@@ -61,12 +61,12 @@ const descriptionStructure = [
   {
     step: 'Resources & Links',
     description: 'Link to practice worksheets, related lessons, your course page, or study materials mentioned in the video.',
-    example: '"📝 Download the practice worksheet: [link]\\n📚 Related lesson — Linear Equations: [link]"',
+    example: '"📝 Download the practice worksheet: [link]\\n📚 Related lesson - Linear Equations: [link]"',
   },
   {
     step: 'Call to Action',
     description: 'Encourage students to subscribe, comment with questions, or share with classmates who need help.',
-    example: '"👍 Like if this helped! 💬 Drop your doubts in the comments — I reply to every question. 🔔 Subscribe for daily lessons."',
+    example: '"👍 Like if this helped! 💬 Drop your doubts in the comments - I reply to every question. 🔔 Subscribe for daily lessons."',
   },
   {
     step: 'Hashtags',
@@ -77,7 +77,7 @@ const descriptionStructure = [
 const exampleDescriptions = [
   {
     type: 'Math Tutorial',
-    preview: 'Learn how to solve quadratic equations using 3 different methods — the quadratic formula, factoring, and completing the square. Step-by-step walkthrough with 5 practice problems. Perfect for Class 10 and SAT prep.',
+    preview: 'Learn how to solve quadratic equations using 3 different methods - the quadratic formula, factoring, and completing the square. Step-by-step walkthrough with 5 practice problems. Perfect for Class 10 and SAT prep.',
   },
   {
     type: 'Science Lecture',
@@ -97,7 +97,7 @@ const tips = [
   {
     title: 'Write at least 200 words',
     description:
-      'YouTube gives more weight to videos with detailed descriptions. Think of it as a mini lesson plan — summarize the topic, list what students will learn, and include relevant terminology.',
+      'YouTube gives more weight to videos with detailed descriptions. Think of it as a mini lesson plan - summarize the topic, list what students will learn, and include relevant terminology.',
   },
   {
     title: 'Always add timestamps',
@@ -163,7 +163,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Description Generator for Education — FreeViralKit',
+      name: 'YouTube Description Generator for Education - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-description-generator-for-education',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -249,13 +249,13 @@ export default function EducationDescriptionLandingPage() {
             Why Descriptions Matter for Educational Content
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Educational YouTube videos compete in one of the most search-driven categories on the platform. Students don&apos;t browse — they <strong className="text-slate-900 dark:text-slate-50">search</strong>. &ldquo;How to solve quadratic equations,&rdquo; &ldquo;photosynthesis explained simply,&rdquo; &ldquo;IELTS speaking tips.&rdquo; Your description is what tells YouTube&apos;s algorithm whether your video is the right answer.
+            Educational YouTube videos compete in one of the most search-driven categories on the platform. Students don&apos;t browse - they <strong className="text-slate-900 dark:text-slate-50">search</strong>. &ldquo;How to solve quadratic equations,&rdquo; &ldquo;photosynthesis explained simply,&rdquo; &ldquo;IELTS speaking tips.&rdquo; Your description is what tells YouTube&apos;s algorithm whether your video is the right answer.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
             A detailed, well-structured description helps YouTube understand your lesson&apos;s topic, connect it to relevant searches, and recommend it to students who need exactly what you teach. Yet most educators skip the description entirely or write a single line.
           </p>
           <p className="text-slate-600 dark:text-slate-400">
-            Our AI generates complete, structured descriptions specifically designed for educational content — with learning objectives, content summaries, and proper keyword placement that drives organic traffic from students worldwide.
+            Our AI generates complete, structured descriptions specifically designed for educational content - with learning objectives, content summaries, and proper keyword placement that drives organic traffic from students worldwide.
           </p>
         </section>
         {/* Description structure */}
@@ -320,15 +320,15 @@ export default function EducationDescriptionLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your lesson topic</strong> — describe what your educational video covers and the target audience.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your lesson topic</strong> - describe what your educational video covers and the target audience.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates a complete description</strong> — with learning objectives, content summary, keywords, and calls to action.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates a complete description</strong> - with learning objectives, content summary, keywords, and calls to action.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Add timestamps and publish</strong> — customize with your specific chapter markers and paste into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Add timestamps and publish</strong> - customize with your specific chapter markers and paste into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

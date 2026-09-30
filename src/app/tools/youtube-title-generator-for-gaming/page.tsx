@@ -62,7 +62,7 @@ const examplesByCategory = [
   {
     category: 'Rankings & Reviews',
     examples: [
-      'I Tried Every Weapon in GTA 5 — Here Is the Best One',
+      'I Tried Every Weapon in GTA 5 - Here Is the Best One',
       'Top 10 Hidden Tricks in Roblox You Missed',
       'Ranking Every Minecraft Biome from Worst to Best',
     ],
@@ -70,7 +70,7 @@ const examplesByCategory = [
   {
     category: 'Let\'s Plays & Series',
     examples: [
-      'Starting a New Minecraft Survival World — Day 1',
+      'Starting a New Minecraft Survival World - Day 1',
       'My First Time Playing Elden Ring (This Game Is BRUTAL)',
     ],
   },
@@ -94,12 +94,12 @@ const tips = [
   {
     title: 'Add numbers when possible',
     description:
-      'Titles with numbers get 36% more clicks on average. "Top 10", "5 Tips", "100 Days" — numbers create clear expectations and draw the eye.',
+      'Titles with numbers get 36% more clicks on average. "Top 10", "5 Tips", "100 Days" - numbers create clear expectations and draw the eye.',
   },
   {
     title: 'Create an information gap',
     description:
-      'Phrases like "What Happened Next Shocked Me" or "You Won\'t Believe This" create curiosity. But always deliver on the promise — misleading clickbait kills watch time.',
+      'Phrases like "What Happened Next Shocked Me" or "You Won\'t Believe This" create curiosity. But always deliver on the promise - misleading clickbait kills watch time.',
   },
   {
     title: 'Match trending search terms',
@@ -150,7 +150,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Title Generator for Gaming — FreeViralKit',
+      name: 'YouTube Title Generator for Gaming - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-title-generator-for-gaming',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -176,7 +176,7 @@ export default function GamingTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Gaming </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Generate high-CTR gaming titles for walkthroughs, shorts, ranked gameplay, tutorials, and challenge videos. Powered by AI, built for gamers.
+            Generate high-CTR gaming titles for walkthroughs, shorts, ranked gameplay, tutorials, and challenge videos. Built specifically for gaming creators.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="gaming" />

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     'Generate SEO-optimized YouTube descriptions with keyword placement, timestamps, and CTAs instantly. Free AI description generator.',
   openGraph: {
-    title: 'Free YouTube Description Generator — AI SEO Tool',
+    title: 'Free YouTube Description Generator - AI SEO Tool',
     description:
       'Generate SEO-optimized YouTube descriptions with proper keyword placement, timestamps, and calls-to-action instantly.',
     url: buildAbsoluteUrl('/youtube-description-generator'),
@@ -145,7 +145,7 @@ export default function DescriptionGeneratorPage() {
                 When creators upload a new video, they typically obsess over the title and the thumbnail. By the time they reach the description box, fatigue sets in. They drop in a quick sentence, paste their social links, and hit publish. This is a massive missed opportunity. The YouTube description box is an <strong className="text-slate-900 dark:text-white">untapped SEO goldmine</strong> that the algorithm relies heavily upon to understand, categorize, and rank your content. It provides the crucial text data the machine learning systems need to comprehend the nuance of your video.
               </p>
               <p>
-                YouTube allows up to 5,000 characters in the description. This isn&apos;t arbitrary — it is an invitation to provide deep context. YouTube&apos;s machine learning algorithms crawl this text to determine exactly what your video is about, how it answers user queries, and which other videos it should be suggested next to. A video with a 300-word, highly relevant description will almost always outrank a similar video with only a one-sentence summary, especially for highly competitive search terms.
+                YouTube allows up to 5,000 characters in the description. This isn&apos;t arbitrary - it is an invitation to provide deep context. YouTube&apos;s machine learning algorithms crawl this text to determine exactly what your video is about, how it answers user queries, and which other videos it should be suggested next to. A video with a 300-word, highly relevant description will almost always outrank a similar video with only a one-sentence summary, especially for highly competitive search terms.
               </p>
               <p>
                 Furthermore, the description doesn&apos;t just serve YouTube; it serves Google Search. Videos with well-written, keyword-rich descriptions are far more likely to appear on the first page of Google search results in the dedicated "Video" carousel. Using a <strong className="text-slate-900 dark:text-white">free YouTube description generator</strong> ensures you don&apos;t miss this critical optimization step. Instead of starting from a blank page, you get a structured, algorithm-friendly draft that perfectly balances natural language with strategic keyword placement.
@@ -167,7 +167,7 @@ export default function DescriptionGeneratorPage() {
                 Affiliate marketing is one of the most common ways creators monetize their descriptions. By explicitly listing the camera gear, software, or tools used in the video, and pairing those items with affiliate links, you can generate significant passive income. The key is context: a random list of links will be ignored, but a dedicated "My Gear" section formatted properly within a comprehensive description will consistently generate clicks.
               </p>
               <p>
-                The description is also your best tool for building an email list or driving traffic to your own website. By including a clear, compelling Call to Action (CTA) paired with a lead magnet—such as a free checklist, a downloadable template, or an exclusive newsletter—you convert rented YouTube audience members into owned audience members. Our AI description generator helps you naturally weave these CTAs into the text so they feel like a helpful resource rather than a desperate sales pitch.
+                The description is also your best tool for building an email list or driving traffic to your own website. By including a clear, compelling Call to Action (CTA) paired with a lead magnet-such as a free checklist, a downloadable template, or an exclusive newsletter-you convert rented YouTube audience members into owned audience members. Our AI description generator helps you naturally weave these CTAs into the text so they feel like a helpful resource rather than a desperate sales pitch.
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function DescriptionGeneratorPage() {
                 1. The "Above the Fold" Hook (First 150 Characters)
               </h3>
               <p>
-                The first two to three lines of your description are the most important. This text is visible in YouTube search results, Google search results, and above the "Show More" button on the video page. Your primary target keyword <strong className="text-slate-900 dark:text-white">must</strong> appear naturally within the first 25 words. Treat this section like an extension of your title — it should hook the reader, summarize the core value proposition of the video, and compel them to click. If this section is boring or irrelevant, you will lose search traffic.
+                The first two to three lines of your description are the most important. This text is visible in YouTube search results, Google search results, and above the "Show More" button on the video page. Your primary target keyword <strong className="text-slate-900 dark:text-white">must</strong> appear naturally within the first 25 words. Treat this section like an extension of your title - it should hook the reader, summarize the core value proposition of the video, and compel them to click. If this section is boring or irrelevant, you will lose search traffic.
               </p>
 
               <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white pt-2">

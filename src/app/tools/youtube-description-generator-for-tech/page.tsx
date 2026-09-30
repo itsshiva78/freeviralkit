@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'YouTube Description Generator for Tech Videos',
     description:
-      'Generate structured, SEO-friendly descriptions for tech YouTube videos. Cover specs, timestamps, affiliate links, and CTAs — all free.',
+      'Generate structured, SEO-friendly descriptions for tech YouTube videos. Cover specs, timestamps, affiliate links, and CTAs - all free.',
     type: 'website',
     url: buildAbsoluteUrl('/tools/youtube-description-generator-for-tech'),
     images: [
@@ -49,20 +49,20 @@ const examplesByCategory = [
     category: 'Product Reviews',
     examples: [
       'In this video, I review the Samsung Galaxy S26 Ultra after 30 days of real-world use. I cover camera quality, battery life, display performance, and whether it\'s worth the $1,199 price tag.',
-      'Full review of the MacBook Air M4 — benchmarks, thermals, real-world performance, and who should buy it vs. the MacBook Pro.',
+      'Full review of the MacBook Air M4 - benchmarks, thermals, real-world performance, and who should buy it vs. the MacBook Pro.',
     ],
   },
   {
     category: 'Unboxing & First Impressions',
     examples: [
       'Unboxing the Sony WH-1000XM6 noise-cancelling headphones! First impressions on build quality, comfort, ANC performance, and sound signature.',
-      'I just received the Nothing Phone 3 — here\'s my unboxing, setup walkthrough, and first 24-hour impressions.',
+      'I just received the Nothing Phone 3 - here\'s my unboxing, setup walkthrough, and first 24-hour impressions.',
     ],
   },
   {
     category: 'Comparisons & Versus',
     examples: [
-      'iPhone 17 Pro vs Samsung Galaxy S26 Ultra — the ultimate camera, performance, and battery comparison. Which flagship wins in 2026?',
+      'iPhone 17 Pro vs Samsung Galaxy S26 Ultra - the ultimate camera, performance, and battery comparison. Which flagship wins in 2026?',
       'M4 MacBook Pro vs Dell XPS 16: Which laptop should you actually buy? I test both side-by-side.',
     ],
   },
@@ -70,7 +70,7 @@ const examplesByCategory = [
     category: 'Tutorials & How-To',
     examples: [
       'Step-by-step guide to building a budget gaming PC under $800 in 2026. Parts list, assembly walkthrough, benchmarks, and tips for first-time builders.',
-      'How to set up a home network with mesh Wi-Fi — complete beginner tutorial covering hardware, placement, and speed optimization.',
+      'How to set up a home network with mesh Wi-Fi - complete beginner tutorial covering hardware, placement, and speed optimization.',
     ],
   },
 ];
@@ -180,7 +180,7 @@ export default function TechDescriptionLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Description Generator for Tech </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Create structured, SEO-optimized descriptions for product reviews, unboxings, comparisons, and tech tutorials. Powered by AI, always free.
+            Create structured, SEO-optimized descriptions for product reviews, unboxings, comparisons, and tech tutorials. Formatted with timestamps and affiliate blocks, always free.
           </p>
           <div className="text-left mt-8">
             <DescriptionGeneratorClient niche="tech" />
@@ -249,7 +249,7 @@ export default function TechDescriptionLandingPage() {
             Tech viewers are researchers. They search for specific product names, model numbers, and comparison queries before making a purchase decision. Your description is where YouTube (and Google) finds those keywords.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            A well-structured tech description doesn&apos;t just help with SEO — it builds viewer trust. When someone sees organized timestamps, clear product links, and detailed specs in your description, they know you&apos;re a credible source.
+            A well-structured tech description doesn&apos;t just help with SEO - it builds viewer trust. When someone sees organized timestamps, clear product links, and detailed specs in your description, they know you&apos;re a credible source.
           </p>
           <p className="text-slate-600 dark:text-slate-400">
             The best tech descriptions combine <strong className="text-slate-900 dark:text-slate-50">keyword-rich summaries</strong>, <strong className="text-slate-900 dark:text-slate-50">structured timestamps</strong>, and <strong className="text-slate-900 dark:text-slate-50">clear affiliate/purchase links</strong>. That&apos;s exactly what our AI builds for you.
@@ -296,15 +296,15 @@ export default function TechDescriptionLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your video topic</strong> — describe the product, comparison, or tutorial you&apos;re covering.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your video topic</strong> - describe the product, comparison, or tutorial you&apos;re covering.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates a structured description</strong> — with SEO summary, timestamps template, specs section, and CTAs.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates a structured description</strong> - with SEO summary, timestamps template, specs section, and CTAs.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Customize and publish</strong> — edit the timestamps, add your links, and paste into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Customize and publish</strong> - edit the timestamps, add your links, and paste into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

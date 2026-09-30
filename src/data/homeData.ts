@@ -6,19 +6,19 @@ export interface HomepageFaq {
 export const homepageFaqs: HomepageFaq[] = [
   {
     q: 'Is FreeViralKit really free?',
-    a: 'Yes — 100% free, no signup, no credit card. Generate unlimited titles, descriptions, hashtags, and tags for all your YouTube videos without any hidden costs.',
+    a: 'Yes: 100% free, no signup, no credit card required. Generate unlimited titles, descriptions, hashtags, and tags for all your YouTube videos without any hidden costs.',
   },
   {
-    q: 'How does the AI generate YouTube titles?',
-    a: 'We use advanced language models trained on successful YouTube title patterns across every niche. The AI analyzes top-performing videos to craft titles that drive clicks while staying SEO-friendly.',
+    q: 'How does the engine generate YouTube titles?',
+    a: 'We use high-performance language models calibrated on successful YouTube title patterns across every niche. The system analyzes top-performing videos to craft titles that drive clicks while staying SEO-friendly.',
   },
   {
     q: 'Will these tags and titles help me rank?',
-    a: "Yes — our AI generates content following YouTube SEO best practices: proper keyword placement, optimal character counts, and trending formats. Optimized metadata helps YouTube's algorithm understand your content better, which can improve discoverability over time.",
+    a: "Yes: our metadata engine generates content following YouTube SEO best practices: proper keyword placement, optimal character counts, and trending formats. Optimized metadata helps YouTube's algorithm understand your content better, which can improve discoverability over time.",
   },
   {
     q: 'Can I use FreeViralKit for YouTube Shorts?',
-    a: 'Absolutely! FreeViralKit works for long-form videos and Shorts. The AI adapts its output to match your content type, generating punchy titles and trending hashtags perfect for short-form content.',
+    a: 'Absolutely! FreeViralKit works for long-form videos and Shorts. The engine adapts its output to match your content type, generating punchy titles and trending hashtags perfect for short-form content.',
   },
   {
     q: 'How many titles can I generate at once?',
@@ -26,10 +26,10 @@ export const homepageFaqs: HomepageFaq[] = [
   },
   {
     q: 'What makes FreeViralKit different from other YouTube tools?',
-    a: 'FreeViralKit is the only tool that gives you a complete SEO package in one click — title, description, hashtags, tags, and a pinned comment — all optimized together for maximum YouTube visibility.',
+    a: 'FreeViralKit gives you a complete SEO package in one click: title, description, hashtags, tags, and a pinned comment, all optimized together for maximum YouTube visibility.',
   },
   {
     q: 'Do I need a YouTube channel to use FreeViralKit?',
-    a: 'No — anyone can use FreeViralKit. Whether you are planning your first video or managing a channel with thousands of subscribers, our AI tools help you create better metadata for every upload.',
+    a: 'No: anyone can use FreeViralKit. Whether you are planning your first video or managing a channel with thousands of subscribers, our tools help you create better metadata for every upload.',
   },
 ];

@@ -15,7 +15,7 @@ export function ThumbnailMasterclassSection() {
           How to Reverse-Engineer <span className="gradient-text">Viral Thumbnails &amp; Tags</span>
         </h2>
         <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed">
-          The top 1% of gaming and video creators don&apos;t guess what works — they analyze high-CTR competitors. Here is the exact framework to maximize your click-through rates.
+          The top 1% of gaming and video creators don&apos;t guess what works - they analyze high-CTR competitors. Here is the exact framework to maximize your click-through rates.
         </p>
       </div>
 

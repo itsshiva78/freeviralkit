@@ -95,7 +95,7 @@ export default function SEOGraderPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-cyan-500 bg-cyan-500/10 border border-cyan-500/20 mb-6 uppercase tracking-wider">
             <Activity className="w-4 h-4" /> SEO Score Grader
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube SEO Checker — Grade Your Video </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900 dark:text-white"> Free YouTube SEO Checker - Grade Your Video </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             Paste your video's title, description, and tags to see how well it's optimized for the YouTube algorithm. Get an instant score and actionable feedback.
           </p>
@@ -111,7 +111,7 @@ export default function SEOGraderPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-6">
               <p>
-                Uploading a video to YouTube without optimizing its metadata is like writing a bestselling novel and giving it a blank cover. The YouTube algorithm is a machine; it cannot &quot;watch&quot; your video to understand what it is about. It relies entirely on the text data you provide—your title, description, and tags—to categorize your content and decide who to serve it to. When you take the time to run your video through a dedicated grader, you ensure that you are sending the right signals directly to the search engine.
+                Uploading a video to YouTube without optimizing its metadata is like writing a bestselling novel and giving it a blank cover. The YouTube algorithm is a machine; it cannot &quot;watch&quot; your video to understand what it is about. It relies entirely on the text data you provide-your title, description, and tags-to categorize your content and decide who to serve it to. When you take the time to run your video through a dedicated grader, you ensure that you are sending the right signals directly to the search engine.
               </p>
 
 

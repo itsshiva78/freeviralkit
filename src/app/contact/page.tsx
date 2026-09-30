@@ -3,16 +3,16 @@ import { Mail, MessageSquare } from 'lucide-react';
 import { buildAbsoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contact Us — FreeViralKit',
+  title: 'Contact Us - FreeViralKit',
   description: 'Have questions, feedback, or partnership inquiries? Get in touch with the FreeViralKit team for prompt support and assistance.',
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Us — FreeViralKit',
+    title: 'Contact Us - FreeViralKit',
     description: 'Have questions, feedback, or partnership inquiries? Get in touch with the FreeViralKit team for prompt support and assistance.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
   openGraph: {
-    title: 'Contact Us — FreeViralKit',
+    title: 'Contact Us - FreeViralKit',
     description: 'Have questions, feedback, or partnership inquiries? Get in touch with the FreeViralKit team for prompt support and assistance.',
     type: 'website',
     url: buildAbsoluteUrl('/contact'),

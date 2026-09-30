@@ -47,15 +47,25 @@ const SLUG_ALIASES: Record<string, string> = {
 // --- Database Connection Pool ---
 const rawUrl = process.env.DATABASE_URL;
 
+// Ensure pg-connection-string does not emit deprecated sslmode warning by explicitly declaring libpq compatibility
+function getConnectionString(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  if (url.includes('uselibpqcompat=')) return url;
+  const separator = url.includes('?') ? '&' : '?';
+  return `${url}${separator}uselibpqcompat=true`;
+}
+
+const dbConnectionString = getConnectionString(rawUrl);
+
 const globalForPg = global as unknown as { pool: Pool | null };
-export const pool: Pool | null = rawUrl
+export const pool: Pool | null = dbConnectionString
   ? (globalForPg.pool ||
       new Pool({
-        connectionString: rawUrl,
+        connectionString: dbConnectionString,
         ssl: { rejectUnauthorized: false },
-        connectionTimeoutMillis: 5000,
-        idleTimeoutMillis: 10000,
-        max: 10,
+        connectionTimeoutMillis: 15000,
+        idleTimeoutMillis: 15000,
+        max: 20,
       }))
   : null;
 
@@ -109,7 +119,7 @@ const _getPublishedPosts = async (): Promise<BlogPost[]> => {
     const missingStatic = STATIC_BLOG_POSTS.filter((p) => !existingSlugs.has(p.slug));
     return [...dbPosts, ...missingStatic];
   } catch (error) {
-    console.warn('getPublishedPosts DB fallback:', error);
+    console.warn('getPublishedPosts DB fallback:', error instanceof Error ? error.message : String(error));
     return STATIC_BLOG_POSTS;
   }
 };
@@ -133,7 +143,7 @@ const _getPublishedPostBySlug = async (rawSlug: string): Promise<BlogPost | unde
       `, [canonicalSlug, rawSlug]);
       if (rows.length > 0) return mapRowToBlogPost(rows[0]);
     } catch (error) {
-      console.warn('getPublishedPostBySlug DB fallback:', error);
+      console.warn('getPublishedPostBySlug DB fallback:', error instanceof Error ? error.message : String(error));
     }
   }
 
@@ -154,7 +164,7 @@ const _getPostBySlug = async (rawSlug: string): Promise<BlogPost | undefined> =>
       const { rows } = await pool.query('SELECT * FROM posts WHERE slug = $1 OR slug = $2 LIMIT 1;', [canonicalSlug, rawSlug]);
       if (rows.length > 0) return mapRowToBlogPost(rows[0]);
     } catch (error) {
-      console.warn('getPostBySlug DB fallback:', error);
+      console.warn('getPostBySlug DB fallback:', error instanceof Error ? error.message : String(error));
     }
   }
 
@@ -176,7 +186,7 @@ const _getAllSlugs = async (): Promise<string[]> => {
     const dbSlugs = rows.map((r) => r.slug as string);
     return Array.from(new Set([...dbSlugs, ...staticSlugs, ...aliasSlugs]));
   } catch (error) {
-    console.warn('getAllSlugs DB fallback:', error);
+    console.warn('getAllSlugs DB fallback:', error instanceof Error ? error.message : String(error));
     return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   }
 };
@@ -200,7 +210,7 @@ const _getPublishedSlugs = async (): Promise<string[]> => {
     const dbSlugs = rows.map((r) => r.slug as string);
     return Array.from(new Set([...dbSlugs, ...staticSlugs, ...aliasSlugs]));
   } catch (error) {
-    console.warn('getPublishedSlugs DB fallback:', error);
+    console.warn('getPublishedSlugs DB fallback:', error instanceof Error ? error.message : String(error));
     return Array.from(new Set([...staticSlugs, ...aliasSlugs]));
   }
 };

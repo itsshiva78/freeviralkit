@@ -46,8 +46,8 @@ const examplesByCategory = [
   {
     category: 'Product Reviews',
     examples: [
-      'iPhone 17 Pro Max Review — Is It Actually Worth $1,200?',
-      'I Used the Galaxy S26 for 30 Days — Here Is My Honest Opinion',
+      'iPhone 17 Pro Max Review - Is It Actually Worth $1,200?',
+      'I Used the Galaxy S26 for 30 Days - Here Is My Honest Opinion',
       'The Best Budget Laptop of 2026 (Under $500)',
     ],
   },
@@ -55,15 +55,15 @@ const examplesByCategory = [
     category: 'Unboxing Videos',
     examples: [
       'Unboxing the Most Expensive Gaming Setup on Amazon ($10,000)',
-      'Apple Vision Pro 2 Unboxing — First Impressions and Setup',
-      'I Bought Every Gadget Under $50 on Amazon — Are They Worth It?',
+      'Apple Vision Pro 2 Unboxing - First Impressions and Setup',
+      'I Bought Every Gadget Under $50 on Amazon - Are They Worth It?',
     ],
   },
   {
     category: 'Comparison & Versus',
     examples: [
-      'iPhone 17 vs Samsung S26 — Which One Should You Actually Buy?',
-      'MacBook Air M5 vs Dell XPS 15 — The REAL Difference',
+      'iPhone 17 vs Samsung S26 - Which One Should You Actually Buy?',
+      'MacBook Air M5 vs Dell XPS 15 - The REAL Difference',
       'Best Wireless Earbuds 2026: AirPods Pro 3 vs Galaxy Buds 4 vs Sony WF',
     ],
   },
@@ -71,7 +71,7 @@ const examplesByCategory = [
     category: 'How-To Tutorials',
     examples: [
       'How to Speed Up Your PC in 5 Minutes (Free, No Downloads)',
-      'Set Up a Home Server for FREE — Complete Beginner Guide',
+      'Set Up a Home Server for FREE - Complete Beginner Guide',
     ],
   },
 ];
@@ -84,7 +84,7 @@ const tips = [
   {
     title: 'Use definitive language',
     description:
-      'Words like "best", "ultimate", "honest", "real", and "actual" signal authority. Tech viewers want confident, informed opinions — not wishy-washy takes. "The BEST Budget Laptop" outperforms "A Good Budget Laptop".',
+      'Words like "best", "ultimate", "honest", "real", and "actual" signal authority. Tech viewers want confident, informed opinions - not wishy-washy takes. "The BEST Budget Laptop" outperforms "A Good Budget Laptop".',
   },
   {
     title: 'Include the year or model number',
@@ -150,7 +150,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Title Generator for Tech — FreeViralKit',
+      name: 'YouTube Title Generator for Tech - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-title-generator-for-tech',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -176,7 +176,7 @@ export default function TechTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Tech </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Generate high-CTR titles for product reviews, unboxing videos, tech comparisons, and how-to tutorials. Powered by AI, built for tech creators.
+            Generate high-CTR titles for product reviews, unboxing videos, tech comparisons, and how-to tutorials. Built specifically for tech creators.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="tech" />
@@ -188,10 +188,10 @@ export default function TechTitleLandingPage() {
             Why Your Tech Title Determines Your Video&apos;s Success
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Tech is one of the most competitive niches on YouTube. Every product launch triggers hundreds of review, unboxing, and comparison videos — all fighting for the same audience. The title is what separates a 500-view video from a 500K-view video.
+            Tech is one of the most competitive niches on YouTube. Every product launch triggers hundreds of review, unboxing, and comparison videos - all fighting for the same audience. The title is what separates a 500-view video from a 500K-view video.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            A bland title like &ldquo;Phone Review&rdquo; gets completely lost. But &ldquo;iPhone 17 Pro Max Review — Is It Actually Worth $1,200?&rdquo; immediately tells the viewer the product, the format, and raises a question they need answered.
+            A bland title like &ldquo;Phone Review&rdquo; gets completely lost. But &ldquo;iPhone 17 Pro Max Review - Is It Actually Worth $1,200?&rdquo; immediately tells the viewer the product, the format, and raises a question they need answered.
           </p>
           <p className="text-slate-600 dark:text-slate-400">
             Effective tech titles combine <strong className="text-slate-900 dark:text-slate-50">the product name</strong>, a <strong className="text-slate-900 dark:text-slate-50">clear content format</strong>, and a <strong className="text-slate-900 dark:text-slate-50">compelling hook or question</strong>. That&apos;s exactly what our AI generates for you.
@@ -277,7 +277,7 @@ export default function TechTitleLandingPage() {
                 Leveraging Long-Tail Keywords
               </h3>
               <p>
-                New tech creators often try to rank for &quot;Best Laptops.&quot; This is a fool&apos;s errand. Instead, you need to target long-tail keywords—highly specific phrases with lower search volume but zero competition. Instead of &quot;Best Laptops,&quot; target &quot;Best Laptops for Video Editing Under $800 in 2026.&quot; 
+                New tech creators often try to rank for &quot;Best Laptops.&quot; This is a fool&apos;s errand. Instead, you need to target long-tail keywords-highly specific phrases with lower search volume but zero competition. Instead of &quot;Best Laptops,&quot; target &quot;Best Laptops for Video Editing Under $800 in 2026.&quot; 
               </p>
               <p>
                 By getting incredibly granular, you guarantee that whoever searches that term will find your video. The viewers who click will have incredibly high retention because your video is exactly what they asked for. Over time, YouTube recognizes your channel as an authority on these niche topics, allowing you to gradually compete for larger, broader terms. Our AI tool automatically integrates these psychological triggers and long-tail strategies, ensuring your tech content actually reaches the audience it deserves.
@@ -293,15 +293,15 @@ export default function TechTitleLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your tech topic</strong> — describe your product review, unboxing, or tutorial.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your tech topic</strong> - describe your product review, unboxing, or tutorial.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to tech content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> - each optimized with SEO keywords, emojis, and hooks specific to tech content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> - paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { page } = await params;
   const pageNum = parseInt(page, 10);
   return {
-    title: `YouTube SEO Blog — Page ${pageNum} | FreeViralKit`,
+    title: `YouTube SEO Blog - Page ${pageNum} | FreeViralKit`,
     description: `Browse page ${pageNum} of FreeViralKit's YouTube SEO guides, tips, and strategies to grow your channel faster.`,
     alternates: {
       // Each pagination page has its own canonical to avoid duplicate content
       canonical: buildAbsoluteUrl(`/blog/page/${pageNum}`),
     },
-    // Noindex pagination pages — individual blog posts are already in the sitemap.
+    // Noindex pagination pages - individual blog posts are already in the sitemap.
     // This prevents Google wasting crawl budget on listing pages that have no unique content.
     robots: {
       index: false,

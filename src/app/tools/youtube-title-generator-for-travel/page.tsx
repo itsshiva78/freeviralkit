@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'YouTube Title Generator for Travel Vlogs',
     description:
-      'Generate travel vlog titles that get clicks and rank in search. Destination guides, budget tips, solo travel stories — all optimized by AI.',
+      'Generate travel vlog titles that get clicks and rank in search. Destination guides, budget tips, solo travel stories - all optimized by AI.',
     type: 'website',
     url: buildAbsoluteUrl('/tools/youtube-title-generator-for-travel'),
     images: [
@@ -46,9 +46,9 @@ const examplesByCategory = [
   {
     category: 'Destination Guides',
     examples: [
-      'First Time in Bali — 7 Days, $500 Budget (Complete Guide)',
+      'First Time in Bali - 7 Days, $500 Budget (Complete Guide)',
       'Tokyo Travel Guide 2026: Everything You Need to Know Before Going',
-      '48 Hours in Istanbul — The Perfect Itinerary',
+      '48 Hours in Istanbul - The Perfect Itinerary',
     ],
   },
   {
@@ -61,15 +61,15 @@ const examplesByCategory = [
   {
     category: 'Solo Travel',
     examples: [
-      'I Traveled Solo Through South America for 3 Months — Here Is What Happened',
+      'I Traveled Solo Through South America for 3 Months - Here Is What Happened',
       'Solo Female Travel in Morocco: Is It Safe? (Honest Review)',
-      'Why Traveling Alone Changed My Life — 1 Year Update',
+      'Why Traveling Alone Changed My Life - 1 Year Update',
     ],
   },
   {
     category: 'Food & Culture Travel',
     examples: [
-      'I Tried Every Street Food in Bangkok — Rating the Best and Worst',
+      'I Tried Every Street Food in Bangkok - Rating the Best and Worst',
       'Italian Food Tour: 10 Dishes You MUST Try in Rome',
     ],
   },
@@ -83,7 +83,7 @@ const tips = [
   {
     title: 'Add specific numbers',
     description:
-      'Numbers create clear expectations and boost CTR. "7 Days in Japan" is more clickable than "My Japan Trip." Mention days, budget amounts, number of places, or costs — viewers love concrete details.',
+      'Numbers create clear expectations and boost CTR. "7 Days in Japan" is more clickable than "My Japan Trip." Mention days, budget amounts, number of places, or costs - viewers love concrete details.',
   },
   {
     title: 'Use a personal angle',
@@ -98,12 +98,12 @@ const tips = [
   {
     title: 'Keep it under 65 characters',
     description:
-      'Travel titles tend to run long because of destination names. Fight the urge — titles over 70 characters get cut off on mobile, where most travel content is consumed.',
+      'Travel titles tend to run long because of destination names. Fight the urge - titles over 70 characters get cut off on mobile, where most travel content is consumed.',
   },
   {
     title: 'Include the year for evergreen content',
     description:
-      'Adding "2026" to destination guides signals freshness. Travelers want current information — prices, visa rules, and safety conditions change yearly. A dated title gets more clicks from search.',
+      'Adding "2026" to destination guides signals freshness. Travelers want current information - prices, visa rules, and safety conditions change yearly. A dated title gets more clicks from search.',
   },
 ];
 const faqs = [
@@ -175,7 +175,7 @@ export default function TravelTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Travel </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Create engaging titles for destination guides, budget travel, solo adventures, and food travel vlogs. Optimized for clicks, powered by AI.
+            Create engaging titles for destination guides, budget travel, solo adventures, and food travel vlogs. Optimized for maximum search discoverability and clicks.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="travel" />
@@ -187,10 +187,10 @@ export default function TravelTitleLandingPage() {
             Why Your Travel Title Is Your Most Important SEO Asset
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Travel is one of the most searched categories on YouTube. Millions of people plan their trips by watching YouTube videos — and your title is what determines whether they click on your video or a competitor&apos;s.
+            Travel is one of the most searched categories on YouTube. Millions of people plan their trips by watching YouTube videos - and your title is what determines whether they click on your video or a competitor&apos;s.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            A generic title like &ldquo;My Trip to Thailand&rdquo; competes with millions of similar videos. But &ldquo;First Time in Thailand — 10 Days, $800 Budget (Complete Guide)&rdquo; immediately tells the viewer the destination, duration, cost, and value they&apos;ll get.
+            A generic title like &ldquo;My Trip to Thailand&rdquo; competes with millions of similar videos. But &ldquo;First Time in Thailand - 10 Days, $800 Budget (Complete Guide)&rdquo; immediately tells the viewer the destination, duration, cost, and value they&apos;ll get.
           </p>
           <p className="text-slate-600 dark:text-slate-400">
             The best travel titles combine a <strong className="text-slate-900 dark:text-slate-50">specific destination</strong>, <strong className="text-slate-900 dark:text-slate-50">concrete numbers</strong>, and <strong className="text-slate-900 dark:text-slate-50">a compelling hook</strong>. Our AI crafts these for you in seconds.
@@ -279,7 +279,7 @@ export default function TravelTitleLandingPage() {
                 Solo travel, particularly solo female travel, has exploded in popularity. The primary search intent here isn&apos;t just about fun; it is about safety and logistics. Titles that address these fears head-on perform exceptionally well. &quot;Solo Female Travel in Egypt: Is It Actually Safe?&quot; directly addresses the primary objection someone might have about visiting. It promises a narrative journey mixed with highly practical advice.
               </p>
               <p>
-                By utilizing our AI title generator, you can effortlessly weave these psychological triggers, exact numbers, and SEO keywords into your titles. You spent weeks planning your trip and editing the footage—don&apos;t let a weak title be the reason your adventure goes unseen.
+                By utilizing our AI title generator, you can effortlessly weave these psychological triggers, exact numbers, and SEO keywords into your titles. You spent weeks planning your trip and editing the footage-don&apos;t let a weak title be the reason your adventure goes unseen.
               </p>
             </div>
           </div>
@@ -292,15 +292,15 @@ export default function TravelTitleLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your travel topic</strong> — describe the destination, trip style, or travel experience.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your travel topic</strong> - describe the destination, trip style, or travel experience.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> — each crafted with destination keywords, hooks, and SEO best practices.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> - each crafted with destination keywords, hooks, and SEO best practices.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> - paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

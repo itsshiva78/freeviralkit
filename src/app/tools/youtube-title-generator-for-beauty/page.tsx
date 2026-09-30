@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'YouTube Title Generator for Beauty & Makeup',
     description:
-      'Generate beauty YouTube titles that get clicks and views. GRWM, tutorials, reviews, skincare, and transformations — optimized by AI.',
+      'Generate beauty YouTube titles that get clicks and views. GRWM, tutorials, reviews, skincare, and transformations - optimized by AI.',
     type: 'website',
     url: buildAbsoluteUrl('/tools/youtube-title-generator-for-beauty'),
     images: [
@@ -46,7 +46,7 @@ const examplesByCategory = [
   {
     category: 'GRWM (Get Ready With Me)',
     examples: [
-      'GRWM for a First Date — Soft Glam Makeup + Outfit',
+      'GRWM for a First Date - Soft Glam Makeup + Outfit',
       'Get Ready With Me: Everyday 10-Minute Makeup Routine',
       'GRWM Using ONLY Drugstore Products Under $5',
     ],
@@ -55,15 +55,15 @@ const examplesByCategory = [
     category: 'Skincare Routines',
     examples: [
       'My Dermatologist-Approved Skincare Routine for Acne-Prone Skin',
-      'I Tried a 10-Step Korean Skincare Routine for 30 Days — Results',
+      'I Tried a 10-Step Korean Skincare Routine for 30 Days - Results',
     ],
   },
   {
     category: 'Product Reviews & Hauls',
     examples: [
-      'I Tried Every NEW Sephora Launch — Here Are the Winners and Losers',
+      'I Tried Every NEW Sephora Launch - Here Are the Winners and Losers',
       'Honest Review: Is the Rare Beauty Blush Actually Worth the Hype?',
-      '$500 Ulta Haul — Testing Everything for a Week',
+      '$500 Ulta Haul - Testing Everything for a Week',
     ],
   },
   {
@@ -120,7 +120,7 @@ const faqs = [
   {
     question: 'How do I title a GRWM (Get Ready With Me) video?',
     answer:
-      'A GRWM title needs a secondary hook—usually the occasion or a topic you discuss. "GRWM: First Date Makeup + Storytime" or "GRWM: My 10-Minute Morning Routine for College" performs much better than just "GRWM".',
+      'A GRWM title needs a secondary hook-usually the occasion or a topic you discuss. "GRWM: First Date Makeup + Storytime" or "GRWM: My 10-Minute Morning Routine for College" performs much better than just "GRWM".',
   },
   {
     question: 'Do negative titles work well in the beauty community?',
@@ -149,7 +149,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Title Generator for Beauty & Makeup — FreeViralKit',
+      name: 'YouTube Title Generator for Beauty & Makeup - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-title-generator-for-beauty',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -175,7 +175,7 @@ export default function BeautyTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Beauty </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Create viral titles for GRWM, makeup tutorials, skincare routines, product reviews, and transformation videos. Powered by AI, always free.
+            Create high-CTR titles for GRWM, makeup tutorials, skincare routines, product reviews, and transformation videos. Optimized for search and suggested feeds, always free.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="beauty" />
@@ -237,7 +237,7 @@ export default function BeautyTitleLandingPage() {
             Why Your Beauty Title Determines Your Video&apos;s Success
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            The beauty niche on YouTube is massive — and fiercely competitive. With thousands of makeup tutorials, skincare routines, and product reviews uploaded daily, your title is the single biggest factor that determines whether someone clicks your video or scrolls past it.
+            The beauty niche on YouTube is massive - and fiercely competitive. With thousands of makeup tutorials, skincare routines, and product reviews uploaded daily, your title is the single biggest factor that determines whether someone clicks your video or scrolls past it.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
             Beauty viewers are searching with high intent. They&apos;re looking for &ldquo;best drugstore foundation for oily skin&rdquo; or &ldquo;GRWM everyday makeup.&rdquo; If your title matches their search query naturally, YouTube rewards you with higher rankings and more recommendations.
@@ -284,15 +284,15 @@ export default function BeautyTitleLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your beauty topic</strong> — describe the look, product, routine, or tutorial you&apos;re creating.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your beauty topic</strong> - describe the look, product, routine, or tutorial you&apos;re creating.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> — each crafted with beauty keywords, trending formats, and engagement hooks.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 optimized titles</strong> - each crafted with beauty keywords, trending formats, and engagement hooks.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> - paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

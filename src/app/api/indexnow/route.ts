@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import sitemap from '../../sitemap';
 
-// IndexNow key — matches the BingSiteAuth.xml user ID and the .txt file in /public
+// IndexNow key - matches the BingSiteAuth.xml user ID and the .txt file in /public
 const INDEXNOW_KEY = '1FA6B38A290761B175A968B85022B7A8';
 const SITE_URL = 'https://freeviralkit.com';
 

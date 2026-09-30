@@ -47,8 +47,8 @@ const examplesByCategory = [
     category: 'Song Covers & Performances',
     examples: [
       'I Sang "Bohemian Rhapsody" in 10 Different Styles (Mind-Blown)',
-      'Singing to Strangers on the Street — Their Reactions Were PRICELESS',
-      'My Acoustic Cover of "Blinding Lights" — The Weeknd (One Take)',
+      'Singing to Strangers on the Street - Their Reactions Were PRICELESS',
+      'My Acoustic Cover of "Blinding Lights" - The Weeknd (One Take)',
     ],
   },
   {
@@ -63,14 +63,14 @@ const examplesByCategory = [
     category: 'Album & Song Reviews',
     examples: [
       'Is This the Best Album of 2026? (Honest Review)',
-      'Ranking Every Song on Taylor Swift\'s New Album — Worst to Best',
+      'Ranking Every Song on Taylor Swift\'s New Album - Worst to Best',
       'Music Producer Reacts to the Most Overrated Songs of All Time',
     ],
   },
   {
     category: 'Music Theory & Tutorials',
     examples: [
-      'Learn Piano in 30 Days — Day 1 (Complete Beginner)',
+      'Learn Piano in 30 Days - Day 1 (Complete Beginner)',
       'The Music Theory Hack That Changed Everything for Me',
     ],
   },
@@ -89,7 +89,7 @@ const tips = [
   {
     title: 'Use emotional and curiosity hooks',
     description:
-      'Words like "mind-blown", "insane", "emotional", or "you won\'t believe" create urgency. Music is emotional content — your title should reflect that energy.',
+      'Words like "mind-blown", "insane", "emotional", or "you won\'t believe" create urgency. Music is emotional content - your title should reflect that energy.',
   },
   {
     title: 'Keep titles between 50-65 characters',
@@ -99,7 +99,7 @@ const tips = [
   {
     title: 'Capitalize on trending songs and artists',
     description:
-      'When a new song drops or an artist goes viral, create content immediately. "Reacting to [New Song]" searches spike within the first 48 hours — timing is everything.',
+      'When a new song drops or an artist goes viral, create content immediately. "Reacting to [New Song]" searches spike within the first 48 hours - timing is everything.',
   },
   {
     title: 'Add format context',
@@ -150,7 +150,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Title Generator for Music — FreeViralKit',
+      name: 'YouTube Title Generator for Music - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-title-generator-for-music',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -176,7 +176,7 @@ export default function MusicTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Music </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Generate viral titles for song covers, music production tutorials, beat-making sessions, and album reviews. Powered by AI, built for musicians.
+            Generate high-CTR titles for song covers, music production tutorials, beat-making sessions, and album reviews. Built specifically for musicians.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="music" />
@@ -188,7 +188,7 @@ export default function MusicTitleLandingPage() {
             Why Your Music Title Makes or Breaks Your Video
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Music is one of the most-watched categories on YouTube, but also one of the most saturated. Millions of covers, tutorials, and reactions compete for the same audience every day. Your title is the first — and often only — chance to stand out.
+            Music is one of the most-watched categories on YouTube, but also one of the most saturated. Millions of covers, tutorials, and reactions compete for the same audience every day. Your title is the first - and often only - chance to stand out.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
             A lazy title like &ldquo;New Cover Song&rdquo; tells viewers nothing. But &ldquo;I Sang Bohemian Rhapsody in 10 Different Styles (Mind-Blown)&rdquo; instantly communicates the challenge, the scope, and the excitement.
@@ -271,7 +271,7 @@ export default function MusicTitleLandingPage() {
                 One of the most common mistakes musicians make is writing titles that are far too long. YouTube truncates (cuts off) titles that exceed 70 characters on most mobile devices. Since over 70% of YouTube viewership happens on mobile phones, a truncated title can destroy your CTR. 
               </p>
               <p>
-                Imagine a title that reads: &quot;My Amazing Acoustic Cover of Someone Like You by Adele Featuring My Friend Sarah on the Cello.&quot; On a phone, the viewer might only see: &quot;My Amazing Acoustic Cover of Someone...&quot; They have no idea what song you are singing. The crucial information—Adele, Someone Like You, Cello—is completely hidden. Always front-load the most important keywords. A better version would be: &quot;Adele - Someone Like You (Acoustic Cello Cover).&quot; It is short, punchy, and instantly communicates the value of the video.
+                Imagine a title that reads: &quot;My Amazing Acoustic Cover of Someone Like You by Adele Featuring My Friend Sarah on the Cello.&quot; On a phone, the viewer might only see: &quot;My Amazing Acoustic Cover of Someone...&quot; They have no idea what song you are singing. The crucial information-Adele, Someone Like You, Cello-is completely hidden. Always front-load the most important keywords. A better version would be: &quot;Adele - Someone Like You (Acoustic Cello Cover).&quot; It is short, punchy, and instantly communicates the value of the video.
               </p>
               <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mt-8 mb-4">
                 The Power of Emotional Trigger Words
@@ -293,15 +293,15 @@ export default function MusicTitleLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your music topic</strong> — describe your cover, production session, or music review.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your music topic</strong> - describe your cover, production session, or music review.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> — each optimized with SEO keywords, emojis, and hooks specific to music content.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> - each optimized with SEO keywords, emojis, and hooks specific to music content.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> — paste your favorite title directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and use</strong> - paste your favorite title directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

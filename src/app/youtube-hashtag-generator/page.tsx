@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description:
     'Generate trending YouTube hashtags instantly with our free AI hashtag generator. Get 15+ niche-specific hashtags ranked by traffic potential.',
   openGraph: {
-    title: 'Free YouTube Hashtag Generator — Trending Tags',
+    title: 'Free YouTube Hashtag Generator - Trending Tags',
     description:
-      'Generate trending YouTube hashtags instantly. Get 15+ niche-specific hashtags ranked by traffic potential — completely free.',
+      'Generate trending YouTube hashtags instantly. Get 15+ niche-specific hashtags ranked by traffic potential - completely free.',
     url: buildAbsoluteUrl('/youtube-hashtag-generator'),
     type: 'website',
     images: [
@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: 'How many hashtags should I use on YouTube?',
     answer:
-      'YouTube recommends using no more than 15 hashtags per video. Using more than 15 will cause YouTube to ignore all of them. The sweet spot for most creators is 8-15 hashtags — enough to cover broad and niche categories without appearing spammy. Your three strongest, most relevant hashtags should come first since those appear above the title.',
+      'YouTube recommends using no more than 15 hashtags per video. Using more than 15 will cause YouTube to ignore all of them. The sweet spot for most creators is 8-15 hashtags - enough to cover broad and niche categories without appearing spammy. Your three strongest, most relevant hashtags should come first since those appear above the title.',
   },
   {
     question: 'Do hashtags actually help YouTube videos get more views?',
@@ -132,9 +132,9 @@ export default function HashtagGeneratorPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-pink-400 bg-pink-400/10 border border-pink-400/20 mb-6 uppercase tracking-wider">
             <Hash className="w-4 h-4" /> AI Hashtag Generator
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> Free YouTube Hashtag Generator — Trending Hashtags Instantly </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> Free YouTube Hashtag Generator - Trending Hashtags Instantly </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
-            Generate trending YouTube hashtags instantly with our free AI hashtag generator. Enter your video topic and get 15+ niche-specific hashtags ranked by traffic potential — completely free, no account required.
+            Generate trending YouTube hashtags instantly with our free AI hashtag generator. Enter your video topic and get 15+ niche-specific hashtags ranked by traffic potential - completely free, no account required.
           </p>
         </section>
 
@@ -216,7 +216,7 @@ export default function HashtagGeneratorPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-6 text-lg">
               <p>
-                If you are creating short-form content, you must understand that hashtags play a significantly outsized role in YouTube Shorts discovery compared to long-form content. On traditional videos, your thumbnail and your title do the heavy lifting of convincing a human being to click. However, the Shorts feed is a fundamentally different environment. Viewers do not click to watch a Short; the algorithm serves it to them directly in an endless, rapid-fire feed. Because of this, the algorithm relies incredibly heavily on backend metadata—specifically hashtags—to understand the exact context and target demographic for your Short.
+                If you are creating short-form content, you must understand that hashtags play a significantly outsized role in YouTube Shorts discovery compared to long-form content. On traditional videos, your thumbnail and your title do the heavy lifting of convincing a human being to click. However, the Shorts feed is a fundamentally different environment. Viewers do not click to watch a Short; the algorithm serves it to them directly in an endless, rapid-fire feed. Because of this, the algorithm relies incredibly heavily on backend metadata-specifically hashtags-to understand the exact context and target demographic for your Short.
               </p>
               <p>
                 The inclusion of the #Shorts hashtag itself has been the subject of endless debate within the creator community. While YouTube engineers have officially stated that the #Shorts tag is not strictly mandatory for a vertical video to be indexed properly in the Shorts shelf, thousands of creators consistently report slightly faster initial indexing and wider early distribution when they include it. It is generally considered a best practice to keep it.

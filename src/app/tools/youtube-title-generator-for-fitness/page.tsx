@@ -46,24 +46,24 @@ const examplesByCategory = [
   {
     category: 'Workout Routines',
     examples: [
-      '30-Minute Full Body Workout — No Equipment Needed (Beginner Friendly)',
+      '30-Minute Full Body Workout - No Equipment Needed (Beginner Friendly)',
       'The 7-Minute Abs Workout That Actually Works (Science-Based)',
-      'I Tried David Goggins\' Morning Workout for 30 Days — Results Were Insane',
+      'I Tried David Goggins\' Morning Workout for 30 Days - Results Were Insane',
     ],
   },
   {
     category: 'Transformation & Challenges',
     examples: [
-      'My 90-Day Body Transformation — From Skinny to Muscular (Full Journey)',
-      'I Did 100 Push-Ups Every Day for a Month — Before and After',
-      'I Followed a Celebrity\'s Workout Plan for a Week — Here Is What Happened',
+      'My 90-Day Body Transformation - From Skinny to Muscular (Full Journey)',
+      'I Did 100 Push-Ups Every Day for a Month - Before and After',
+      'I Followed a Celebrity\'s Workout Plan for a Week - Here Is What Happened',
     ],
   },
   {
     category: 'Nutrition & Diet Tips',
     examples: [
       'What I Eat in a Day to Build Muscle (3,000 Calories)',
-      'The Protein Myth — How Much Do You ACTUALLY Need?',
+      'The Protein Myth - How Much Do You ACTUALLY Need?',
       '5 Meal Prep Ideas for Weight Loss That Taste Amazing',
     ],
   },
@@ -176,7 +176,7 @@ export default function FitnessTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Fitness </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Generate high-CTR titles for workout routines, body transformations, nutrition guides, and gym challenge videos. Powered by AI, built for fitness creators.
+            Generate high-CTR titles for workout routines, body transformations, nutrition guides, and gym challenge videos. Built specifically for fitness creators.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="fitness" />
@@ -190,10 +190,10 @@ export default function FitnessTitleLandingPage() {
             </h2>
             <div className="prose prose-slate max-w-none">
               <p>
-                Fitness is one of the most competitive categories on YouTube, with millions of workout and health videos uploaded every month. Your title is the make-or-break element that decides whether someone watches your video or your competitor&apos;s. When a user is searching for a workout, they are usually in a specific mindset—often motivated but pressed for time, or perhaps intimidated and looking for guidance. Your title must instantly address their mental state.
+                Fitness is one of the most competitive categories on YouTube, with millions of workout and health videos uploaded every month. Your title is the make-or-break element that decides whether someone watches your video or your competitor&apos;s. When a user is searching for a workout, they are usually in a specific mindset-often motivated but pressed for time, or perhaps intimidated and looking for guidance. Your title must instantly address their mental state.
               </p>
               <p>
-                A vague title like &ldquo;Workout Video&rdquo; tells the viewer nothing about what they will get. But &ldquo;30-Minute Full Body HIIT Workout — No Equipment, Beginner Friendly&rdquo; immediately communicates the duration, style, and accessibility. It removes all friction. The viewer knows exactly what they are clicking into, which builds immediate trust and vastly improves your Click-Through Rate (CTR).
+                A vague title like &ldquo;Workout Video&rdquo; tells the viewer nothing about what they will get. But &ldquo;30-Minute Full Body HIIT Workout - No Equipment, Beginner Friendly&rdquo; immediately communicates the duration, style, and accessibility. It removes all friction. The viewer knows exactly what they are clicking into, which builds immediate trust and vastly improves your Click-Through Rate (CTR).
               </p>
               <p>
                 Effective fitness titles combine <strong>the workout type</strong>, a <strong>specific outcome or hook</strong>, and <strong>audience qualifiers</strong>. The AI title generator analyzes millions of successful fitness videos to apply these exact psychological triggers, ensuring your content stands out in a crowded search feed.
@@ -220,7 +220,7 @@ export default function FitnessTitleLandingPage() {
                 This viewer has a problem they need you to solve. They might be experiencing back pain during deadlifts or struggling to lose belly fat. Here, negative hooks and curiosity gaps work best.
               </p>
               <p>
-                Instead of &ldquo;How to Deadlift,&rdquo; use &ldquo;Stop Deadlifting Like This (Fix Lower Back Pain).&rdquo; People are far more motivated to click on a video to avoid a mistake or pain than they are to gain a positive outcome. This psychological principle—loss aversion—is incredibly powerful in fitness SEO.
+                Instead of &ldquo;How to Deadlift,&rdquo; use &ldquo;Stop Deadlifting Like This (Fix Lower Back Pain).&rdquo; People are far more motivated to click on a video to avoid a mistake or pain than they are to gain a positive outcome. This psychological principle-loss aversion-is incredibly powerful in fitness SEO.
               </p>
               <h3>3. The Motivational Intent (Transformations & Challenges)</h3>
               <p>
@@ -394,7 +394,7 @@ export default function FitnessTitleLandingPage() {
               >
                 <span className="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-600 text-xs font-bold mb-3">CTR</span>
                 <h3 className="font-display text-xl font-bold group-hover:text-purple-600 transition-colors leading-snug mb-2">
-                  YouTube CTR Secrets — How to Get More Clicks on Every Video
+                  YouTube CTR Secrets - How to Get More Clicks on Every Video
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">Discover how aligning your thumbnail, title, and topic can drastically improve your click-through rate.</p>
               </Link>

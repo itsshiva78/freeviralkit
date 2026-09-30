@@ -7,18 +7,18 @@ import { AboutValuesGrid } from '@/components/about/AboutValuesGrid';
 import { AboutFaqSection } from '@/components/about/AboutFaqSection';
 
 export const metadata: Metadata = {
-  title: 'About FreeViralKit — Our Mission',
+  title: 'About FreeViralKit - Our Mission',
   description:
     'FreeViralKit is built by Shiva Srivastava, a CS engineer from India. Our mission: make pro YouTube SEO tools free for every creator.',
   twitter: {
     card: 'summary_large_image',
-    title: 'About FreeViralKit — Our Mission',
+    title: 'About FreeViralKit - Our Mission',
     description:
       'FreeViralKit is built by Shiva Srivastava, a CS engineer from India. Our mission: make pro YouTube SEO tools free for every creator.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
   openGraph: {
-    title: 'About FreeViralKit — Free AI YouTube SEO Tool',
+    title: 'About FreeViralKit - Free AI YouTube SEO Tool',
     description:
       'Learn about FreeViralKit and our mission to help YouTube creators grow faster with AI-powered SEO optimization. Built by Shiva Srivastava.',
     type: 'website',
@@ -112,7 +112,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
             FreeViralKit is a free, AI-powered YouTube SEO tool that generates optimized titles,
-            descriptions, hashtags, and tags — everything you need to rank higher and grow faster,
+            descriptions, hashtags, and tags - everything you need to rank higher and grow faster,
             completely free without arbitrary paywalls.
           </p>
         </section>
@@ -140,14 +140,14 @@ export default function AboutPage() {
             We believe every creator deserves access to professional-grade SEO tools, regardless of
             budget. The creator economy is increasingly becoming a pay-to-play ecosystem where massive
             corporate channels dominate search results. FreeViralKit was built to disrupt this model
-            by providing instant, high-quality YouTube optimization — completely free, with no account required.
+            by providing instant, high-quality YouTube optimization - completely free, with no account required.
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Our AI understands every YouTube niche. Whether you are running a gaming channel, a cooking vlog, or an educational hub, FreeViralKit generates human-quality titles with proper emoji placement, descriptions with strategic keyword integration, and tags that maximize your video&apos;s reach.
           </p>
         </section>
 
-        {/* Creator Bio — E-E-A-T section */}
+        {/* Creator Bio - E-E-A-T section */}
         <AboutFounderCard />
 
         {/* Values & Tech Stack */}

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Free AI YouTube A/B Test Pack Generator for YouTube Studio Test & Compare. Generate 3 distinct title & thumbnail variants with live mobile feed simulation.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'YouTube 3-Way A/B Test Pack Generator — YouTube Studio Test & Compare Tool',
+  title: 'YouTube 3-Way A/B Test Pack Generator - YouTube Studio Test & Compare Tool',
   description:
     'Free AI YouTube A/B Test Pack Generator. Create 3 distinct strategic title & thumbnail combinations formatted for YouTube Studio Test & Compare with live mobile feed simulation.',
   alternates: {
@@ -77,7 +77,7 @@ const rules = [
   {
     title: '2. Enforce the Anti-Duplication Packaging Rule',
     description:
-      'Your thumbnail text should NEVER repeat your title word-for-word. If your title is "How Rolex Tricked the World", your thumbnail should say "THE SCAM" or "STATUS TRAP" — adding new emotional tension rather than repeating text.',
+      'Your thumbnail text should NEVER repeat your title word-for-word. If your title is "How Rolex Tricked the World", your thumbnail should say "THE SCAM" or "STATUS TRAP" - adding new emotional tension rather than repeating text.',
   },
   {
     title: '3. Respect the 45–65 Character Mobile Rule',

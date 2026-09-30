@@ -15,11 +15,11 @@ export const metadata: Metadata = {
       'Generate accurate, high-CTR YouTube titles, search tags, hashtags, and descriptions for real-world movies, trailers, pop culture news, and live events.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'Real-Time Movie & Live Topic YouTube Title Generator — Free AI Tool',
+  title: 'Real-Time Movie & Live Topic YouTube Title Generator - Free AI Tool',
   description:
     'Generate accurate, high-CTR YouTube titles, search tags, hashtags, and descriptions for real-world movies, trailers, pop culture news, and live events with live fact fetching.',
   openGraph: {
-    title: 'Real-Time Movie & Live Topic YouTube Title Generator — Free AI Tool',
+    title: 'Real-Time Movie & Live Topic YouTube Title Generator - Free AI Tool',
     description:
       'Generate accurate, high-CTR YouTube titles, search tags, hashtags, and descriptions for real-world movies, trailers, pop culture news, and live events.',
     url: buildAbsoluteUrl('/youtube-realtime-title-generator'),

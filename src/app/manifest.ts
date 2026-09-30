@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'FreeViralKit — Free AI YouTube SEO Optimizer',
+    name: 'FreeViralKit - Free AI YouTube SEO Optimizer',
     short_name: 'FreeViralKit',
     description: 'Free AI YouTube SEO tool. Generate viral titles, descriptions, hashtags, tags, and script hooks instantly.',
     start_url: '/',

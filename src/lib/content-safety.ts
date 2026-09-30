@@ -5,7 +5,7 @@
  */
 
 // Blocked content categories with representative terms.
-// This is NOT exhaustive — it catches the most common violations.
+// This is NOT exhaustive - it catches the most common violations.
 const BLOCKED_PATTERNS: { category: string; patterns: RegExp[] }[] = [
   {
     category: 'explicit_content',

@@ -12,16 +12,16 @@ const POSTS_PER_PAGE = 10;
 export const revalidate = 3600; // Cache on Vercel Edge CDN for 1 hour with SWR background revalidation
 
 export const metadata: Metadata = {
-  title: 'YouTube SEO Blog — Tips & Guides',
+  title: 'YouTube SEO Blog - Tips & Guides',
   description: 'Expert YouTube SEO tips, guides, and strategies to grow your channel. Learn about tags, hashtags, descriptions, titles, and more.',
   twitter: {
     card: 'summary_large_image',
-    title: 'YouTube SEO Blog — Tips & Guides',
+    title: 'YouTube SEO Blog - Tips & Guides',
     description: 'Expert YouTube SEO tips, guides, and strategies to grow your channel. Learn about tags, hashtags, descriptions, titles, and more.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
   openGraph: {
-    title: 'YouTube SEO Blog — Tips, Guides & Strategies',
+    title: 'YouTube SEO Blog - Tips, Guides & Strategies',
     description: 'Expert YouTube SEO tips and strategies to grow your channel faster.',
     type: 'website',
     url: buildAbsoluteUrl('/blog'),

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Free AI YouTube title generator for Anime creators. Generate high-CTR titles for anime reviews, episode breakdowns, power scaling, and tier lists.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'YouTube Title Generator for Anime Channels — High CTR Titles',
+  title: 'YouTube Title Generator for Anime Channels - High CTR Titles',
   description:
     'Free AI YouTube title generator for anime creators. Create click-worthy titles for episode reviews, manga theories, power scaling, and seasonal rankings.',
   alternates: {

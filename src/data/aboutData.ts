@@ -17,8 +17,8 @@ export interface TechStackItem {
 
 export const aboutStats = [
   { value: 'Growing', label: 'Creator Community' },
-  { value: '100%', label: 'Free — No Signup Required' },
-  { value: '<5s', label: 'AI Generation Speed' },
+  { value: '100%', label: 'Free: No Signup Required' },
+  { value: '<5s', label: 'Generation Speed' },
   { value: '11+', label: 'SEO Tools in One Place' },
 ];
 
@@ -26,18 +26,18 @@ export const aboutValues: ValueCardItem[] = [
   {
     icon: Zap,
     title: 'Lightning Fast',
-    description: 'Sub-second AI generation powered by Groq LPUs and Cloudflare Workers AI edge network.',
-    color: 'text-purple-400',
-    bg: 'bg-purple-500/10',
-    border: 'border-purple-500/20',
+    description: 'Sub-second metadata generation running on high-speed edge networks.',
+    color: 'text-red-500',
+    bg: 'bg-red-500/10',
+    border: 'border-red-500/20',
   },
   {
     icon: Target,
     title: 'Data-Driven SEO',
     description: 'Prompts tuned to YouTube algorithm ranking factors, CTR psychology, and retention curves.',
-    color: 'text-pink-400',
-    bg: 'bg-pink-500/10',
-    border: 'border-pink-500/20',
+    color: 'text-rose-400',
+    bg: 'bg-rose-500/10',
+    border: 'border-rose-500/20',
   },
   {
     icon: Shield,
@@ -51,15 +51,15 @@ export const aboutValues: ValueCardItem[] = [
     icon: Users,
     title: 'Built for Creators',
     description: 'Designed by a developer who deeply understands the YouTube algorithm and what it takes to grow.',
-    color: 'text-cyan-400',
-    bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/20',
+    color: 'text-zinc-300',
+    bg: 'bg-zinc-800/50',
+    border: 'border-zinc-700/60',
   },
 ];
 
 export const aboutTechStack: TechStackItem[] = [
   { icon: Code2, name: 'Next.js 16', detail: 'App Router + SSG' },
-  { icon: Globe, name: 'Groq & Cloudflare', detail: 'Edge LLM Inference' },
+  { icon: Globe, name: 'Edge Infrastructure', detail: 'Distributed Cloud Network' },
   { icon: Database, name: 'TypeScript', detail: 'Type-safe codebase' },
   { icon: Star, name: 'Vercel', detail: 'Edge deployment' },
 ];
@@ -73,7 +73,7 @@ export const aboutFaqs = [
   {
     question: 'How does the AI optimize for YouTube SEO?',
     answer:
-      "Our backend is powered by advanced Large Language Models running on high-speed inference engines. The AI is specifically prompted with deep YouTube SEO knowledge—such as character limits, high-CTR hook patterns, keyword front-loading, and algorithm preferences—to generate content that performs exceptionally well in search and suggested feeds.",
+      "Our backend leverages advanced semantic models running on high-speed inference engines. The system applies deep YouTube SEO knowledge (such as character limits, high-CTR hook patterns, keyword front-loading, and algorithm preferences) to generate content that performs exceptionally well in search and suggested feeds.",
   },
   {
     question: 'Do I need to worry about algorithmic penalties for using AI?',

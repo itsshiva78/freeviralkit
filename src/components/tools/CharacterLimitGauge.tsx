@@ -19,16 +19,21 @@ export function CharacterLimitGauge({
 }: CharacterLimitGaugeProps) {
   const percent = Math.min(Math.round((current / max) * 100), 100);
   const isOver = current > max;
-  const isApproaching = current > (recommendedMax || max * 0.85);
+  const isOptimal = max === 500 ? current >= 420 && current <= 500 : false;
+  const isApproaching = !isOptimal && current > (recommendedMax || max * 0.85);
 
   const barColor = isOver
     ? 'bg-rose-500 shadow-rose-500/50'
+    : isOptimal
+    ? 'bg-emerald-500 shadow-emerald-500/50'
     : isApproaching
     ? 'bg-amber-400 shadow-amber-400/50'
     : 'bg-emerald-500 shadow-emerald-500/50';
 
   const textColor = isOver
     ? 'text-rose-500 dark:text-rose-400'
+    : isOptimal
+    ? 'text-emerald-500 dark:text-emerald-400'
     : isApproaching
     ? 'text-amber-500 dark:text-amber-400'
     : 'text-emerald-600 dark:text-emerald-400';
@@ -41,6 +46,11 @@ export function CharacterLimitGauge({
           <span className={`font-mono font-bold ${textColor}`}>
             {current} / {max}
           </span>
+          {isOptimal && (
+            <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-mono">
+              ✓ Peak Studio Quota
+            </span>
+          )}
           {isOver && (
             <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-500 border border-rose-500/20">
               Limit Exceeded

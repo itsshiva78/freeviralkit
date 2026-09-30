@@ -10,17 +10,17 @@ import LatestBlogPosts from '@/components/LatestBlogPosts';
 export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
-    title: 'Free AI YouTube Tag Generator — 20+ Tags',
+    title: 'Free AI YouTube Tag Generator - 20+ Tags',
     description: 'Generate 20+ relevant, SEO-optimized YouTube tags instantly with our free AI tag generator. Copy-paste ready for YouTube Studio.',
     images: [buildAbsoluteUrl('/banner.png')],
   },
-  title: 'Free AI YouTube Tag Generator — 20+ Tags',
+  title: 'Free YouTube Tag Generator: 20+ SEO Tags',
   description:
-    'Generate 20+ relevant, SEO-optimized YouTube tags instantly with our free AI tag generator. Copy-paste ready for YouTube Studio.',
+    'Generate 20+ relevant, SEO-optimized YouTube tags instantly. Copy-paste ready under the 500-character YouTube Studio limit.',
   openGraph: {
-    title: 'Free YouTube Tag Generator — Get 20+ SEO Tags Instantly',
+    title: 'Free YouTube Tag Generator: Get 20+ SEO Tags Instantly',
     description:
-      'Generate 20-25 highly relevant, SEO-optimized YouTube tags instantly. The best free YouTube tag generator powered by AI.',
+      'Generate 20-25 highly relevant, SEO-optimized YouTube tags instantly. The best free YouTube tag generator tuned for YouTube Studio.',
     url: buildAbsoluteUrl('/youtube-tags-generator'),
     type: 'website',
     images: [
@@ -122,12 +122,12 @@ export default function TagsGeneratorPage() {
 
       <main className="container mx-auto px-6 py-12 max-w-4xl relative z-10 min-h-screen">
         <section className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 mb-6 uppercase tracking-wider">
-            <Tag className="w-4 h-4" /> AI Tag Generator
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-mono font-medium text-slate-300 bg-zinc-900 border border-zinc-800 mb-6 uppercase tracking-wider">
+            <Tag className="w-3.5 h-3.5 text-red-500" /> YouTube Tag Architecture
           </div>
-          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> Free YouTube Tag Generator — Get 20+ SEO Tags Instantly </h1>
+          <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> Free YouTube Tag Generator: Get 20+ SEO Tags Instantly </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
-            The best free YouTube tag generator powered by AI. Enter your video topic and instantly get highly relevant, SEO-optimized tags formatted perfectly for YouTube Studio. No account needed, completely free.
+            Enter your video topic and instantly get highly relevant, SEO-optimized tags formatted perfectly under the 500-character YouTube Studio limit. No account needed, completely free.
           </p>
         </section>
 
@@ -229,7 +229,7 @@ export default function TagsGeneratorPage() {
 
 
               <p>
-                Our tool doesn&apos;t just spit out random words. It generates a cohesive list that includes the primary long-tail phrases, secondary variations, and necessary context tags — all formatted perfectly with commas so you can copy and paste them directly into YouTube Studio with a single click. This saves you 10-15 minutes of SEO research per upload, allowing you to focus on what actually matters: creating better content that retains the audience once the algorithm brings them to your channel.
+                Our tool doesn&apos;t just spit out random words. It generates a cohesive list that includes the primary long-tail phrases, secondary variations, and necessary context tags - all formatted perfectly with commas so you can copy and paste them directly into YouTube Studio with a single click. This saves you 10-15 minutes of SEO research per upload, allowing you to focus on what actually matters: creating better content that retains the audience once the algorithm brings them to your channel.
               </p>
             </div>
           </div>

@@ -170,7 +170,7 @@ function getNicheStrategy(niche?: string): NicheStrategy {
     ],
     rules: [
       `Front-load the primary search keyword within the first 3-4 words whenever possible.`,
-      `Sound like a confident, opinionated creator — NOT a corporate narrator.`
+      `Sound like a confident, opinionated creator - NOT a corporate narrator.`
     ],
     examples: [
       `I Tested the Most Viral Productivity Hack for 30 Days`,
@@ -230,7 +230,7 @@ ${strategy.rules.map((r) => `- ${r}`).join('\n')}
   * "Fast Growth"
   * "You Are Wrong"
   * "They Hate This"
-- TONE: Sound like a world-class creator with strong opinions, empirical data, and concrete nouns — NEVER a corporate AI bot.
+- TONE: Sound like a world-class creator with strong opinions, empirical data, and concrete nouns - NEVER a corporate AI bot.
 - HASHTAGS: Attach 1-2 clean hashtags to 4-5 titles only (e.g. #Shorts, #${niche?.split(' ')[0] || 'YouTube'}). Keep remaining titles clean.
 ${excludes.length > 0 ? `- DO NOT repeat previous titles: ${JSON.stringify(excludes)}` : ''}
 </strict_rules>

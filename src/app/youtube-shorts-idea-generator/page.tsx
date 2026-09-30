@@ -165,7 +165,7 @@ export default function ShortsIdeaGeneratorPage() {
             </h2>
             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-6">
               <p>
-                When you generate an idea using our tool, you will notice it is split into specific sections. This structure is intentional. Every successful short-form video — whether on YouTube, TikTok, or Instagram — relies on these three layers working together flawlessly. Mastering these layers is the key to escaping the &quot;200-view jail&quot; that many new creators experience.
+                When you generate an idea using our tool, you will notice it is split into specific sections. This structure is intentional. Every successful short-form video - whether on YouTube, TikTok, or Instagram - relies on these three layers working together flawlessly. Mastering these layers is the key to escaping the &quot;200-view jail&quot; that many new creators experience.
               </p>
 
               <div className="glass-card rounded-2xl p-8 border-l-4 border-l-pink-500 mt-6 mb-6">
@@ -185,7 +185,7 @@ export default function ShortsIdeaGeneratorPage() {
                   Layer 2: Visual Pacing (B-Roll & Editing)
                 </h3>
                 <p className="mb-4">
-                  In short-form content, silence and static frames are your enemy. The viewer&apos;s eye needs constant stimulation to prevent them from swiping. Your edit should feature a visual change every 1.5 to 3 seconds. This doesn&apos;t necessarily mean a camera cut — it could be a dynamic zoom, a pop-up text graphic, an emoji appearing on screen, or switching to B-roll footage.
+                  In short-form content, silence and static frames are your enemy. The viewer&apos;s eye needs constant stimulation to prevent them from swiping. Your edit should feature a visual change every 1.5 to 3 seconds. This doesn&apos;t necessarily mean a camera cut - it could be a dynamic zoom, a pop-up text graphic, an emoji appearing on screen, or switching to B-roll footage.
                 </p>
                 <p>
                   Our generator explicitly suggests what visuals should be on screen to keep the pacing tight. These visual changes serve as &quot;pattern interrupts&quot; that reset the viewer&apos;s attention span. When you combine rapid visual pacing with matching sound effects (whooshes, pops, risers), you create a highly immersive experience that makes it physically difficult for the viewer to look away.
@@ -197,10 +197,10 @@ export default function ShortsIdeaGeneratorPage() {
                   Layer 3: The Lean, Fast-Paced Audio Script
                 </h3>
                 <p className="mb-4">
-                  Your voiceover must be aggressively edited. Remove all &quot;ums,&quot; &quot;ahs,&quot; and pauses for breath. Speak slightly faster and with more energy than you would in a normal conversation. The script must be completely devoid of fluff — deliver the value you promised in the hook as quickly and densely as possible. If a word doesn&apos;t move the story forward, delete it.
+                  Your voiceover must be aggressively edited. Remove all &quot;ums,&quot; &quot;ahs,&quot; and pauses for breath. Speak slightly faster and with more energy than you would in a normal conversation. The script must be completely devoid of fluff - deliver the value you promised in the hook as quickly and densely as possible. If a word doesn&apos;t move the story forward, delete it.
                 </p>
                 <p>
-                  Furthermore, the ending of your script is almost as important as the beginning. Instead of a traditional sign-off (&quot;Thanks for watching, please subscribe!&quot;), you should design the end of the script to seamlessly loop back into the hook. A perfect loop creates a seamless transition that tricks the viewer into watching the first 3-5 seconds again, which pushes your Average View Duration over 100%—a massive signal to the algorithm.
+                  Furthermore, the ending of your script is almost as important as the beginning. Instead of a traditional sign-off (&quot;Thanks for watching, please subscribe!&quot;), you should design the end of the script to seamlessly loop back into the hook. A perfect loop creates a seamless transition that tricks the viewer into watching the first 3-5 seconds again, which pushes your Average View Duration over 100%-a massive signal to the algorithm.
                 </p>
               </div>
             </div>

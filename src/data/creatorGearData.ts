@@ -77,7 +77,7 @@ export const gearCategories: GearCategory[] = [
     title: '📷 Cameras & Lenses',
     icon: Camera,
     categoryDesc:
-      'When upgrading to a dedicated camera, you aren\'t just paying for resolution—you are paying for color science, depth of field (that blurry background effect), and autofocus reliability. For YouTube, continuous autofocus tracking is often more important than raw 4K resolution, ensuring you stay sharp even when moving.',
+      'When upgrading to a dedicated camera, you aren\'t just paying for resolution-you are paying for color science, depth of field (that blurry background effect), and autofocus reliability. For YouTube, continuous autofocus tracking is often more important than raw 4K resolution, ensuring you stay sharp even when moving.',
     items: [
       {
         id: 'sony-zv-e10',
@@ -118,7 +118,7 @@ export const gearCategories: GearCategory[] = [
       },
       {
         id: 'elgato-facecam',
-        name: 'Elgato Facecam Pro — True 4K60 Web Camera',
+        name: 'Elgato Facecam Pro - True 4K60 Web Camera',
         desc: 'World\'s first 4K60 webcam. Premium studio-quality lens with professional manual settings control, eliminating the need for a DSLR capture card setup.',
         link: 'https://www.amazon.com/s?k=Elgato+Facecam+Pro+%E2%80%94+True+4K60+Web+Camera',
         price: '$$',
@@ -262,7 +262,7 @@ export const gearCategories: GearCategory[] = [
       },
       {
         id: 'canva-pro',
-        name: 'Canva Pro — Thumbnail & Brand Assets Designer',
+        name: 'Canva Pro - Thumbnail & Brand Assets Designer',
         desc: 'Visual editor with thousands of premium templates, automatic background remover, and cloud collaboration. The fastest way to design clickable thumbnails.',
         link: 'https://www.canva.com',
         price: 'Subscription',

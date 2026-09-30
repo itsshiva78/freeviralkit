@@ -48,7 +48,7 @@ Return ONLY a valid JSON object matching this schema:
     "Phase 2: The 3-Step Fix (1:10 - 3:00) | VISUAL: Step-by-step terminal walkthrough with highlighted text | TALKING POINTS: Breakdown step 1, avoid step 2 trap.",
     "Phase 3: Real World Test (3:00 - 4:15) | VISUAL: Side-by-side benchmark comparison graph | TALKING POINTS: Prove the 2x performance gain with real numbers."
   ],
-  "cta": "Drop your current build specs below — I'll personally review the top 5 in the next video.",
+  "cta": "Drop your current build specs below - I'll personally review the top 5 in the next video.",
   "outro": "Now that you have fixed this bottleneck, watch THIS video on screen to double your speed next."
 }
 </output_format>

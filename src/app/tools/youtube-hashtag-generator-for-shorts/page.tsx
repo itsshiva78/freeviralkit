@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: buildAbsoluteUrl('/tools/youtube-hashtag-generator-for-shorts'),
   },
   openGraph: {
-    title: 'YouTube Shorts Hashtag Generator — Free AI Tool',
+    title: 'YouTube Shorts Hashtag Generator - Free AI Tool',
     description:
       'Generate trending hashtags specifically optimized for YouTube Shorts. Reach more viewers, land on the Shorts shelf, and go viral.',
     type: 'website',
@@ -92,12 +92,12 @@ const tips = [
   {
     title: 'Place hashtags in the title',
     description:
-      'Hashtags in the Shorts title appear as clickable links above the video. This is prime real estate — viewers can tap on them to discover related content, and your Short rides that hashtag feed.',
+      'Hashtags in the Shorts title appear as clickable links above the video. This is prime real estate - viewers can tap on them to discover related content, and your Short rides that hashtag feed.',
   },
   {
     title: 'Ride trending hashtag waves',
     description:
-      'When a new trend breaks — a dance, a meme format, a sound — use the trending hashtag within the first 24–48 hours. Early adoption gets exponentially more shelf impressions.',
+      'When a new trend breaks - a dance, a meme format, a sound - use the trending hashtag within the first 24–48 hours. Early adoption gets exponentially more shelf impressions.',
   },
   {
     title: 'Avoid banned or spammy hashtags',
@@ -148,7 +148,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Shorts Hashtag Generator — FreeViralKit',
+      name: 'YouTube Shorts Hashtag Generator - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-hashtag-generator-for-shorts',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -231,7 +231,7 @@ export default function ShortsHashtagLandingPage() {
               Trending vs. Evergreen Hashtags on Shorts
             </h3>
             <p>
-              When creating your content calendar, you must balance trending content with evergreen content. Trending hashtags are explosive. They represent a current cultural moment—a viral dance, a news event, a trending audio track, or a new video game release. Jumping on a trending hashtag like <strong>#GTA6Trailer</strong> can inject massive, immediate views into your channel because the algorithmic demand for that content far outweighs the supply in the short term. However, the lifespan of these views is incredibly short. After a week, the trend dies, and the video stops getting impressions.
+              When creating your content calendar, you must balance trending content with evergreen content. Trending hashtags are explosive. They represent a current cultural moment-a viral dance, a news event, a trending audio track, or a new video game release. Jumping on a trending hashtag like <strong>#GTA6Trailer</strong> can inject massive, immediate views into your channel because the algorithmic demand for that content far outweighs the supply in the short term. However, the lifespan of these views is incredibly short. After a week, the trend dies, and the video stops getting impressions.
             </p>
             <p>
               Evergreen hashtags, on the other hand, represent consistent, long-term interest. Tags like <strong>#ExcelTips</strong>, <strong>#WeightLossJourney</strong>, or <strong>#GuitarTutorial</strong> will get searched for and watched year-round. These Shorts might not get a million views in their first 24 hours, but they will generate a slow, steady stream of views, subscribers, and potentially ad revenue over months or even years. A healthy YouTube Shorts strategy utilizes both trending tags to capture immediate attention and evergreen tags to build a sustainable, searchable library of content.
@@ -253,7 +253,7 @@ export default function ShortsHashtagLandingPage() {
             Why Hashtags Are Critical for YouTube Shorts Success
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            YouTube Shorts compete in one of the fastest-moving feeds on the internet. Every day, over 70 billion Shorts are watched globally. In that ocean of content, hashtags act as your compass — they tell the algorithm exactly who should see your Short.
+            YouTube Shorts compete in one of the fastest-moving feeds on the internet. Every day, over 70 billion Shorts are watched globally. In that ocean of content, hashtags act as your compass - they tell the algorithm exactly who should see your Short.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
             Unlike long-form videos where SEO relies heavily on descriptions and tags, Shorts discovery is driven by the Shorts shelf algorithm. Hashtags are one of the strongest relevance signals the algorithm uses to categorize and recommend your content.
@@ -300,15 +300,15 @@ export default function ShortsHashtagLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Describe your Short</strong> — enter the topic, niche, or trend your video covers.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Describe your Short</strong> - enter the topic, niche, or trend your video covers.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized hashtag sets</strong> — mixing trending, niche, and shelf-boosting hashtags.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates optimized hashtag sets</strong> - mixing trending, niche, and shelf-boosting hashtags.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and paste</strong> — add them to your Shorts title or description in YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and paste</strong> - add them to your Shorts title or description in YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">
@@ -352,7 +352,7 @@ export default function ShortsHashtagLandingPage() {
               className="block p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700 hover:border-purple-500/30 transition-all"
             >
               <span className="font-semibold text-slate-900 dark:text-slate-50">#️⃣ YouTube Hashtag Generator</span>
-              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized hashtags for all YouTube video formats — long-form and Shorts.</p>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">Generate optimized hashtags for all YouTube video formats - long-form and Shorts.</p>
             </Link>
             <Link
               href="/youtube-tags-generator"

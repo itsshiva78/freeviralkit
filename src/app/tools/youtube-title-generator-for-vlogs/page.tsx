@@ -55,16 +55,16 @@ const examplesByCategory = [
   {
     category: 'Travel & Adventure',
     examples: [
-      'Solo Trip to Manali — What Nobody Tells You',
+      'Solo Trip to Manali - What Nobody Tells You',
       '48 Hours in Goa on a ₹5000 Budget',
       'I Visited the Most Underrated City in India',
-      'Backpacking Southeast Asia — Week 1 Honest Review',
+      'Backpacking Southeast Asia - Week 1 Honest Review',
     ],
   },
   {
     category: 'Challenge & Experiment',
     examples: [
-      'I Tried Waking Up at 5AM for 7 Days — Honest Results',
+      'I Tried Waking Up at 5AM for 7 Days - Honest Results',
       'I Quit Social Media for 30 Days. Here\'s What Changed',
       'Living on ₹100 a Day for a Week (Is It Possible?)',
     ],
@@ -73,7 +73,7 @@ const examplesByCategory = [
     category: 'Personal & Lifestyle',
     examples: [
       'Things I Stopped Buying to Save Money in My 20s',
-      'Moving Into My First Apartment — Empty Apartment Tour',
+      'Moving Into My First Apartment - Empty Apartment Tour',
       'How I Stay Motivated When Nothing Seems to Work',
     ],
   },
@@ -107,7 +107,7 @@ const tips = [
   {
     title: 'Add 1-2 emojis naturally',
     description:
-      'A well-placed emoji adds visual contrast in a feed full of plain text titles. Don\'t overdo it — one or two is perfect for vlogs.',
+      'A well-placed emoji adds visual contrast in a feed full of plain text titles. Don\'t overdo it - one or two is perfect for vlogs.',
   },
 ];
 const faqs = [
@@ -134,7 +134,7 @@ const faqs = [
   {
     question: 'Do emojis actually help travel vlog titles?',
     answer:
-      'Yes, when used sparingly. A single relevant emoji (like ✈️ or 🌴) can add visual contrast to a feed full of black-and-white text. Just don\'t overdo it—more than two emojis makes the title look spammy.',
+      'Yes, when used sparingly. A single relevant emoji (like ✈️ or 🌴) can add visual contrast to a feed full of black-and-white text. Just don\'t overdo it-more than two emojis makes the title look spammy.',
   },
 ];
 const pageJsonLd = {
@@ -153,7 +153,7 @@ const pageJsonLd = {
     },
     {
       '@type': 'WebApplication',
-      name: 'YouTube Title Generator for Vlogs — FreeViralKit',
+      name: 'YouTube Title Generator for Vlogs - FreeViralKit',
       url: 'https://freeviralkit.com/tools/youtube-title-generator-for-vlogs',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
@@ -179,7 +179,7 @@ export default function VlogTitleLandingPage() {
         <section className="text-center mb-12">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"> YouTube Title Generator for Vlogs </h1>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-6">
-            Make relatable, click-worthy vlog titles for daily routines, travel experiences, lifestyle content, and personal stories. Powered by AI, built for vloggers.
+            Make relatable, click-worthy vlog titles for daily routines, travel experiences, lifestyle content, and personal stories. Built specifically for vloggers.
           </p>
           <div className="text-left mt-8">
             <TitleGeneratorClient niche="vlogs" />
@@ -197,7 +197,7 @@ export default function VlogTitleLandingPage() {
             The best-performing vlog titles do three things: they&apos;re <strong className="text-slate-900 dark:text-slate-50">personal</strong> (using &ldquo;I&rdquo; and &ldquo;My&rdquo;), they&apos;re <strong className="text-slate-900 dark:text-slate-50">specific</strong> (mentioning a place, timeframe, or challenge), and they create <strong className="text-slate-900 dark:text-slate-50">curiosity</strong> (making viewers need to know what happened).
           </p>
           <p className="text-slate-600 dark:text-slate-400">
-            Our AI title generator understands these patterns and creates vlog-specific titles that actually get clicked. Not generic, SEO-stuffed titles — real titles that feel authentic to the vlog format.
+            Our AI title generator understands these patterns and creates vlog-specific titles that actually get clicked. Not generic, SEO-stuffed titles - real titles that feel authentic to the vlog format.
           </p>
         </section>
         {/* Examples by category */}
@@ -262,7 +262,7 @@ export default function VlogTitleLandingPage() {
                 The Power of First-Person Vulnerability
               </h3>
               <p>
-                Vlogs thrive on parasocial relationships—the feeling that the creator is a close friend. The language in your title should reflect this intimacy. Titles that begin with &quot;Why I stopped...,&quot; &quot;How I survived...,&quot; or &quot;I tried...&quot; naturally draw people in because humans are inherently nosy. We love hearing about other people&apos;s mistakes, experiments, and realizations.
+                Vlogs thrive on parasocial relationships-the feeling that the creator is a close friend. The language in your title should reflect this intimacy. Titles that begin with &quot;Why I stopped...,&quot; &quot;How I survived...,&quot; or &quot;I tried...&quot; naturally draw people in because humans are inherently nosy. We love hearing about other people&apos;s mistakes, experiments, and realizations.
               </p>
               <p>
                 Consider the difference between &quot;Tips for Waking Up Early&quot; and &quot;I Tried Waking Up at 5AM for 30 Days (It Broke Me).&quot; The first is a generic, soulless tutorial. The second is a personal story of struggle. The bracketed text &quot;(It Broke Me)&quot; acts as an intense curiosity hook. The viewer must click to find out why waking up early was so disastrous. 
@@ -308,7 +308,7 @@ export default function VlogTitleLandingPage() {
               <p className="text-sm">Creates an information gap that drives clicks. Implies insider knowledge the viewer can&apos;t get elsewhere.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">&ldquo;[Action] — Honest Results/Review&rdquo;</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-slate-50 mb-1">&ldquo;[Action] - Honest Results/Review&rdquo;</h3>
               <p className="text-sm">The word &ldquo;honest&rdquo; signals authenticity and builds trust. Viewers know they&apos;ll get a real perspective.</p>
             </div>
           </div>
@@ -321,15 +321,15 @@ export default function VlogTitleLandingPage() {
           <ol className="space-y-3 text-slate-600 dark:text-slate-400">
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">1</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Enter your vlog topic</strong> — describe what your vlog is about: a trip, routine, challenge, or personal story.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Enter your vlog topic</strong> - describe what your vlog is about: a trip, routine, challenge, or personal story.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">2</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> — each crafted with vlog-specific hooks, personal language, and SEO keywords.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">AI generates 10 titles</strong> - each crafted with vlog-specific hooks, personal language, and SEO keywords.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-7 h-7 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-sm font-bold text-purple-500 shrink-0">3</span>
-              <span><strong className="text-slate-900 dark:text-slate-50">Copy and publish</strong> — pick your favorite and paste it directly into YouTube Studio.</span>
+              <span><strong className="text-slate-900 dark:text-slate-50">Copy and publish</strong> - pick your favorite and paste it directly into YouTube Studio.</span>
             </li>
           </ol>
           <div className="mt-6">

@@ -32,7 +32,7 @@ function categorizeError(errMsg: string): { type: ErrorType; title: string; expl
   if (lower.includes('rate limit') || lower.includes('too many requests') || lower.includes('429') || lower.includes('wait')) {
     return {
       type: 'RATE_LIMIT',
-      title: 'High Demand — Speed Limit Active',
+      title: 'High Demand - Speed Limit Active',
       explanation: 'To keep FreeViralKit 100% free for everyone, we briefly pause requests during traffic spikes. Your spot is reserved.',
       icon: Clock,
       badge: 'Speed Limit',
