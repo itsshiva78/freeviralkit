@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { page } = await params;
   const pageNum = parseInt(page, 10);
   return {
-    title: `YouTube SEO Blog - Page ${pageNum} | FreeViralKit`,
+    title: `YouTube SEO Blog - Page ${pageNum}`,
     description: `Browse page ${pageNum} of FreeViralKit's YouTube SEO guides, tips, and strategies to grow your channel faster.`,
     alternates: {
       // Each pagination page has its own canonical to avoid duplicate content

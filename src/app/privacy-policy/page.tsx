@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { buildAbsoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | FreeViralKit',
+  title: 'Privacy Policy',
   description: 'Read the FreeViralKit Privacy Policy to understand how we collect, use, and protect your data while using our YouTube SEO tools.',
   twitter: {
     card: 'summary_large_image',

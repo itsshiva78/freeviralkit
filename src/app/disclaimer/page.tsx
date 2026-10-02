@@ -3,7 +3,7 @@ import { buildAbsoluteUrl } from '@/lib/site';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | FreeViralKit',
+  title: 'Disclaimer',
   description: 'Read the earnings disclaimer, affiliate disclosure, and liability information for FreeViralKit. Understand our content policies and guarantees.',
   openGraph: {
     title: 'Disclaimer | FreeViralKit',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { buildAbsoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | FreeViralKit',
+  title: 'Terms of Service',
   description: 'Read the FreeViralKit Terms of Service governing the use of our free YouTube SEO tools, AI content generators, and platform.',
   twitter: {
     card: 'summary_large_image',
