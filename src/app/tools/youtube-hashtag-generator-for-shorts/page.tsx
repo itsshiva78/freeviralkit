@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { buildAbsoluteUrl } from '@/lib/site';
 import HashtagGeneratorClient from '@/components/tools/HashtagGeneratorClient';
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'YouTube Shorts Hashtag Generator',

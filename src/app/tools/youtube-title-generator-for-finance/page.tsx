@@ -4,6 +4,10 @@ import NicheStudioLayout, { type NicheFramework, type NicheCaseStudy, type Niche
 import FinanceStudioClient from '@/components/tools/niche/FinanceStudioClient';
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'YouTube Title Generator for Personal Finance & Wealth Creators | FreeViralKit',

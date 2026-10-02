@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { buildAbsoluteUrl } from '@/lib/site';
 import TagsGeneratorClient from '@/components/tools/TagsGeneratorClient';
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'YouTube Tags Generator for Gaming',

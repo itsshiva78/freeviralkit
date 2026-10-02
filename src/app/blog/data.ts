@@ -19,26 +19,11 @@ export interface BlogPost {
  * to their primary canonical database article without any 404 errors.
  */
 const SLUG_ALIASES: Record<string, string> = {
-  'youtube-titles-that-get-clicks': 'how-to-write-youtube-titles-that-get-clicks',
-  'youtube-title-strategies': 'how-to-write-youtube-titles-that-get-clicks',
-  'youtube-seo-guide': 'youtube-seo-checklist-2026',
-  'youtube-description-tips': 'youtube-description-optimization',
-  'increase-youtube-audience-retention': 'how-to-write-viral-youtube-hooks',
-  'best-youtube-tags': 'best-youtube-tags-for-gaming',
   'do-youtube-tags-still-work': 'best-youtube-tags-for-gaming',
-  'youtube-tag-optimization-guide': 'best-youtube-tags-for-gaming',
-  'how-to-find-youtube-niche': 'how-to-pick-youtube-channel-name',
-  'do-youtube-hashtags-actually-help': 'youtube-hashtag-strategy',
-  'youtube-shorts-seo': 'youtube-shorts-viral-secrets',
-  'how-to-get-more-views-on-youtube-shorts': 'youtube-shorts-viral-secrets',
-  'how-to-start-a-vlog-channel': 'youtube-gaming-channel-growth-guide',
-  'youtube-ctr-secrets': 'youtube-thumbnail-psychology',
   'increase-youtube-ctr': 'youtube-thumbnail-psychology',
   'youtube-keyword-research-guide': 'how-to-grow-youtube-channel-from-zero',
   'how-to-rank-on-youtube': 'youtube-seo-checklist-2026',
   'how-to-add-youtube-chapters': 'youtube-description-optimization',
-  'grow-educational-youtube-channel': 'how-to-grow-youtube-channel-from-zero',
-  'how-to-promote-youtube-videos': 'how-to-grow-youtube-channel-from-zero',
   'freeviralkit-vs-vidiq': 'freeviralkit-vs-vidiq-tubebuddy',
   'freeviralkit-vs-tubebuddy': 'freeviralkit-vs-vidiq-tubebuddy',
   'freeviralkit-vs-chatgpt': 'freeviralkit-vs-chatgpt-youtube-seo',
@@ -126,7 +111,7 @@ const _getPublishedPosts = async (): Promise<BlogPost[]> => {
 
 export const getPublishedPosts = unstable_cache(
   _getPublishedPosts,
-  ['blog-published-posts-v11'],
+  ['blog-published-posts-v12'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
@@ -153,7 +138,7 @@ const _getPublishedPostBySlug = async (rawSlug: string): Promise<BlogPost | unde
 
 export const getPublishedPostBySlug = unstable_cache(
   _getPublishedPostBySlug,
-  ['blog-published-post-by-slug-v11'],
+  ['blog-published-post-by-slug-v12'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
@@ -173,7 +158,7 @@ const _getPostBySlug = async (rawSlug: string): Promise<BlogPost | undefined> =>
 
 export const getPostBySlug = unstable_cache(
   _getPostBySlug,
-  ['blog-post-by-slug-v11'],
+  ['blog-post-by-slug-v12'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
@@ -193,7 +178,7 @@ const _getAllSlugs = async (): Promise<string[]> => {
 
 export const getAllSlugs = unstable_cache(
   _getAllSlugs,
-  ['blog-all-slugs-v11'],
+  ['blog-all-slugs-v12'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 
@@ -217,7 +202,7 @@ const _getPublishedSlugs = async (): Promise<string[]> => {
 
 export const getPublishedSlugs = unstable_cache(
   _getPublishedSlugs,
-  ['blog-published-slugs-v11'],
+  ['blog-published-slugs-v12'],
   { tags: ['blog-posts'], revalidate: process.env.NODE_ENV === 'development' ? 1 : 3600 }
 );
 

@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { buildAbsoluteUrl } from '@/lib/site';
 import TitleGeneratorClient from '@/components/tools/TitleGeneratorClient';
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'YouTube Title Generator for Gaming',
